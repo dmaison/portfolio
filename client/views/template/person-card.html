@@ -1,0 +1,18 @@
+<a href="/people/{{person._id}}">
+	<div class="ui person card">
+	  	<div class="image">
+	    	<img src="{{person.headshot}}">
+	  	</div>
+	  	<div class="content">
+		    <span class="header">{{person.name}}</span>
+		    <div class="meta">
+		      	<span class="date">{{date( person.birthdate )}}</span>
+		    </div>
+	  	</div>
+	  	<div class="extra content">
+		    <i class="fa gender-icon" ng-class="controls.gender.icon( controls.attribute( person.gender, 'term', genders ) )"></i>
+		    <i class="fa fa-eye" style="color: #{{controls.attribute( person.eyes.color, 'hex', eyes.colors )}};"></i>
+		    <i class="fa {{controls.body.shape.icon( controls.attribute( person.body.shape, 'term', body.shapes ) )}}"></i>
+	  	</div>
+	</div>
+</a>

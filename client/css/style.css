@@ -1,0 +1,63 @@
+@import url( animations.css );
+
+body { overflow-x: hidden; }
+
+#content { 
+	margin-top: 38px; 
+	position: absolute;
+	width: 100%;
+	top: 300px;
+	padding: 15px;
+}
+
+#content.ng-enter { 
+	animation: enter 0.5s both ease-in; 
+	-webkit-animation: enter 0.5s both ease-in;
+	-moz-animation: enter 0.5s both ease-in;
+}
+
+#content.ng-leave { 
+	animation: leave 0.5s both ease-in;
+	-webkit-animation: leave 0.5s both ease-in; 
+	-moz-animation: leave 0.5s both ease-in; 
+	transition-delay: 0.6s;
+}
+
+.animate-show { 
+	display: block; 
+	transition: 0.3s linear all;
+	-webkit-transition: 0.3s linear all;
+	-moz-transition: 0.3s linear all;
+	opacity: 1;
+	transition-delay: 0.4s;
+	position: absolute;
+	top: 0;
+	width: calc( 100% - 30px );
+}
+
+.animate-show.ng-hide {
+	opacity: 0;
+	transition-delay: 0s;
+}
+
+.masthead.segment {
+	background-color: #333;
+	background-size: 100% auto;
+	background-position: left center;
+	min-height: 300px;
+	position: relative;
+}
+
+.masthead.segment h1 > .library {
+    display: block;
+    font-size: 1.75em;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.masthead .menu,
+.masthead.segment h1 > .library { font-family: 'Abel', sans-serif; }
+
+.ui.top.fixed.menu .icon { margin: 0; }
