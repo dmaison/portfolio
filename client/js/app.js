@@ -1,5 +1,5 @@
 angular
-	.module( 'app', ['ngRoute', 'ngAnimate', 'routes', 'app.main' ])
+	.module( 'app', ['ngRoute', 'ngAnimate', 'routes', 'app.main', 'app.resume', 'app.portfolio' ])
 	.directive( 'modal', function() {
 		return {
 			restrict: 'E',

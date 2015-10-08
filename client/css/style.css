@@ -3,7 +3,6 @@
 body { overflow-x: hidden; }
 
 #content { 
-	margin-top: 38px; 
 	position: absolute;
 	width: 100%;
 	top: 300px;

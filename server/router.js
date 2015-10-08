@@ -1,5 +1,65 @@
 module.exports = function( app, dir ){
-		
+	
+	app.get( '/api/qualifications/', function( req, res ){
+
+		var langs = {
+			server: [ 
+				{ language: 'Node', experience: 3 }, 
+				{ language: 'PHP', experience: 3 }, 
+				{ language: 'Classic ASP', experience: 3 }, 
+				{ language: '.NET', experience: 3 } 
+			],
+
+			db: [
+				{ language: 'Mongo', experience: 3 }, 
+				{ language: 'Redis', experience: 3 }, 
+				{ language: 'SQL', experience: 3 }
+			],
+
+			compiled: [
+				{ language: 'C', experience: 3 },
+				{ language: 'C#', experience: 3 },
+				{ language: 'Visual Basic', experience: 3 }
+			],
+
+			web: [
+				{ language: 'HTML 5', experience: 3 },
+				{ language: 'CSS 3', experience: 3 },
+				{ language: 'Javascript', experience: 3 },
+				{ language: 'AJAX', experience: 3 },
+				{ language: 'JSON', experience: 3 },
+				{ language: 'XML', experience: 3 }
+			],
+
+			libs: [
+				{ language: 'jQuery', experience: 3 },
+				{ language: 'Prototype.js', experience: 3 },
+				{ language: 'script.aculo.us', experience: 3 },
+				{ language: 'Angular.js', experience: 3 },
+				{ language: 'Backbone.js', experience: 3 },
+				{ language: 'Bootstrap', experience: 3 },
+				{ language: 'Semantic UI', experience: 3 }
+			],
+
+			versionControl: [
+				{ language: 'GitHub', experience: 3 },
+				{ language: 'Visual SourceSafe', experience: 3 },
+			],
+
+			other: [
+				{ language: 'SOAP', experience: 3 },
+				{ language: 'RESTful Web Services', experience: 3 },
+				{ language: 'Windows Powershell Command Line', experience: 3 },
+				{ language: 'Ubuntu Command line', experience: 3 },
+				{ language: 'Adobe Creative Suites', experience: 3 },
+			]
+		};
+
+		res.status( 200 );
+		res.send( langs );
+
+	});
+
 	// Front end
 	app.get( '*', function( req, res ){
 		res.sendFile( dir + '/client/views/index.html' );
