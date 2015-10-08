@@ -1,0 +1,51 @@
+[
+	{
+		"description": "interlinkONE, Inc.",
+		"url": "http://www.interlinkone.com",
+		"thumbnail": "img/portfolio/interlinkone.png",
+		"technologies": [
+			{
+				"icon": "wordpress",
+				"description": "Wordpress"
+			},
+			{
+				"icon": "html5",
+				"description": "HTML 5"
+			},
+			{
+				"icon": "css3",
+				"description": "CSS 3" 
+			},
+			{
+				"icon": "code",
+				"description": "Javascript/jQuery" 
+			}
+		]
+	},
+
+	{
+		"description": "MAX",
+		"url": "http://www.marketwithmax.com",
+		"thumbnail": "img/portfolio/max.png",
+		"technologies": [
+			{
+				"icon": "wordpress",
+				"description": "Wordpress"
+			},
+			{
+				"icon": "html5",
+				"description": "HTML 5"
+			},
+			{
+				"icon": "css3",
+				"description": "CSS 3" 
+			},
+			{
+				"icon": "code",
+				"description": "Javascript/jQuery" 
+			}
+		]
+	}
+  
+
+]
