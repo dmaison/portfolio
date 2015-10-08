@@ -57,6 +57,7 @@ body { overflow-x: hidden; }
 }
 
 .masthead .menu,
-.masthead.segment h1 > .library { font-family: 'Abel', sans-serif; }
+.masthead.segment h1 > .library,
+h1.ui.header { font-family: 'Abel', sans-serif; }
 
 .ui.top.fixed.menu .icon { margin: 0; }

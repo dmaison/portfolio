@@ -14,7 +14,7 @@ angular
 	}])
 	.controller( 'resume', [ '$scope', '$http', '$window', '$location', function( $scope, $http, $window, $location ) {
 
-		$scope.page = ( $location.hash() != '' ) ? $location.hash() : 'experience';
+		$scope.page = ( $location.hash() != '' ) ? $location.hash() : 'about';
 
 		$scope.navigate = function( page ){
 			$scope.page = page;
@@ -32,6 +32,17 @@ angular
 						.get( '/api/qualifications/' )
 						.success(function( res ){
 							$scope.languages = res;
+							$scope.loading = false;
+						});
+					break;
+
+				case 'experience':
+					if( $scope.jobs ) break;
+					$scope.loading = true;
+					$http
+						.get( '/api/experience/' )
+						.success(function( res ){
+							$scope.jobs = res;
 							$scope.loading = false;
 						});
 					break;
