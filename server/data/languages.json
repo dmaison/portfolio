@@ -43,6 +43,7 @@
 	],
 
 	"other": [
+		{ "language": "npm & Bower", "experience": 3 },
 		{ "language": "SOAP", "experience": 3 },
 		{ "language": "RESTful Web Services", "experience": 3 },
 		{ "language": "Windows Powershell Command Line", "experience": 3 },
