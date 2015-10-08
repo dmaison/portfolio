@@ -1,5 +1,33 @@
 [
 	{
+		"description": "My Portfolio site",
+		"url": "http://dave.maison",
+		"thumbnail": "img/portfolio/portfolio.png",
+		"technologies": [
+			{
+				"icon": "code",
+				"description": "Node.js w/ Express.js" 
+			},
+			{
+				"icon": "html5",
+				"description": "HTML 5"
+			},
+			{
+				"icon": "css3",
+				"description": "CSS 3" 
+			},
+			{
+				"icon": "css3",
+				"description": "Semantic UI" 
+			},
+			{
+				"icon": "code",
+				"description": "Javascript/Angular" 
+			}
+		]
+	},
+
+	{
 		"description": "interlinkONE, Inc.",
 		"url": "http://www.interlinkone.com",
 		"thumbnail": "img/portfolio/interlinkone.png",
