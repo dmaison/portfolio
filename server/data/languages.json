@@ -1,54 +1,56 @@
 {
 	"server": [ 
 		{ "language": "Node", "experience": 3 }, 
-		{ "language": "PHP", "experience": 3 }, 
-		{ "language": "Classic ASP", "experience": 3 }, 
-		{ "language": ".NET", "experience": 3 } 
+		{ "language": "PHP", "experience": 4 }, 
+		{ "language": "Classic ASP", "experience": 5 }, 
+		{ "language": ".NET", "experience": 1 } 
 	],
 
 	"db": [
 		{ "language": "Mongo", "experience": 3 }, 
-		{ "language": "Redis", "experience": 3 }, 
-		{ "language": "SQL", "experience": 3 }
+		{ "language": "Redis", "experience": 2 }, 
+		{ "language": "SQL", "experience": 5 },
+		{ "language": "Microsoft Access", "experience": ">1" }
 	],
 
 	"compiled": [
-		{ "language": "C", "experience": 3 },
-		{ "language": "C#", "experience": 3 },
-		{ "language": "Visual Basic", "experience": 3 }
+		{ "language": "C", "experience": ">1" },
+		{ "language": "C#", "experience": 1 },
+		{ "language": "Visual Basic", "experience": 5 }
 	],
 
 	"web": [
-		{ "language": "HTML 5", "experience": 3 },
-		{ "language": "CSS 3", "experience": 3 },
-		{ "language": "Javascript", "experience": 3 },
-		{ "language": "AJAX", "experience": 3 },
-		{ "language": "JSON", "experience": 3 },
-		{ "language": "XML", "experience": 3 }
+		{ "language": "HTML", "experience": "10+" },
+		{ "language": "CSS", "experience": "10+" },
+		{ "language": "Javascript", "experience": "10+" },
+		{ "language": "AJAX", "experience": 5 },
+		{ "language": "JSON", "experience": 5 },
+		{ "language": "XML", "experience": 5 }
 	],
 
 	"libs": [
 		{ "language": "jQuery", "experience": 3 },
-		{ "language": "Prototype.js", "experience": 3 },
-		{ "language": "script.aculo.us", "experience": 3 },
+		{ "language": "Prototype.js", "experience": 2 },
+		{ "language": "script.aculo.us", "experience": 2 },
 		{ "language": "Angular.js", "experience": 3 },
-		{ "language": "Backbone.js", "experience": 3 },
-		{ "language": "Bootstrap", "experience": 3 },
-		{ "language": "Semantic UI", "experience": 3 }
+		{ "language": "Backbone.js", "experience": ">1" },
+		{ "language": "Bootstrap", "experience": 5 },
+		{ "language": "Semantic UI", "experience": ">1" }
 	],
 
 	"versionControl": [
 		{ "language": "GitHub", "experience": 3 },
-		{ "language": "Visual SourceSafe", "experience": 3 }
+		{ "language": "Visual SourceSafe", "experience": 2 }
 	],
 
 	"other": [
 		{ "language": "npm & Bower", "experience": 3 },
-		{ "language": "SOAP", "experience": 3 },
-		{ "language": "RESTful Web Services", "experience": 3 },
+		{ "language": "XMPie", "experience": 5 },
+		{ "language": "SOAP", "experience": 5 },
+		{ "language": "RESTful Web Services", "experience": 5 },
 		{ "language": "Windows Powershell Command Line", "experience": 3 },
-		{ "language": "Ubuntu Command line", "experience": 3 },
+		{ "language": "Ubuntu Command line", "experience": ">1" },
 		{ "language": "Wordpress", "experience": 3 },
-		{ "language": "Adobe Creative Suites", "experience": 3 }
+		{ "language": "Adobe Creative Suites", "experience": "10+" }
 	]
 }
