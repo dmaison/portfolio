@@ -13,7 +13,6 @@
     "express": "^4.8.0",
     "express-session": "*",
     "method-override": "~2.0.2",
-    "mongoose": "~3.8.0",
     "webdriver-manager": "^6.0.0"
   }
 }
