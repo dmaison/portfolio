@@ -53,90 +53,17 @@
 		</div>
 	</div>
 
-
 	<div ng-show="( page == 'qualifications' )">
+		<paginate list="languages" items-per-page="4"></paginate>
 		<div class="ui grid">
-			<div class="four wide column">
-				<h3 class="ui header">Compiled Languages</h3>
+			<div class="four wide column" ng-repeat="item in languages">
+				<h3 class="ui header">{{item.description}}</h3>
 				<div class="ui relaxed divided list">
-				  	<div class="item" ng-repeat="item in languages.compiled">
-				    	<i class="large puzzle middle aligned icon"></i>
+				  	<div class="item" ng-repeat="lang in item.languages">
+				    	<i class="large {{item.icon}} middle aligned icon"></i>
 				    	<div class="content">
-				      		<a class="header">{{item.language}}</a>
-				      		<div class="description">{{item.experience}} years experience</div>
-				    	</div>
-				  	</div>
-				</div>
-			</div>
-
-			<div class="four wide column">
-				<h3 class="ui header">Server Side</h3>
-				<div class="ui relaxed divided list">
-				  	<div class="item" ng-repeat="item in languages.server">
-				    	<i class="large code middle aligned icon"></i>
-				    	<div class="content">
-				      		<a class="header">{{item.language}}</a>
-				      		<div class="description">{{item.experience}} years experience</div>
-				    	</div>
-				  	</div>
-				</div>
-			</div>
-			<div class="four wide column">
-				<h3 class="ui header">Database</h3>
-				<div class="ui relaxed divided list">
-				  	<div class="item" ng-repeat="item in languages.db">
-				    	<i class="large database middle aligned icon"></i>
-				    	<div class="content">
-				      		<a class="header">{{item.language}}</a>
-				      		<div class="description">{{item.experience}} years experience</div>
-				    	</div>
-				  	</div>
-				</div>
-			</div>
-			<div class="four wide column">
-				<h3 class="ui header">Web</h3>
-				<div class="ui relaxed divided list">
-				  	<div class="item" ng-repeat="item in languages.web">
-				    	<i class="large html5 middle aligned icon"></i>
-				    	<div class="content">
-				      		<a class="header">{{item.language}}</a>
-				      		<div class="description">{{item.experience}} years experience</div>
-				    	</div>
-				  	</div>
-				</div>
-			</div>
-			<div class="four wide column">
-				<h3 class="ui header">Libraries and Packages</h3>
-				<div class="ui relaxed divided list">
-				  	<div class="item" ng-repeat="item in languages.libs">
-				    	<i class="large dropbox middle aligned icon"></i>
-				    	<div class="content">
-				      		<a class="header">{{item.language}}</a>
-				      		<div class="description">{{item.experience}} years experience</div>
-				    	</div>
-				  	</div>
-				</div>
-			</div>
-			<div class="four wide column">
-				<h3 class="ui header">Version Control</h3>
-				<div class="ui relaxed divided list">
-				  	<div class="item" ng-repeat="item in languages.versionControl">
-				    	<i class="large fork middle aligned icon"></i>
-				    	<div class="content">
-				      		<a class="header">{{item.language}}</a>
-				      		<div class="description">{{item.experience}} years experience</div>
-				    	</div>
-				  	</div>
-				</div>
-			</div>
-			<div class="four wide column">
-				<h3 class="ui header">Other</h3>
-				<div class="ui relaxed divided list">
-				  	<div class="item" ng-repeat="item in languages.other">
-				    	<i class="large desktop middle aligned icon"></i>
-				    	<div class="content">
-				      		<a class="header">{{item.language}}</a>
-				      		<div class="description">{{item.experience}} years experience</div>
+				      		<a class="header">{{lang.language}}</a>
+				      		<div class="description">{{lang.experience}} years experience</div>
 				    	</div>
 				  	</div>
 				</div>

@@ -1,0 +1,93 @@
+<div class="ui active inverted dimmer" ng-show="loading">
+   	<div class="ui loader"></div>
+</div>
+
+<h1 class="ui header">
+  	<i class="folder open icon"></i>
+  	<div class="content">
+    	Examples
+    	<div class="sub header">
+    		Demonstratable examples of Angular code I've created
+    	</div>
+  	</div>
+</h1>
+<div class="ui top attached tabular menu">
+	<a class="item" ng-class="{ 'active' : ( page == 'paginate' ) }"  ng-click="navigate( 'paginate' )">Pagination</a>
+	<a class="item" ng-class="{ 'active' : ( page == 'drop' ) }"  ng-click="navigate( 'drop' )">Dropdown</a>
+</div>
+<div class="ui bottom attached segment">
+	<div ng-show="( page == 'paginate' )">
+		<h3>Demonstration</h3>
+		<table class="ui celled table">
+			<thead>
+				<tr>
+					<th style="width: 100px;">Icon</th>
+					<th>Group</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="item in items">
+					<td class="center aligned"><i class="{{item.icon}} icon"></i></td>
+					<td>{{item.description}}</td>
+				</tr>
+			</tbody>
+		</table>
+		<paginate list="items" items-per-page="3"></paginate>
+
+		<h3>Demonstration Markup</h3>
+		<pre class="ui info message">
+&lt;table class="ui celled table">
+	&lt;thead>
+		&lt;tr>
+			&lt;th style="width: 100px;">Icon&lt;/th>
+			&lt;th>Group&lt;/th>
+		&lt;/tr>
+	&lt;/thead>
+	&lt;tbody>
+		&lt;tr ng-repeat="item in items">
+			&lt;td class="center aligned">&lt;i class="{{item.icon}} icon">&lt;/i>&lt;/td>
+			&lt;td>{{item.description}}&lt;/td>
+		&lt;/tr>
+	&lt;/tbody>
+&lt;table>
+&lt;paginate list="items" items-per-page="3">&lt;/paginate>
+		</pre>
+	</div>
+
+	<div ng-show="( page == 'drop' )" class="ui form">
+		<h3>Demonstration</h3>
+		<div class="field">
+			<label>Select Single Icon</label>
+			<dropdown ng-model="dropValue" placeholder="Please select a single icon">
+				<choice ng-repeat="item in drops" choice-value="item.icon" display="item.icon"></choice>
+			</dropdown>
+			<div class="ui info message">{{dropValue}} <i class="{{dropValue}} icon"></i></div>
+		</div>
+
+		<div class="field">
+			<label>Select Multiple Icons</label>
+			<dropdown ng-model="dropValueMulti" multiple="true">
+				<choice ng-repeat="item in drops" choice-value="item.icon" display="item.icon"></choice>
+			</dropdown>
+			<div class="ui info message">{{dropValueMulti}} <div ng-repeat="item in dropValueMulti"><i class="{{item}} icon"></i></div></div>
+		</div>
+		<h3>Demonstration Markup</h3>
+		<pre class="ui info message">
+&lt;div class="field">
+	&lt;label>Select Single Icon&lt;/label>
+	&lt;dropdown ng-model="dropValue" placeholder="Please select a single icon">
+		&lt;choice ng-repeat="item in drops" choice-value="item.icon" display="item.icon">&lt;/choice>
+	&lt;/dropdown>
+	&lt;div class="ui info message">{{dropValue}} &lt;i class="{{dropValue}} icon">&lt;/i>&lt;/div>
+&lt;/div>
+
+&lt;div class="field">
+	&lt;label>Select Multiple Icons&lt;/label>
+	&lt;dropdown ng-model="dropValueMulti" multiple="true">
+		&lt;choice ng-repeat="item in drops" choice-value="item.icon" display="item.icon">&lt;/choice>
+	&lt;/dropdown>
+	&lt;div class="ui info message">{{dropValueMulti}} &lt;div ng-repeat="item in dropValueMulti">&lt;i class="{{item}} icon">&lt;/i>&lt;/div>&lt;/div>
+&lt;/div>
+		</pre>
+	</div>
+</div>

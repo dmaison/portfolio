@@ -67,3 +67,5 @@ body { overflow-x: hidden; }
 h1.ui.header { font-family: 'Abel', sans-serif; }
 
 .ui.top.fixed.menu .icon { margin: 0; }
+
+.ui.pagination.menu { margin-bottom: 1em; }

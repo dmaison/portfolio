@@ -1,56 +1,78 @@
-{
-	"server": [ 
-		{ "language": "Node", "experience": 3 }, 
-		{ "language": "PHP", "experience": 4 }, 
-		{ "language": "Classic ASP", "experience": 5 }, 
-		{ "language": ".NET", "experience": 1 } 
-	],
-
-	"db": [
-		{ "language": "Mongo", "experience": 3 }, 
-		{ "language": "Redis", "experience": 2 }, 
-		{ "language": "SQL", "experience": 5 },
-		{ "language": "Microsoft Access", "experience": ">1" }
-	],
-
-	"compiled": [
-		{ "language": "C", "experience": ">1" },
-		{ "language": "C#", "experience": 1 },
-		{ "language": "Visual Basic", "experience": 5 }
-	],
-
-	"web": [
-		{ "language": "HTML", "experience": "10+" },
-		{ "language": "CSS", "experience": "10+" },
-		{ "language": "Javascript", "experience": "10+" },
-		{ "language": "AJAX", "experience": 5 },
-		{ "language": "JSON", "experience": 5 },
-		{ "language": "XML", "experience": 5 }
-	],
-
-	"libs": [
-		{ "language": "jQuery", "experience": 3 },
-		{ "language": "Prototype.js", "experience": 2 },
-		{ "language": "script.aculo.us", "experience": 2 },
-		{ "language": "Angular.js", "experience": 3 },
-		{ "language": "Backbone.js", "experience": ">1" },
-		{ "language": "Bootstrap", "experience": 5 },
-		{ "language": "Semantic UI", "experience": ">1" }
-	],
-
-	"versionControl": [
-		{ "language": "GitHub", "experience": 3 },
-		{ "language": "Visual SourceSafe", "experience": 2 }
-	],
-
-	"other": [
-		{ "language": "npm & Bower", "experience": 3 },
-		{ "language": "XMPie", "experience": 5 },
-		{ "language": "SOAP", "experience": 5 },
-		{ "language": "RESTful Web Services", "experience": 5 },
-		{ "language": "Windows Powershell Command Line", "experience": 3 },
-		{ "language": "Ubuntu Command line", "experience": ">1" },
-		{ "language": "Wordpress", "experience": 3 },
-		{ "language": "Adobe Creative Suites", "experience": "10+" }
-	]
-}
+[
+	{	
+		"description": "Server Side",
+		"icon": "code",
+		"languages" : [ 
+			{ "language": "Node", "experience": 3 }, 
+			{ "language": "PHP", "experience": 4 }, 
+			{ "language": "Classic ASP", "experience": 5 }, 
+			{ "language": ".NET", "experience": 1 } 
+		]
+	},
+	{
+		"description": "Database",
+		"icon": "database",
+		"languages" : [
+			{ "language": "Mongo", "experience": 3 }, 
+			{ "language": "Redis", "experience": 2 }, 
+			{ "language": "SQL", "experience": 5 },
+			{ "language": "Microsoft Access", "experience": ">1" }
+		]
+	},
+	{
+		"description": "Compiled",
+		"icon": "puzzle",
+		"languages" : [
+			{ "language": "C", "experience": ">1" },
+			{ "language": "C#", "experience": 1 },
+			{ "language": "Visual Basic", "experience": 5 }
+		]
+	},
+	{
+		"description": "Web",
+		"icon": "html5",
+		"languages" : [
+			{ "language": "HTML", "experience": "10+" },
+			{ "language": "CSS", "experience": "10+" },
+			{ "language": "Javascript", "experience": "10+" },
+			{ "language": "AJAX", "experience": 5 },
+			{ "language": "JSON", "experience": 5 },
+			{ "language": "XML", "experience": 5 }
+		]
+	},
+	{
+		"description": "Libraries & Packages",
+		"icon": "dropbox",
+		"languages" : [
+			{ "language": "jQuery", "experience": 3 },
+			{ "language": "Prototype.js", "experience": 2 },
+			{ "language": "script.aculo.us", "experience": 2 },
+			{ "language": "Angular.js", "experience": 3 },
+			{ "language": "Backbone.js", "experience": ">1" },
+			{ "language": "Bootstrap", "experience": 5 },
+			{ "language": "Semantic UI", "experience": ">1" }
+		]
+	},
+	{
+		"description": "Version Control",
+		"icon": "fork",
+		"languages" : [
+			{ "language": "GitHub", "experience": 3 },
+			{ "language": "Visual SourceSafe", "experience": 2 }
+		]
+	},
+	{
+		"description": "Other",
+		"icon": "desktop",
+		"languages" : [
+			{ "language": "npm & Bower", "experience": 3 },
+			{ "language": "XMPie", "experience": 5 },
+			{ "language": "SOAP", "experience": 5 },
+			{ "language": "RESTful Web Services", "experience": 5 },
+			{ "language": "Windows Powershell Command Line", "experience": 3 },
+			{ "language": "Ubuntu Command line", "experience": ">1" },
+			{ "language": "Wordpress", "experience": 3 },
+			{ "language": "Adobe Creative Suites", "experience": "10+" }
+		]
+	}
+]
