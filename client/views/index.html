@@ -32,18 +32,19 @@
             <a href="/" class="active item">
                 dave.maison
             </a>
-            <a href="/resume" class="item">
-                Resume
-            </a>
-            <a href="/examples" class="item">
-                Examples
-            </a>
-            <a href="/portfolio" class="item">
-                Portfolio
-            </a>
-            <a href="/contact" class="item">
-                Contact
-            </a>
+            <div ng-show="responsive" class="ui simple dropdown item">
+                <i class="sidebar icon"></i>
+                <div class="menu">
+                    <a href="/resume" class="item">Resume</a>
+                    <a href="/examples" class="item">Examples</a>
+                    <a href="/portfolio" class="item">Portfolio</a>
+                    <a href="/contact" class="item">Contact</a>
+                </div>
+            </div>
+            <a ng-show="!responsive" href="/resume" class="item">Resume</a>
+            <a ng-show="!responsive" href="/examples" class="item">Examples</a>
+            <a ng-show="!responsive" href="/portfolio" class="item">Portfolio</a>
+            <a ng-show="!responsive" href="/contact" class="item">Contact</a>
             <div class="right menu">
                 <a target="_blank" class="item" href="https://github.com/dmaison">
                     <i class="large github icon"></i>
