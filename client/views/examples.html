@@ -11,13 +11,18 @@
     	</div>
   	</div>
 </h1>
+
+<a href="https://github.com/dmaison/portfolio/blob/master/client/js/app.js" class="ui primary labeled icon button" target="_blank">
+	<i class="github icon"></i>
+	View Directives on GitHub
+</a>
 <div class="ui top attached tabular menu">
 	<a class="item" ng-class="{ 'active' : ( page == 'paginate' ) }"  ng-click="navigate( 'paginate' )">Pagination</a>
 	<a class="item" ng-class="{ 'active' : ( page == 'drop' ) }"  ng-click="navigate( 'drop' )">Dropdown</a>
 </div>
 <div class="ui bottom attached segment">
 	<div ng-show="( page == 'paginate' )">
-		<h3>Demonstration</h3>
+		<h3 class="ui header">Demonstration</h3 class="ui header">
 		<table class="ui celled table">
 			<thead>
 				<tr>
@@ -34,7 +39,7 @@
 		</table>
 		<paginate list="items" items-per-page="3"></paginate>
 
-		<h3>Demonstration Markup</h3>
+		<h3 class="ui header">Demonstration Markup</h3 class="ui header">
 		<pre class="ui info message">
 &lt;table class="ui celled table">
 	&lt;thead>
@@ -55,7 +60,19 @@
 	</div>
 
 	<div ng-show="( page == 'drop' )" class="ui form">
-		<h3>Demonstration</h3>
+		<h3 class="ui header">Foreword</h3 class="ui header">
+		<p>At first glance, this demonstration is admittedly underwhelming and unimpressive.</p>
+		<p>
+			<em>However</em>, the reason why I feel this is impressive, and why I included it, is that when invoking Semantic UI
+			dropdown method on an element, it essentially undoes any ties to Angular on the element.
+		</p>
+
+		<p>
+			What I've done is allowed the element to have the semantic UI dropdown invoked on it, and still have the dropdown's value
+			be bound to the scope.
+		</p>
+
+		<h3 class="ui header">Demonstration</h3 class="ui header">
 		<div class="field">
 			<label>Select Single Icon</label>
 			<dropdown ng-model="dropValue" placeholder="Please select a single icon">
@@ -66,12 +83,12 @@
 
 		<div class="field">
 			<label>Select Multiple Icons</label>
-			<dropdown ng-model="dropValueMulti" multiple="true">
+			<dropdown ng-model="dropValueMulti" placeholder="Please select multiple icons" multiple="true">
 				<choice ng-repeat="item in drops" choice-value="item.icon" display="item.icon"></choice>
 			</dropdown>
 			<div class="ui info message">{{dropValueMulti}} <div ng-repeat="item in dropValueMulti"><i class="{{item}} icon"></i></div></div>
 		</div>
-		<h3>Demonstration Markup</h3>
+		<h3 class="ui header">Demonstration Markup</h3 class="ui header">
 		<pre class="ui info message">
 &lt;div class="field">
 	&lt;label>Select Single Icon&lt;/label>

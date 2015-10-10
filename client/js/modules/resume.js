@@ -25,7 +25,7 @@ angular
 
 			switch( value ){
 
-				case 'qualifications':
+				case 'expertise':
 					if( $scope.languages ) break;
 					$scope.loading = true;
 					$http

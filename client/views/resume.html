@@ -3,7 +3,7 @@
   	<div class="content">
     	Resume
     	<div class="sub header">
-    		A summary of my experience &amp; expertise
+    		A summary of myself, my qualifications, experience, &amp; expertise
     	</div>
   	</div>
 </h1>
@@ -12,7 +12,7 @@
 <div class="ui top attached tabular menu">
 	<a class="item" ng-class="{ 'active' : ( page == 'about' ) }"  ng-click="navigate( 'about' )">About</a>
 	<a class="item" ng-class="{ 'active' : ( page == 'experience' ) }"  ng-click="navigate( 'experience' )">Experience</a>
-  	<a class="item" ng-class="{ 'active' : ( page == 'qualifications' ) }"  ng-click="navigate( 'qualifications' )">Qualifications</a>
+  	<a class="item" ng-class="{ 'active' : ( page == 'expertise' ) }"  ng-click="navigate( 'expertise' )">Expertise</a>
 </div>
 <div class="ui bottom attached segment">
 
@@ -21,11 +21,64 @@
  	</div>
 
  	<div ng-show="( page == 'about' )">
-		<p>
-			6 years experience in the web development career field, with an emphasis on web standards, design, 
-			and user experience. 4 years of education with emphasis in internet technologies from Shawsheen 
-			Valley High School, and currently attending UMass Lowell for Information Technologies degree.
-		</p>
+ 		<div class="ui grid">
+ 			<div class="three wide column">
+			 	<div class="ui fluid card">
+			 		<div class="image">
+				    	<img src="/img/me.jpg">
+				  	</div>
+			 		<div class="content">
+					    <div class="header">
+					    	David J. Maison Jr.
+					    </div>
+					    <div class="meta">
+					    	<span class="right floated time">16 October 1987</span>
+					      	Senior Developer
+					    </div>
+				  	</div>
+				  	<div class="extra content">
+				  		<div class="description">
+					    	6 years experience in the web development career field, with an emphasis on web standards, design, 
+							and user experience. 4 years of education with emphasis in internet technologies from Shawsheen 
+							Valley High School, and currently attending UMass Lowell for Information Technologies degree.
+					    </div>
+				  	</div>
+			    </div>
+			</div>
+			<div class="thirteen wide column">
+				<h3 class="ui header">Relevant Qualifications</h3>
+				<div class="ui relaxed divided list">
+					<div class="item">
+						MEAN Stack Development
+					</div>
+					<div class="item">
+						RESTful Web Services
+					</div>
+					<div class="item">
+						MVC Software Architecture
+					</div>
+					<div class="item">
+						W3C Standards Compliant
+					</div>
+				</div>
+
+				<h3 class="ui header">Hobbies &amp; Interests</h3>
+				<div class="ui relaxed divided list">
+					<div class="item">
+						Health &amp; Fitness
+					</div>
+					<div class="item">
+						Music
+					</div>
+					<div class="item">
+						Art
+					</div>
+					<div class="item">
+						Whisky
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div ng-show="( page == 'experience' )">
@@ -44,7 +97,7 @@
 					      	<p>{{job.description}}</p>
 					    </div>
 				  	</div>
-			      	<a href="{{job.site}}" class="ui bottom attached labeled icon button" target="_blank">
+			      	<a href="{{job.site}}" class="ui bottom attached primary labeled icon button" target="_blank">
 			      		<i class="forward mail icon"></i>
 			      		Visit Site
 			      	</a>
@@ -53,7 +106,7 @@
 		</div>
 	</div>
 
-	<div ng-show="( page == 'qualifications' )">
+	<div ng-show="( page == 'expertise' )">
 		<paginate list="languages" items-per-page="4"></paginate>
 		<div class="ui grid">
 			<div class="four wide column" ng-repeat="item in languages">
