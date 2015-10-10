@@ -12,31 +12,27 @@
    	<div class="ui loader"></div>
 </div>
 
-<div class="ui icon info message">
-	<i class="info icon"></i>
-	Due to the nature of my current employment, I am limited as to the projects that I can share on this site. 
-</div>
-
-<div class="ui grid">
-	<div class="three wide column" ng-repeat="site in sites">
-		<div class="ui fluid card">
-		  	<div class="image">
-		    	<img src="{{site.thumbnail}}">
-		  	</div>
-		  	<div class="content">
-			    <span class="header">{{site.description}}</span>
-			    <div class="meta">
-			      	<span class="date">{{site.url}}</span>
-			    </div>
-		  	</div>
-		  	<div class="extra content" ng-repeat="item in site.technologies">
-			    <i class="{{item.icon}} icon"></i>
-			    {{item.description}}
-		  	</div>
-		  	<a href="{{site.url}}" class="ui bottom attached primary labeled icon button" target="_blank">
-		  		<i class="forward mail icon"></i>
-		  		Visit Site
-		  	</a>
-		</div>
+<form class="ui form">
+	<div class="required field">
+		<label for="">From</label>
+		<input type="text" ng-model="" name="" id="" placeholder="name@domain.com">
 	</div>
-</div>
+	<div class="required field">
+		<label for="">Subject</label>
+		<input type="text" ng-model="" name="" id="" placeholder="Subject of the Email">
+	</div>
+	<div class="required field">
+		<label for="">Message</label>
+		<textarea ng-model="" name="" id="" placeholder="Body of the Email"></textarea>
+	</div>
+	<div class="ui buttons">
+		<button type="submit" class="ui primary labeled icon button">
+			<i class="mail icon"></i>
+			Send
+		</button>
+		<button type="reset" class="ui labeled icon button">
+			<i class="history icon"></i>
+			Reset
+		</button>
+	</div>
+</form>
