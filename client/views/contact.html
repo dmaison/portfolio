@@ -12,30 +12,61 @@
    	<div class="ui loader"></div>
 </div>
 
-<form class="ui form" name="form">
-	<div class="required field" ng-class="{ 'error': form.email.$invalid && form.email.$dirty }">
-		<label for="email">From</label>
-		<input type="email" ng-model="email" name="email" id="email" placeholder="name@domain.com" required autocomplete="off">
-		<div ng-show="form.email.$invalid && form.email.$dirty" class="ui pointing red label">Please enter a valid email address</div>
+<div class="ui grid">
+	<div class="eight wide column">
+		<form class="ui form" name="form">
+			<div class="required field" ng-class="{ 'error': form.email.$invalid && form.email.$dirty }">
+				<label for="email">From</label>
+				<input type="email" ng-model="email" name="email" id="email" placeholder="name@domain.com" required autocomplete="off">
+				<div ng-show="form.email.$invalid && form.email.$dirty" class="ui pointing red label">Please enter a valid email address</div>
+			</div>
+			<div class="required field" ng-class="{ 'error': form.subject.$invalid && form.subject.$dirty }">
+				<label for="subject">Subject</label>
+				<input type="text" ng-model="subject" name="subject" id="subject" placeholder="Subject of the Email" required autocomplete="off">
+				<div ng-show="form.subject.$invalid && form.subject.$dirty" class="ui pointing red label">Please enter a subject</div>
+			</div>
+			<div class="required field" ng-class="{ 'error': form.message.$invalid && form.message.$dirty }">
+				<label for="message">Message</label>
+				<textarea ng-model="message" name="message" id="message" placeholder="Body of the Email" required autocomplete="off"></textarea>
+				<div ng-show="form.message.$invalid && form.message.$dirty" class="ui pointing red label">Please enter a message</div>
+			</div>
+			<div class="ui buttons">
+				<button type="submit" class="ui primary labeled icon button">
+					<i class="send icon"></i>
+					Send
+				</button>
+				<button type="reset" class="ui labeled icon button">
+					<i class="history icon"></i>
+					Reset
+				</button>
+			</div>
+		</form>
 	</div>
-	<div class="required field" ng-class="{ 'error': form.subject.$invalid && form.subject.$dirty }">
-		<label for="subject">Subject</label>
-		<input type="text" ng-model="subject" name="subject" id="subject" placeholder="Subject of the Email" required autocomplete="off">
-		<div ng-show="form.subject.$invalid && form.subject.$dirty" class="ui pointing red label">Please enter a subject</div>
+	<div class="eight wide column">
+
+		<h2>Information</h2>
+		<div class="ui relaxed divided list">
+		 	<div class="item">
+		    	<i class="large phone middle aligned icon"></i>
+		    	<div class="content">978-436-0982</div>
+		  	</div>
+		  	<div class="item">
+		    	<i class="large at middle aligned icon"></i>
+		    	<div class="content">davemaison@gmail.com</div>
+		  	</div>
+		  	<div class="item">
+		    	<i class="large linkedin middle aligned icon"></i>
+		    	<div class="content">
+		    		<a href="https://www.linkedin.com/pub/david-maison/57/70b/859">https://www.linkedin.com/pub/david-maison/57/70b/859</a>
+		    	</div>
+		  	</div>
+		  	<div class="item">
+		    	<i class="large facebook middle aligned icon"></i>
+		    	<div class="content">
+		    		<a href="https://www.facebook.com/dave.maison">https://www.facebook.com/dave.maison</a>
+		    	</div>
+		  	</div>
+		</div>
+
 	</div>
-	<div class="required field" ng-class="{ 'error': form.message.$invalid && form.message.$dirty }">
-		<label for="message">Message</label>
-		<textarea ng-model="message" name="message" id="message" placeholder="Body of the Email" required autocomplete="off"></textarea>
-		<div ng-show="form.message.$invalid && form.message.$dirty" class="ui pointing red label">Please enter a message</div>
-	</div>
-	<div class="ui buttons">
-		<button type="submit" class="ui primary labeled icon button">
-			<i class="mail icon"></i>
-			Send
-		</button>
-		<button type="reset" class="ui labeled icon button">
-			<i class="history icon"></i>
-			Reset
-		</button>
-	</div>
-</form>
+</div>
