@@ -1,9 +1,9 @@
 <h1 class="ui header">
-  	<i class="folder open icon"></i>
+  	<i class="mail icon"></i>
   	<div class="content">
     	Contact
     	<div class="sub header">
-    		Websites &amp; projects I've worked on
+    		Use this form to contact me!
     	</div>
   	</div>
 </h1>
@@ -12,18 +12,21 @@
    	<div class="ui loader"></div>
 </div>
 
-<form class="ui form">
-	<div class="required field">
-		<label for="">From</label>
-		<input type="text" ng-model="" name="" id="" placeholder="name@domain.com">
+<form class="ui form" name="form">
+	<div class="required field" ng-class="{ 'error': form.email.$invalid && form.email.$dirty }">
+		<label for="email">From</label>
+		<input type="email" ng-model="email" name="email" id="email" placeholder="name@domain.com" required autocomplete="off">
+		<div ng-show="form.email.$invalid && form.email.$dirty" class="ui pointing red label">Please enter a valid email address</div>
 	</div>
-	<div class="required field">
-		<label for="">Subject</label>
-		<input type="text" ng-model="" name="" id="" placeholder="Subject of the Email">
+	<div class="required field" ng-class="{ 'error': form.subject.$invalid && form.subject.$dirty }">
+		<label for="subject">Subject</label>
+		<input type="text" ng-model="subject" name="subject" id="subject" placeholder="Subject of the Email" required autocomplete="off">
+		<div ng-show="form.subject.$invalid && form.subject.$dirty" class="ui pointing red label">Please enter a subject</div>
 	</div>
-	<div class="required field">
-		<label for="">Message</label>
-		<textarea ng-model="" name="" id="" placeholder="Body of the Email"></textarea>
+	<div class="required field" ng-class="{ 'error': form.message.$invalid && form.message.$dirty }">
+		<label for="message">Message</label>
+		<textarea ng-model="message" name="message" id="message" placeholder="Body of the Email" required autocomplete="off"></textarea>
+		<div ng-show="form.message.$invalid && form.message.$dirty" class="ui pointing red label">Please enter a message</div>
 	</div>
 	<div class="ui buttons">
 		<button type="submit" class="ui primary labeled icon button">
