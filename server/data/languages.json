@@ -57,8 +57,9 @@
 		"description": "Version Control",
 		"icon": "fork",
 		"languages" : [
-			{ "language": "GitHub", "experience": 3 },
-			{ "language": "Visual SourceSafe", "experience": 2 }
+			{ "language": "GitHub", "experience": 2 },
+			{ "language": "Visual SourceSafe", "experience": 2 },
+			{ "language": "Tortoise SVN", "experience": 1 }
 		]
 	},
 	{
@@ -70,7 +71,7 @@
 			{ "language": "SOAP", "experience": 5 },
 			{ "language": "RESTful Web Services", "experience": 5 },
 			{ "language": "Windows Powershell Command Line", "experience": 3 },
-			{ "language": "Ubuntu Command line", "experience": ">1" },
+			{ "language": "Ubuntu Command line", "experience": 2 },
 			{ "language": "Wordpress", "experience": 3 },
 			{ "language": "Adobe Creative Suites", "experience": "10+" }
 		]
