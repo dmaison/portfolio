@@ -1,4 +1,5 @@
 @import url( animations.css );
+@import url( responsive.css );
 
 body { overflow-x: hidden; }
 
