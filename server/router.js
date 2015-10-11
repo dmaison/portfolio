@@ -2,7 +2,7 @@ var fs 			= require( 'fs' );
 var Error 		= require( './libs/error' );
 var nodemailer 	= require( 'nodemailer' );
 var async 		= require( 'async' );
-var async 		= require( './config' );
+var config 		= require( './config' );
 
 module.exports = function( app, dir ){
 	
@@ -32,37 +32,45 @@ module.exports = function( app, dir ){
 
 	app.post( '/api/contact/', function( req, res ){
 		
+		// Error checking
 		if( !req.body.email ) return Error.send( res, 'POST', 400, '/contact/', 'No email provided.' );
 		if( !req.body.subject ) return Error.send( res, 'POST', 400, '/contact/', 'No subject provided.' );
 		if( !req.body.message ) return Error.send( res, 'POST', 400, '/contact/', 'No message provided.' );
+		if( String( req.body.subject ).length > 78 ) return Error.send( res, 'POST', 400, '/contact/', 'The provided subject exceeds 78 characters.' );
 
 		async.waterfall([
 
 			function( callback ){
-				fs.readFile('./server/email/contact.html', function( err, html ){
+				fs.readFile('./server/emails/contact.html', function( err, html ){
 					if( err ) return callback( err, null );
-					return callback( null, html );
+					return callback( null, String( html ) );
 				});
 			},
 
 			function( html, callback ){
+
+				html = html
+						.replace( /{{message}}/gi, req.body.message )
+						.replace( /{{email}}/gi, req.body.email );
+
 				var transporter = nodemailer.createTransport({
 				    service: 'Gmail',
 				    auth: {
-				        user: 'gmail.user@gmail.com',
-				        pass: 'userpass'
+				        user: config.gmail.username,
+				        pass: config.gmail.password
 				    }
 				});
 
-				var mailOptions = {
+				var options = {
 				    from: req.body.email,
-				    to: 'davemaison@gmail.com',
+				    to: config.gmail.username,
+				    cc: req.body.email,
 				    subject: req.body.subject,
 				    text: req.body.message,
 				    html: html
 				};
 
-				transporter.sendMail(mailOptions, function( err, info ){
+				transporter.sendMail( options, function( err, info ){
 				    if( err ) return callback( err, null );
 				    return callback( null, info.response );
 				});
@@ -73,7 +81,7 @@ module.exports = function( app, dir ){
 		function( err, result ){
 			if( err ) return Error.send( res, 'POST', 500, '/contact/', err );
 			res.status( 200 );
-			res.send({ message: 'Thank you for your interest! The email was successfully sent, and I will get back to you as soon as possible.' });
+			res.send({ message: 'Thank you for your interest! The email was successfully delivered with you CC\'d on it, and I will get back to you as soon as possible.' });
 		});
 
 	});

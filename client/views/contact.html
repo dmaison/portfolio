@@ -22,7 +22,7 @@
 			</div>
 			<div class="required field" ng-class="{ 'error': form.subject.$invalid && form.subject.$dirty }">
 				<label for="subject">Subject</label>
-				<input type="text" ng-model="subject" name="subject" id="subject" placeholder="Subject of the Email" required autocomplete="off">
+				<input type="text" ng-model="subject" name="subject" id="subject" placeholder="Subject of the Email" required autocomplete="off" maxlength="78">
 				<div ng-show="form.subject.$invalid && form.subject.$dirty" class="ui pointing red label">Please enter a subject</div>
 			</div>
 			<div class="required field" ng-class="{ 'error': form.message.$invalid && form.message.$dirty }">

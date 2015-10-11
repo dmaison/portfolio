@@ -28,10 +28,12 @@ angular
 					message: $scope.message
 				})
 				.success(function( res ){
+					$scope.hideForm 	= true;
 					$scope.emailSent 	= true;
 					$scope.sendMessage 	= res.message;
 				})
 				.error(function( res ){
+					$scope.hideForm 	= true;
 					$scope.emailError 	= true;
 					$scope.sendMessage 	= res.message;
 				});
