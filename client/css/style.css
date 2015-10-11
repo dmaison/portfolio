@@ -54,7 +54,7 @@ body { overflow-x: hidden; }
 	opacity: .5;
 }
 
-.masthead.segment h1 > .library {
+.masthead.segment h1 > .sitename {
     display: block;
     font-size: 1.75em;
     font-weight: bold;
@@ -64,7 +64,7 @@ body { overflow-x: hidden; }
 }
 
 .masthead .menu,
-.masthead.segment h1 > .library,
+.masthead.segment h1 > .sitename,
 h1.ui.header { font-family: 'Abel', sans-serif; }
 
 .ui.top.fixed.menu .icon { margin: 0; }
