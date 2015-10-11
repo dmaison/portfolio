@@ -64,7 +64,7 @@
 	},
 	{
 		"description": "Project Management",
-		"icon": "desktop",
+		"icon": "folder open",
 		"languages" : [
 			{ "language": "Jira", "experience": 3 },
 			{ "language": "Trello", "experience": 1 },
