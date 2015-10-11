@@ -7,10 +7,12 @@
 
     <title>dave.maison</title>
 
+    <!-- css -->
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="libs/semantic-ui/dist/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
+    <!-- libs -->
     <script type="text/javascript" src="libs/angular/angular.js"></script>
     <script type="text/javascript" src="libs/angular-route/angular-route.min.js"></script>
     <script type="text/javascript" src="libs/angular-animate/angular-animate.js"></script>
@@ -18,23 +20,31 @@
     <script type="text/javascript" src="libs/semantic-ui/dist/semantic.min.js"></script>
     <script type="text/javascript" src="js/colors.js"></script>
     
+    <!-- directives -->
     <script type="text/javascript" src="js/directives/pagination.js"></script>
     <script type="text/javascript" src="js/directives/dropdown.js"></script>
+
+    <!-- modules -->
     <script type="text/javascript" src="js/modules/main.js"></script>
     <script type="text/javascript" src="js/modules/portfolio.js"></script>
     <script type="text/javascript" src="js/modules/resume.js"></script>
     <script type="text/javascript" src="js/modules/examples.js"></script>
     <script type="text/javascript" src="js/modules/contact.js"></script>
+
+    <!-- app -->
     <script type="text/javascript" src="js/app.routes.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
 </head>
 <body>
     <div>
 
+        <!-- menu -->
         <div class="ui top fixed menu">
             <a href="/" class="active item">
                 dave.maison
             </a>
+
+            <!-- responsive menu -->
             <div class="ui simple dropdown item" id="responsive-menu">
                 <i class="sidebar icon"></i>
                 <div class="menu">
@@ -55,6 +65,7 @@
             </div>
         </div>
 
+        <!-- color bar -->
         <div class="masthead segment bg4">
             <div></div>
             <h1 class="ui inverted header">
@@ -64,9 +75,8 @@
             </h1>    
         </div>
 
-        
-        <div id="content" ng-view></div>
-        
+        <!-- content -->
+        <div id="content" ng-view></div>        
 
     </div>
 </body>
