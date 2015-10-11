@@ -14,7 +14,7 @@
 
 <div class="ui grid">
 	<div class="eight wide column">
-		<form class="ui form" name="form">
+		<form class="ui form" name="form" ng-submit="send( form )">
 			<div class="required field" ng-class="{ 'error': form.email.$invalid && form.email.$dirty }">
 				<label for="email">From</label>
 				<input type="email" ng-model="email" name="email" id="email" placeholder="name@domain.com" required autocomplete="off">
