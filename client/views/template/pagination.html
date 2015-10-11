@@ -1,5 +1,0 @@
-<nav class="ui pagination menu" ng-show="( pageCount() > 1 )">
-  	<a href="#" class="item icon" ng-class="{ 'disabled' : ( currentPage === 0 ) }" ng-click="prevPage()"><i class="chevron left icon"></i></a>
-    <a href="#" class="item" ng-repeat="n in range()" ng-class="{active: n == currentPage}" ng-click="setPage(n)">{{n+1}}</a>
-  	<a href="#" class="item icon" ng-class="{ 'disabled' : ( currentPage === pageCount() - 1 ) }" ng-click="nextPage()"><i class="chevron right icon"></i></a>
-</nav>
