@@ -12,15 +12,17 @@
    	<div class="ui loader"></div>
 </div>
 
-<a href="https://github.com/dmaison/portfolio/blob/master/client/js/app.js" class="ui primary labeled icon button" target="_blank">
-	<i class="github icon"></i>
-	View Directives on GitHub
-</a>
 <div class="ui top attached tabular menu">
 	<a class="item" ng-class="{ 'active' : ( page == 'paginate' ) }"  ng-click="navigate( 'paginate' )">Pagination</a>
 	<a class="item" ng-class="{ 'active' : ( page == 'drop' ) }"  ng-click="navigate( 'drop' )">Dropdown</a>
 </div>
 <div class="ui bottom attached segment">
+
+	<a href="https://github.com/dmaison/portfolio/blob/master/client/js/directives/pagination.js" class="ui primary labeled icon button" target="_blank">
+		<i class="github icon"></i>
+		View Directive on GitHub
+	</a>
+
 	<div ng-show="( page == 'paginate' )">
 		<h3 class="ui header">Demonstration</h3 class="ui header">
 		<table class="ui celled table">
