@@ -13,22 +13,28 @@ angular
 	}])
 	.controller( 'contact', [ '$scope', '$http', '$window', function( $scope, $http, $window ) {
 
+		$scope.emailSent = false;
+		$scope.emailError = false;
+		$scope.hideForm = false;
+
 		$scope.send = function( form ){
 
-			if( !form.$valid ) return;
+			if( !form.$valid || $scope.emailSent ) return;
 
 			$http
-				.post( '/api/contant', {
+				.post( '/api/contact', {
 					email: $scope.email,
 					subject: $scope.subject,
 					message: $scope.message
 				})
 				.success(function( res ){
-					console.info( res );
+					$scope.emailSent 	= true;
+					$scope.sendMessage 	= res.message;
 				})
-				.fail(function( res ){
-					console.error( res );
-				})
+				.error(function( res ){
+					$scope.emailError 	= true;
+					$scope.sendMessage 	= res.message;
+				});
 
 		}
 

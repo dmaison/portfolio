@@ -1,5 +1,6 @@
 node_modules/
 client/libs/
+server/config.js
 
 # Windows image file caches
 Thumbs.db

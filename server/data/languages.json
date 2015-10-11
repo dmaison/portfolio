@@ -63,6 +63,15 @@
 		]
 	},
 	{
+		"description": "Project Management",
+		"icon": "desktop",
+		"languages" : [
+			{ "language": "Jira", "experience": 3 },
+			{ "language": "Trello", "experience": 1 },
+			{ "language": "interlinkONE Projects", "experience": 1 }
+		]
+	},
+	{
 		"description": "Other",
 		"icon": "desktop",
 		"languages" : [

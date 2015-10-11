@@ -14,7 +14,7 @@
 
 <div class="ui grid">
 	<div class="eight wide column">
-		<form class="ui form" name="form" ng-submit="send( form )">
+		<form class="ui form" name="form" ng-submit="send( form )" ng-show="!hideForm">
 			<div class="required field" ng-class="{ 'error': form.email.$invalid && form.email.$dirty }">
 				<label for="email">From</label>
 				<input type="email" ng-model="email" name="email" id="email" placeholder="name@domain.com" required autocomplete="off">
@@ -41,6 +41,20 @@
 				</button>
 			</div>
 		</form>
+		<div class="ui success message" ng-show="emailSent">
+			<h3 class="ui header">
+				<i class="check icon"></i>
+				Success
+			</h3>
+			<p>{{sendMessage}}<p>
+		</div>
+		<div class="ui error message" ng-show="emailError">
+			<h3 class="ui header">
+				<i class="warning circle icon"></i>
+				Whoops!
+			</h3>
+			<p>{{sendMessage}}<p>
+		</div>
 	</div>
 	<div class="eight wide column">
 
