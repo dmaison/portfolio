@@ -8,7 +8,7 @@ var cookieParser 	= require( 'cookie-parser' );
 var clc 			= require('cli-color');
 
 // set app port
-var port 			= process.env.PORT || 80;
+var port 			= process.env.PORT || 8081;
 
 // parse request objects
 app.use( bodyParser.json() );
