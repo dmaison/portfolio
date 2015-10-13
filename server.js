@@ -7,12 +7,6 @@ var session 		= require( 'express-session' );
 var cookieParser 	= require( 'cookie-parser' );
 var clc 			= require('cli-color');
 
-
-/* CONFIGURATION -------------------- */
-
-// config file
-var config 				= require( './config' );
-
 // set app port
 var port 			= process.env.PORT || 8080;
 
