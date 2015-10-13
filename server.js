@@ -16,12 +16,6 @@ var config 				= require( './config' );
 // set app port
 var port 			= process.env.PORT || 8080;
 
-// connect to mongo
-mongoose.connect( config.mongo.host, function( err ){
-	if( err ) throw err;
-	console.log( 'MongoDB running on port ' + clc.greenBright( config.mongo.port ) );
-});
-
 // parse request objects
 app.use( bodyParser.json() );
 
