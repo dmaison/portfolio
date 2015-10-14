@@ -33,6 +33,10 @@
 		"thumbnail": "img/portfolio/interlinkone.png",
 		"technologies": [
 			{
+				"icon": "server",
+				"description": "PHP"
+			},
+			{
 				"icon": "wordpress",
 				"description": "Wordpress"
 			},
@@ -76,6 +80,10 @@
 		"url": "http://www.marketwithmax.com",
 		"thumbnail": "img/portfolio/max.png",
 		"technologies": [
+			{
+				"icon": "server",
+				"description": "PHP"
+			},
 			{
 				"icon": "wordpress",
 				"description": "Wordpress"
