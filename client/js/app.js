@@ -1,5 +1,9 @@
 angular
-	.module( 'app', [ 'pagination', 'dropdown', 'ngRoute', 'ngAnimate', 'routes', 'app.main', 'app.resume', 'app.portfolio', 'app.examples', 'app.contact' ])
+	.module( 'app', [ 'pagination', 'dropdown', 'ngRoute', 'ngAnimate', 'routes', 'app.main', 'app.resume', 'app.portfolio', 'app.examples', 'app.contact', 'angulartics', 'angulartics.google.analytics' ])
+	.config(function ($analyticsProvider) {
+        $analyticsProvider.firstPageview( true ); 
+        $analyticsProvider.withAutoBase( true );  
+    })
 	.run(function( $rootScope ) {
 		setInterval(updateGradient,10);
 
