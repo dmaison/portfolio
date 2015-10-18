@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Basic Controls Test</title>
+	<script src="libs/jquery/dist/jquery.min.js"></script>
+	<script src="js/examples/game/movement.js"></script>
+	<script src="js/examples/game/controls.js"></script>
+	<script src="js/examples/game/collision.js"></script>
+	<script src="js/examples/game/vidya.js"></script>
+	<script>
+		$( document ).ready( function(){
+			new Vidya({ 
+				character	: $( '#mc' ), 
+				objects		: $( '.object' ),
+				movement 	: {
+								fallSpeed	: 20,
+								walkSpeed	: 15
+							}
+			});
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/examples/game/application.css">
+
+</head>
+<body>
+	<pre>
+		Arrow keys move the character left and right, &amp; make him look up and crouch. Space bar makes the character jump.
+	</pre>
+
+	<div id="play-area">
+
+		<div id="mc" class="object"><div></div></div>
+
+		<div id="ground" class="object platform"><div></div></div>
+
+	</div>
+
+</body>
+</html>

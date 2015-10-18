@@ -3,7 +3,7 @@
   	<div class="content">
     	Examples
     	<div class="sub header">
-    		Demonstratable examples of Angular code I've created
+    		Demonstratable examples of code I've created
     	</div>
   	</div>
 </h1>
@@ -15,8 +15,33 @@
 <div class="ui top attached tabular menu">
 	<a class="item" ng-class="{ 'active' : ( page == 'paginate' ) }"  ng-click="navigate( 'paginate' )">Pagination</a>
 	<a class="item" ng-class="{ 'active' : ( page == 'drop' ) }"  ng-click="navigate( 'drop' )">Dropdown</a>
+	<a class="item" ng-class="{ 'active' : ( page == 'game' ) }"  ng-click="navigate( 'game' )">2D Platformer Package</a>
 </div>
 <div class="ui bottom attached segment">
+
+	<div ng-show="( page == 'game' )">
+
+		<a href="https://github.com/dmaison/vidya-platformer" class="ui primary labeled icon button" target="_blank">
+			<i class="github icon"></i>
+			View it on GitHub
+		</a>
+
+		<p class="ui info icon message">
+			<i class="info icon"></i>
+			This package is currently in a very alpha state and may not function properly on all browsers.
+		</p>
+
+		<a href="/game" class="ui positive labeled icon button" target="_blank">
+			<i class="play icon"></i>
+			Try it out the basic controls test
+		</a>
+
+		<p class="ui warning icon message">
+			<i class="warning icon"></i>
+			This package was intended to be ran on a desktop computer. That being said, if you're on a mobile device you will not be able to use the controls.
+		</p>
+
+	</div>
 
 	<div ng-show="( page == 'paginate' )">
 

@@ -86,6 +86,11 @@ module.exports = function( app, dir ){
 
 	});
 
+	// game demo
+	app.get( '/game', function( req, res ){
+		res.sendFile( dir + '/client/examples/game.html' );
+	});
+
 	// Front end
 	app.get( '*', function( req, res ){
 		res.sendFile( dir + '/client/views/index.html' );
