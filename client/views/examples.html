@@ -21,14 +21,28 @@
 
 	<div ng-show="( page == 'game' )">
 
-		<a href="https://github.com/dmaison/vidya-platformer" class="ui primary labeled icon button" target="_blank">
+		<a href="https://github.com/dmaison/vidya-platformer" class="ui primary labeled icon button" target="_blank" style="margin-bottom: 1em;">
 			<i class="github icon"></i>
 			View it on GitHub
 		</a>
 
-		<p class="ui info icon message">
+		<p>
+			The Vidya-Platformer package is an abandoned project of mine that was meant to help significantly 
+			reduce development time on creating two-dimensional platformer style web-based video games.
+		</p>
+
+		<p>
+			The project was put to the wayside due to work related circumstances and other more lucrative 
+			projects. It will be resumed when at a point in time when I have more free time.
+		</p>
+
+		<p class="ui top attached info icon message">
 			<i class="info icon"></i>
-			This package is currently in a very alpha state and may not function properly on all browsers.
+			This package is in an extremely alpha state and may not function as intended on all browsers.
+		</p>
+		<p class="ui bottom attached warning icon message">
+			<i class="warning icon"></i>
+			This package was intended to be ran on a desktop computer and requires a keyboard. It will not function on mobile devices.
 		</p>
 
 		<a href="/game" class="ui positive labeled icon button" target="_blank">
@@ -36,10 +50,27 @@
 			Try it out the basic controls test
 		</a>
 
-		<p class="ui warning icon message">
-			<i class="warning icon"></i>
-			This package was intended to be ran on a desktop computer. That being said, if you're on a mobile device you will not be able to use the controls.
-		</p>
+		<h3 class="ui header">Instantiation Markup</h3>
+		<pre class="ui info message">
+&lt;script src="libs/jquery/dist/jquery.min.js">&lt;/script>
+&lt;script src="js/examples/game/movement.js">&lt;/script>
+&lt;script src="js/examples/game/controls.js">&lt;/script>
+&lt;script src="js/examples/game/collision.js">&lt;/script>
+&lt;script src="js/examples/game/vidya.js">&lt;/script>
+&lt;link rel="stylesheet" type="text/css" href="css/examples/game/application.css">
+&lt;script>
+	$( document ).ready( function(){
+		new Vidya({ 
+			character	: $( '#mc' ), 
+			objects		: $( '.object' ),
+			movement 	: {
+						fallSpeed	: 20,
+						walkSpeed	: 15
+					}
+		});
+	});
+&lt;/script>
+		</pre>
 
 	</div>
 
