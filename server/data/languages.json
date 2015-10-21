@@ -47,7 +47,7 @@
 			{ "language": "jQuery", "experience": 3 },
 			{ "language": "Prototype.js", "experience": 2 },
 			{ "language": "script.aculo.us", "experience": 2 },
-			{ "language": "Angular.js", "experience": 3 },
+			{ "language": "Angular.js", "experience": 2 },
 			{ "language": "Backbone.js", "experience": ">1" },
 			{ "language": "Bootstrap", "experience": 5 },
 			{ "language": "Semantic UI", "experience": ">1" }
