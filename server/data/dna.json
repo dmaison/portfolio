@@ -1,0 +1,51 @@
+{
+  haplogroup: {
+    maternal: 'H2a2b1',
+    paternal: 'R1b1b2a1a2d'
+  },
+  neanderthal: {
+    percentage: 2.4
+  },
+  composition: [
+    {
+      ethnicity: 'British/Irish',
+      percentage: 28.3
+    },
+    {
+      ethnicity: 'French/German',
+      percentage: 18.8
+    },
+    {
+      ethnicity: 'Non-specific Eastern European',
+      percentage: 7.9
+    },
+    {
+      ethnicity: 'Scandinavian',
+      percentage: 6.7
+    },
+    {
+      ethnicity: 'Non-specific European',
+      percentage: 3.8
+    },
+    {
+      ethnicity: 'Iberian',
+      percentage: 1.5
+    },
+    {
+      ethnicity: 'Finnish',
+      percentage: 0.5
+    },
+    {
+      ethnicity: 'Native American',
+      percentage: 0.3
+    },
+    {
+      ethnicity: 'Non-specific East Asian',
+      percentage: 0.3
+    },
+    {
+      ethnicity: 'Unassigned',
+      percentage: 0.1
+    },
+  ]
+}
