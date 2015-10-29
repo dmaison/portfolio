@@ -30,6 +30,14 @@ module.exports = function( app, dir ){
 		});
 	});
 
+	app.get( '/api/dna/', function( req, res ){
+		fs.readFile('./server/data/dna.json', function( err, dna ){
+			if( err ) return Error.send( res, 'GET', 500, '/dna/', err );
+			res.status( 200 );
+			res.send( dna );
+		});
+	});
+
 	app.post( '/api/contact/', function( req, res ){
 		
 		// Error checking

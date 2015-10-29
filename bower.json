@@ -4,6 +4,7 @@
   "dependencies": {
     "angular": "latest",
     "angular-animate": "latest",
+    "angular-chart.js": "~0.8.5",
     "angular-route": "latest",
     "angulartics": "~0.20.1",
     "angulartics-google-analytics": "~0.1.1",

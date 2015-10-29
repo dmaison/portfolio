@@ -3,49 +3,62 @@
     "maternal": "H2a2b1",
     "paternal": "R1b1b2a1a2d"
   },
+  "blood": {
+    "type": "A Positive"
+  },
   "neanderthal": {
     "percentage": 2.4
   },
-  "composition": [
+  "composition": [    
     {
       "ethnicity": "British/Irish",
-      "percentage": 28.3
+      "percentage": 28.3,
+      "color": "green"
     },
     {
       "ethnicity": "French/German",
-      "percentage": 18.8
+      "percentage": 18.8,
+      "color": "red"
     },
     {
       "ethnicity": "Non-specific Eastern European",
-      "percentage": 7.9
+      "percentage": 7.9,
+      "color": "gray"
     },
     {
       "ethnicity": "Scandinavian",
-      "percentage": 6.7
+      "percentage": 6.7,
+      "color": "blue"
     },
     {
       "ethnicity": "Non-specific European",
-      "percentage": 3.8
+      "percentage": 3.8,
+      "color": "gray"
     },
     {
       "ethnicity": "Iberian",
-      "percentage": 1.5
+      "percentage": 1.5,
+      "color": "teal"
     },
     {
       "ethnicity": "Finnish",
-      "percentage": 0.5
+      "percentage": 0.5,
+      "color": "olive"
     },
     {
       "ethnicity": "Native American",
-      "percentage": 0.3
+      "percentage": 0.3,
+      "color": "orange"
     },
     {
       "ethnicity": "Non-specific East Asian",
-      "percentage": 0.3
+      "percentage": 0.3,
+      "color": "yellow"
     },
     {
       "ethnicity": "Unassigned",
-      "percentage": 0.1
-    },
+      "percentage": 0.1,
+      "color": "gray"
+    }
   ]
 }
