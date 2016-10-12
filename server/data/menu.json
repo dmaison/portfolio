@@ -1,0 +1,22 @@
+[
+	{
+		"title": "Resume",
+		"icon": "file text",
+		"path": "/resume"
+	},
+	{
+		"title": "Examples",
+		"icon": "wrench",
+		"path": "/examples"
+	},
+	{
+		"title": "Portfolio",
+		"icon": "folder open",
+		"path":	"/portfolio"
+	},
+	{
+		"title": "Contact",
+		"icon": "envelope",
+		"path":	"/contact"
+	}
+]

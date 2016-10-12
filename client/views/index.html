@@ -27,7 +27,7 @@
     <title>dave.maison</title>
 
     <!-- css -->
-    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Amatica+SC" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="libs/semantic-ui/dist/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="libs/angular-chart.js/dist/angular-chart.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -42,11 +42,11 @@
     <script type="text/javascript" src="libs/angulartics-google-analytics/dist/angulartics-google-analytics.min.js"></script>
     <script type="text/javascript" src="libs/Chart.js/Chart.min.js"></script>
     <script type="text/javascript" src="libs/angular-chart.js/dist/angular-chart.js"></script>
-    <script type="text/javascript" src="js/colors.js"></script>
     
     <!-- directives -->
     <script type="text/javascript" src="js/directives/pagination.js"></script>
     <script type="text/javascript" src="js/directives/dropdown.js"></script>
+    <script type="text/javascript" src="js/directives/semantic.js"></script>
 
     <!-- modules -->
     <script type="text/javascript" src="js/modules/main.js"></script>
@@ -71,7 +71,7 @@
     <div>
 
         <!-- menu -->
-        <div class="ui top fixed menu">
+        <div class="ui top fixed inverted menu" id="main-menu">
             <a href="/" class="active item">
                 dave.maison
             </a>
@@ -80,35 +80,59 @@
             <div class="ui simple dropdown item" id="responsive-menu">
                 <i class="sidebar icon"></i>
                 <div class="menu">
-                    <a ng-repeat="item in menu" href="{{item.path}}" class="item">{{item.title}}</a>
+                    <a ng-repeat="item in menu" href="{{item.path}}" class="item">
+                        {{item.title}}
+                    </a>
                 </div>
             </div>
-            <a ng-repeat="item in menu" href="{{item.path}}" class="desktop item">{{item.title}}</a>
-            <div class="right menu">
-                <a target="_blank" class="item" href="https://github.com/dmaison">
-                    <i class="large github icon"></i>
-                </a>
-                <a target="_blank" class="item" href="https://www.linkedin.com/pub/david-maison/57/70b/859">
-                    <i class="large linkedin icon"></i>
-                </a>
-                <a target="_blank" class="item" href="https://www.facebook.com/dave.maison">
-                    <i class="large facebook icon"></i>
-                </a>
+            <a ng-repeat="item in menu" href="{{item.path}}" class="icon item">
+                <i class="large {{item.icon}} icon"></i>
+            </a>
+            <a target="_blank" class="icon item popup" href="https://github.com/dmaison">
+                <i class="large github icon"></i>
+            </a>
+            <a target="_blank" class="icon item popup" href="https://www.linkedin.com/pub/david-maison/57/70b/859">
+                <i class="large linkedin icon"></i>
+            </a>
+            <a target="_blank" class="icon item popup" href="https://www.facebook.com/dave.maison">
+                <i class="large facebook icon"></i>
+            </a>
+        </div>
+        
+        <!-- content -->
+        <div id="content" ng-view></div>    
+        
+        <div class="ui basic modal" id="error">
+            <div class="ui icon header">
+                <i class="red warning circle icon"></i>
+                Error
+            </div>
+            <div class="center aligned content">
+                <p>{{error}}</p>
+            </div>
+            <div class="center aligned actions">
+                <div class="ui ok labeled icon button">
+                    <i class="check icon"></i>
+                    Got it!
+                </div>
             </div>
         </div>
-
-        <!-- color bar -->
-        <div class="masthead segment bg4">
-            <div></div>
-            <h1 class="ui inverted header">
-                <span class="sitename">
-                    dave.maison
-                </span>
-            </h1>
+        
+        <div class="ui basic modal" id="success">
+            <div class="ui icon header">
+                <i class="green check circle icon"></i>
+                Success
+            </div>
+            <div class="center aligned content">
+                <p>{{success}}</p>
+            </div>
+            <div class="center aligned actions">
+                <div class="ui ok labeled icon button">
+                    <i class="check icon"></i>
+                    Got it!
+                </div>
+            </div>
         </div>
-
-        <!-- content -->
-        <div id="content" ng-view></div>        
 
     </div>
 </body>
