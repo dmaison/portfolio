@@ -6,6 +6,21 @@ angular
 		$scope.percents 	= [];
 		$scope.ethnicities	= [];
 		
+		var USAF			= {
+			start	: new Date( '12/1/2009' ).getFullYear(),
+			end		: new Date( '6/1/2013' ).getFullYear()
+		};
+		
+		var interlink		= {
+			start	: new Date( '6/1/2013' ).getFullYear(),
+			end		: new Date().getFullYear()
+		};
+		
+		var USAFR		= {
+			start	: new Date( '6/1/2013' ).getFullYear(),
+			end		: new Date().getFullYear()
+		};
+		
 		$http
 			.get( '/api/dna' )
 			.success(function( res ){
@@ -17,33 +32,26 @@ angular
 				});
 			});
 			
-		$scope.labels = [ 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday' ];
-		$scope.series = [ 'Work', 'Krav Maga', 'Gym', 'Girlfriend' ];
-		$scope.data = [
-			[ 0, 8, 8, 8, 8, 8, 0 ],
-			[ 0, 1.5, 0, 1.5, 0, 1.5, 0 ],
-			[ 0, 0, 1, 0, 0, 0, 1 ],
-			[ 12, 0, 0, 7, 0, 7, 12 ],
-		];
+		$scope.time = {
+			labels	: [ 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday' ],
+			series	: [ 'Work', 'Krav Maga', 'Gym', 'Girlfriend', 'Band Practice' ],
+			data	: [
+				[ 0, 8, 8, 8, 8, 8, 0 ],
+				[ 0, 0, 1, 0, 0, 0, 1 ],
+				[ 0, 1.5, 0, 1.5, 0, 1.5, 0 ],
+				[ 12, 0, 0, 7, 0, 7, 12 ],
+				[ 0, 0, 0, 2, 0, 0, 4 ]
+			]	
+		};
 		
-		$scope.datasetOverride = [{ yAxisID: 'y-axis-1' }, { yAxisID: 'y-axis-2' }];
-		$scope.options = {
-			scales: {
-				yAxes: [
-					{
-						id: 'y-axis-1',
-						type: 'linear',
-						display: true,
-						position: 'left'
-					},
-					{
-						id: 'y-axis-2',
-						type: 'linear',
-						display: true,
-						position: 'right'
-					}
-				]
-			}
+		$scope.experience = {
+			labels	: [ 'Years' ],
+			series	: [ 'USAF', 'interlinkONE', 'USAF Reserves' ],
+			data	: [
+				[ ( USAF.end - USAF.start ) ],
+				[ ( interlink.end - interlink.start + 3 ) ],
+				[ ( USAFR.end - USAFR.start ) ]
+			]
 		};
 		
 	}]);

@@ -11,10 +11,10 @@
 				</div>
 			</h1>
 			<div class="ui segment">
-				<a class="ui header">
+				<h1 class="ui header">
 					<i class="comment icon"></i>
 					Introduction
-				</a>
+				</h1>
 				<p>
 					The goal of this site is to demonstrate my development abilities and to showcase my resume and portfolio.
 				</p>
@@ -28,7 +28,7 @@
 			</div>
 			<a href="https://github.com/dmaison/portfolio/" target="_blank" class="ui button primary labeled icon button">
 				<i class="github icon"></i>
-				View the code on GitHub
+				View the source on GitHub
 			</a>
 		</div>
 		<div class="eight wide column">
@@ -37,10 +37,10 @@
 			<div class="ui grid">
 				<div class="eight wide column">
 					<div class="ui fluid segment">
-						<a class="ui header">
+						<h1 class="ui header">
 							<i class="server icon"></i>
 							Server Side
-						</a>
+						</h1>
 						<div class="ui divided list">
 							<div class=" item">
 								<i class="large dropbox middle aligned icon"></i>
@@ -96,10 +96,10 @@
 			
 				<div class="eight wide stretched column">
 					<div class="ui fluid segment">
-						<a class="ui header">
+						<h1 class="ui header">
 							<i class="desktop icon"></i>
 							Client Side
-						</a>
+						</h1>
 						<div class="ui divided list">
 							<div class="item">
 								<i class="large dropbox middle aligned icon"></i>
@@ -140,12 +140,33 @@
 	<div class="row">
 		<div class="four wide column">
 			<div class="ui segment">
+				<h1 class="ui header">
+					<i class="world icon"></i>
+					Ethnic Heritage
+				</h1>
 				<canvas class="chart chart-doughnut" chart-data="percents" chart-labels="ethnicities"></canvas>
+			</div>
+			<a class="ui primary labeled icon button" href="/dna">
+				<i class="lab icon"></i>
+				Full Genetic Composition
+			</a>
+		</div>
+		<div class="four wide column">
+			<div class="ui segment">
+				<h1 class="ui header">
+					<i class="wait icon"></i>
+					Time Usage (In Hours)
+				</h1>
+				<canvas id="line" class="chart chart-line" chart-data="time.data" chart-labels="time.labels" chart-series="time.series"></canvas> 
 			</div>
 		</div>
 		<div class="four wide column">
 			<div class="ui segment">
-				<canvas id="line" class="chart chart-line" chart-data="data" chart-labels="labels" chart-series="series" chart-options="options" chart-dataset-override="datasetOverride"></canvas> 
+				<h1 class="ui header">
+					<i class="suitcase icon"></i>
+					Work Experience
+				</h1>
+				<canvas id="bar" class="chart chart-bar" chart-data="experience.data" chart-labels="experience.labels" chart-series="experience.series"></canvas>
 			</div>
 		</div>
 	</div>
