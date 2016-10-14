@@ -859,5 +859,320 @@
                 "correct"   : false
             }
         ]
+    },
+    {
+        "text"  : "How often should joint inventories for all individual tool kits (ITK) be accomplished?",
+        "answers"   : [
+            {
+                "text"      : "Annually",
+                "correct"   : true
+            },
+            {
+                "text"      : "Monthly",
+                "correct"   : false
+            },
+            {
+                "text"      : "Quarterly",
+                "correct"   : false
+            },
+            {
+                "text"      : "Semiannually",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "Which is not a responsibility of the Logistics Readiness Squadron (LRS) customer service element when setting up a bench stock?",
+        "answers"   : [
+            {
+                "text"      : "Ensure proper use, care and security of bench stock items",
+                "correct"   : true
+            },
+            {
+                "text"      : "Replenish and deliver items",
+                "correct"   : false
+            },
+            {
+                "text"      : "Establish the master bench detail record",
+                "correct"   : false
+            },
+            {
+                "text"      : "Install, maintain, and update on-base bench stock placards",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "Which of the following is not a reason for adding items to bench stock",
+        "answers"   : [
+            {
+                "text"      : "The item is not included in the AFMC initial spares support list for the equipment being supported",
+                "correct"   : true
+            },
+            {
+                "text"      : "The unit of issue is not compatible with the unit of use",
+                "correct"   : false
+            },
+            {
+                "text"      : "The FMFC feels the flight can't wait for items to be delivered from the warehouse",
+                "correct"   : false
+            },
+            {
+                "text"      : "A geographically separated location uses the item and the item must be at the using location",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "When may deletions from the bench stock listing be processed?",
+        "answers"   : [
+            {
+                "text"      : "When requested by the flight, or when the bench stock review listing shows no consumption in the past 270 days",
+                "correct"   : true
+            },
+            {
+                "text"      : "When requested by the flight only",
+                "correct"   : false
+            },
+            {
+                "text"      : "At the discretion of LRS customer service element only",
+                "correct"   : false
+            },
+            {
+                "text"      : "At the discretion of the LRS customer service element, or when the bench stock review listing shows no consumption in the past 270 days",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "How often are Phase 1 bench stock reviews conducted?",
+        "answers"   : [
+            {
+                "text"      : "Monthly",
+                "correct"   : true
+            },
+            {
+                "text"      : "Quarterly",
+                "correct"   : false
+            },
+            {
+                "text"      : "Semiannually",
+                "correct"   : false
+            },
+            {
+                "text"      : "Annually",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "Qhat type of time compliance technical order (TCTO) is issued for safety conditions which, if left uncorrected, could result in fatality or serious injury to personnel or extensive damage to or destruction of valuable property",
+        "answers"   : [
+            {
+                "text"      : "Immediate action",
+                "correct"   : true
+            },
+            {
+                "text"      : "Urgent action",
+                "correct"   : false
+            },
+            {
+                "text"      : "Routine action",
+                "correct"   : false
+            },
+            {
+                "text"      : "Scheduled action",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "Urgent action time compliance technical orders (TCTO) require compliance within what maximum amount of days?",
+        "answers"   : [
+            {
+                "text"      : "10 days",
+                "correct"   : true
+            },
+            {
+                "text"      : "20 days",
+                "correct"   : false
+            },
+            {
+                "text"      : "30 days",
+                "correct"   : false
+            },
+            {
+                "text"      : "60 days",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "Which publication is memorandum issued by commercial manufacturers advising maintainers of minor defects with a product?",
+        "answers"   : [
+            {
+                "text"      : "Service bulletin",
+                "correct"   : true
+            },
+            {
+                "text"      : "TCTO",
+                "correct"   : false
+            },
+            {
+                "text"      : "Technical manual",
+                "correct"   : false
+            },
+            {
+                "text"      : "Manufacturer's recall",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "What type of publication is issued when a commercial manufacturer discovers dangerous or unsafe conditions with a product?",
+        "answers"   : [
+            {
+                "text"      : "Manufacturer's recall",
+                "correct"   : true
+            },
+            {
+                "text"      : "Service bulletin",
+                "correct"   : false
+            },
+            {
+                "text"      : "Urgent action TCTO",
+                "correct"   : false
+            },
+            {
+                "text"      : "Immediate action TCTO",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "What type of inspection is performed to determine the condition of a vehicle or piece of equipment?",
+        "answers"   : [
+            {
+                "text"      : "Limited technical inspection",
+                "correct"   : true
+            },
+            {
+                "text"      : "Annual inspection",
+                "correct"   : false
+            },
+            {
+                "text"      : "Special inspection",
+                "correct"   : false
+            },
+            {
+                "text"      : "Preventative maintenance and inspection",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "Within what maximum amounto of days of receipt will all new and used vehicles and equipment be inspected by the Air Force activity which receives it?",
+        "answers"   : [
+            {
+                "text"      : "60",
+                "correct"   : true
+            },
+            {
+                "text"      : "30",
+                "correct"   : false
+            },
+            {
+                "text"      : "45",
+                "correct"   : false
+            },
+            {
+                "text"      : "90",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "What form is used to record limited technical inspections (LTI) on used vehicles?",
+        "answers"   : [
+            {
+                "text"      : "AFTO Form 91",
+                "correct"   : true
+            },
+            {
+                "text"      : "AFTO Form 92",
+                "correct"   : false
+            },
+            {
+                "text"      : "AF Form 1807",
+                "correct"   : false
+            },
+            {
+                "text"      : "AF Form 1800",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "Which of the following may direct shipment of a vehicle with less than 50 percent life expectancy to satisfy mission requirements?",
+        "answers"   : [
+            {
+                "text"      : "MAJCOM",
+                "correct"   : true
+            },
+            {
+                "text"      : "HQ USAF",
+                "correct"   : false
+            },
+            {
+                "text"      : "Wing commander",
+                "correct"   : false
+            },
+            {
+                "text"      : "LRS commander",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "Which hose is exempt from annual hydrostatic hose testing requirements?",
+        "answers"   : [
+            {
+                "text"      : "Hoses used for hot refueling E-4B aircraft",
+                "correct"   : true
+            },
+            {
+                "text"      : "Hoses for FAM carts",
+                "correct"   : false
+            },
+            {
+                "text"      : "Hoses used for hot/rapid defueling",
+                "correct"   : false
+            },
+            {
+                "text"      : "Hoses used for concurrent servicing operations supporting sortie generation operations",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "How often should a filter separator vessel be cleaned?",
+        "answers"   : [
+            {
+                "text"      : "Every three years, or when coalescer elements are changed",
+                "correct"   : true
+            },
+            {
+                "text"      : "Every year, or when high concentrations of water detected",
+                "correct"   : false
+            },
+            {
+                "text"      : "Every two years, or when sediment levels exeed tolerances",
+                "correct"   : false
+            },
+            {
+                "text"      : "Every five years, or when fiber sample fails",
+                "correct"   : false
+            }
+        ]
     }
 ]
