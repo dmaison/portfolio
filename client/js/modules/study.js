@@ -16,6 +16,7 @@ angular
 		$scope.loading		= true;
 		$scope.questions	= [];
 		$scope.answer		= {};
+		$scope.number		= 1;
 		var score			= 0;
 		var passing 		= 0;
 		var total			= 0;
@@ -38,6 +39,9 @@ angular
 			});
 			
 		$scope.check = function(){
+			
+			if( $scope.answer.text == undefined ) return $rootScope.error = 'You must select an answer before continuing...';
+			
 			if( $scope.answer.correct ){
 				++score;
 			} else {
@@ -57,6 +61,8 @@ angular
 					$rootScope.error = 'You failed and scored a ' + score + ' out of ' + total;
 				}
 			}
+			++$scope.number;
+			$scope.answer = {};
 		};
 		
 		$scope.answerSelect = function( answer ){

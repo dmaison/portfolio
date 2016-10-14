@@ -6,7 +6,7 @@
 <div class="ui segment">
 	<form class="ui form" ng-submit="check()">
 		
-		<h2 class="ui header">{{ question.text }}</h2>
+		<h2 class="ui header">{{number}}. {{ question.text }}</h2>
 		<div class="field" ng-repeat="answer in question.answers">
 			<div class="ui radio checkbox">
 				<input type="radio" name="answer" id="answer{{$index}}" ng-click="answerSelect( answer )" value="{{ answer }}" class="hidden">
