@@ -1,5 +1,5 @@
 angular
-	.module( 'app', [ 'pagination', 'dropdown', 'semantic', 'ngRoute', 'ngAnimate', 'routes', 'app.main', 'app.resume', 'app.portfolio', 'app.examples', 'app.contact', 'app.dna', 'angulartics', 'angulartics.google.analytics' ])
+	.module( 'app', [ 'pagination', 'dropdown', 'semantic', 'ngRoute', 'ngAnimate', 'routes', 'app.main', 'app.resume', 'app.portfolio', 'app.examples', 'app.contact', 'app.dna', 'app.study', 'angulartics', 'angulartics.google.analytics' ])
 	.config(function( $analyticsProvider, $httpProvider ){
         
         $analyticsProvider.firstPageview( true ); 

@@ -1,0 +1,527 @@
+[
+    {
+        "text"  : "What is a major difference between a gas and a liquid?",
+        "answers"   : [
+            {
+                "text"      : "A liquid is far less compressible than a gas",
+                "correct"   : true
+            },
+            {
+                "text"      : "A gas is far less compressible than a liquid",
+                "correct"   : false
+            },
+            {
+                "text"      : "A liquid is more combustible than a gas",
+                "correct"   : false
+            },
+            {
+                "text"      : "A gas is more combustible than a liquid",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "What is the lifting force of a liquid called?",
+        "answers"   : [
+            {
+                "text"      : "Buoyance",
+                "correct"   : true
+            },
+            {
+                "text"      : "Laminar",
+                "correct"   : false
+            },
+            {
+                "text"      : "Interface",
+                "correct"   : false
+            },
+            {
+                "text"      : "Dynamic Pressure",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "Which best describes immiscible liquids?",
+        "answers"   : [
+            {
+                "text"      : "One liquid will float on the other",
+                "correct"   : true
+            },
+            {
+                "text"      : "They mix well together",
+                "correct"   : false
+            },
+            {
+                "text"      : "They will become an intrained solution",
+                "correct"   : false
+            },
+            {
+                "text"      : "They will repel eachother",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "Which unit of measurement would indicate velocity of flow?",
+        "answers"   : [
+            {
+                "text"      : "Cubic feet per second",
+                "correct"   : true
+            },
+            {
+                "text"      : "Feet per second",
+                "correct"   : false
+            },
+            {
+                "text"      : "Gallons per minute",
+                "correct"   : false
+            },
+            {
+                "text"      : "Cubic gallons per minute",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "Which physical factor affects the behavior of liquids in both rest and motion?",
+        "answers"   : [
+            {
+                "text"      : "Gravity, atmospheric pressure, and applied forces",
+                "correct"   : true
+            },
+            {
+                "text"      : "Friction, applied forces, and gravity",
+                "correct"   : false
+            },
+            {
+                "text"      : "Friction, inertia, and atmospheric pressure",
+                "correct"   : false
+            },
+            {
+                "text"      : "Gravity, atmospheric pressure, and inertia",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "What determines the intensity of the excess pressure in a water-hammer wave?",
+        "answers"   : [
+            {
+                "text"      : "The amount of extinguished velocity",
+                "correct"   : true
+            },
+            {
+                "text"      : "The size of the pipe",
+                "correct"   : false
+            },
+            {
+                "text"      : "The specific gravity of the fuel",
+                "correct"   : false
+            },
+            {
+                "text"      : "The change in gallons per minute",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "Which type of measurement may be used to express pressure?",
+        "answers"   : [
+            {
+                "text"      : "Pounds per square inch",
+                "correct"   : true
+            },
+            {
+                "text"      : "Kilograms",
+                "correct"   : false
+            },
+            {
+                "text"      : "Pounds",
+                "correct"   : false
+            },
+            {
+                "text"      : "Tons",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "The standard measure for atmospheric pressure is equal to how many pounds per square inch?",
+        "answers"   : [
+            {
+                "text"      : "14.7",
+                "correct"   : true
+            },
+            {
+                "text"      : "13.1",
+                "correct"   : false
+            },
+            {
+                "text"      : "15.2",
+                "correct"   : false
+            },
+            {
+                "text"      : "17.9",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "What type of pressure reading is also referred to as overpressure?",
+        "answers"   : [
+            {
+                "text"      : "Gauge pressure",
+                "correct"   : true
+            },
+            {
+                "text"      : "Zero pressure",
+                "correct"   : false
+            },
+            {
+                "text"      : "Absolute pressure",
+                "correct"   : false
+            },
+            {
+                "text"      : "Atmospheric pressure",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "What term is used to describe the total pressure acting as a gas?",
+        "answers"   : [
+            {
+                "text"      : "Absolute pressure",
+                "correct"   : true
+            },
+            {
+                "text"      : "Gauge pressure",
+                "correct"   : false
+            },
+            {
+                "text"      : "Overpressure",
+                "correct"   : false
+            },
+            {
+                "text"      : "Atmospheric pressure",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "Which measurement scale is commonly used for scientific measurements?",
+        "answers"   : [
+            {
+                "text"      : "Kelvin scale",
+                "correct"   : true
+            },
+            {
+                "text"      : "Rankine scale",
+                "correct"   : false
+            },
+            {
+                "text"      : "Reaumur scale",
+                "correct"   : false
+            },
+            {
+                "text"      : "Fahrenheit scale",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "Which gas law declares that cooling a gas decreases its volume?",
+        "answers"   : [
+            {
+                "text"      : "Charle's law",
+                "correct"   : true
+            },
+            {
+                "text"      : "Boyle's law",
+                "correct"   : false
+            },
+            {
+                "text"      : "Dalton's law",
+                "correct"   : false
+            },
+            {
+                "text"      : "Gay-Lussac's law",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "Two or more atoms combined is called a(n)...",
+        "answers"   : [
+            {
+                "text"      : "Molecule",
+                "correct"   : true
+            },
+            {
+                "text"      : "Compound",
+                "correct"   : false
+            },
+            {
+                "text"      : "Element",
+                "correct"   : false
+            },
+            {
+                "text"      : "Mixture",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "According to electron theory, atoms are composed of",
+        "answers"   : [
+            {
+                "text"      : "Protons, neutrons, and electrons",
+                "correct"   : true
+            },
+            {
+                "text"      : "Neutrons, elements, and protons",
+                "correct"   : false
+            },
+            {
+                "text"      : "Electrons, molecules, and elements",
+                "correct"   : false
+            },
+            {
+                "text"      : "Electrons, neutrons, and matter",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "How do the charges of protons and electrons differ?",
+        "answers"   : [
+            {
+                "text"      : "Protons have positive charges, and electrons have negative charges",
+                "correct"   : true
+            },
+            {
+                "text"      : "Protons have positive charges, and electrons have neutral charges",
+                "correct"   : false
+            },
+            {
+                "text"      : "Protons have neutral charges, and electrons have positive charges",
+                "correct"   : false
+            },
+            {
+                "text"      : "Protons have negative charges, and electrons have positive charges",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "The uniform movement of electrons in a specific direction is called...",
+        "answers"   : [
+            {
+                "text"      : "Electric current",
+                "correct"   : true
+            },
+            {
+                "text"      : "Electrical potential",
+                "correct"   : false
+            },
+            {
+                "text"      : "Free electrons",
+                "correct"   : false
+            },
+            {
+                "text"      : "Ionization",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "Which shell of the valence electrons determines whether a material is a good or a poor conductor of electricity?",
+        "answers"   : [
+            {
+                "text"      : "The outermost shell",
+                "correct"   : true
+            },
+            {
+                "text"      : "The middle shell",
+                "correct"   : false
+            },
+            {
+                "text"      : "The second shell",
+                "correct"   : false
+            },
+            {
+                "text"      : "The first shell",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "Which statement best describes a positive ion?",
+        "answers"   : [
+            {
+                "text"      : "An atom that lost an electron and has more protons",
+                "correct"   : true
+            },
+            {
+                "text"      : "An atom that lost a proton and has more electrons",
+                "correct"   : false
+            },
+            {
+                "text"      : "An atom that has an equal number of electrons and protons",
+                "correct"   : false
+            },
+            {
+                "text"      : "An atom that cannot throw off any protons",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "What effect of current causes an electric motor to produce mechanical energy?",
+        "answers"   : [
+            {
+                "text"      : "Magnetism",
+                "correct"   : true
+            },
+            {
+                "text"      : "Heat",
+                "correct"   : false
+            },
+            {
+                "text"      : "Chemical",
+                "correct"   : false
+            },
+            {
+                "text"      : "Reactance",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "What is the unit of measurement for electrical power?",
+        "answers"   : [
+            {
+                "text"      : "Watts",
+                "correct"   : true
+            },
+            {
+                "text"      : "Volts",
+                "correct"   : false
+            },
+            {
+                "text"      : "Amps",
+                "correct"   : false
+            },
+            {
+                "text"      : "Ohms",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "A 3 horsepower motor consumes how much power?",
+        "answers"   : [
+            {
+                "text"      : "2,238 W",
+                "correct"   : true
+            },
+            {
+                "text"      : "2,023 W",
+                "correct"   : false
+            },
+            {
+                "text"      : "1,534 W",
+                "correct"   : false
+            },
+            {
+                "text"      : "755 W",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "A magnet that is magnetized by induction from an external source is called...",
+        "answers"   : [
+            {
+                "text"      : "An electromagnet",
+                "correct"   : true
+            },
+            {
+                "text"      : "A natural magnet",
+                "correct"   : false
+            },
+            {
+                "text"      : "An artificial magnet",
+                "correct"   : false
+            },
+            {
+                "text"      : "An electromechanical magnet",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "When do the magnetic lines of force in a magnet cross?",
+        "answers"   : [
+            {
+                "text"      : "Magnetic lines of force never cross each other",
+                "correct"   : true
+            },
+            {
+                "text"      : "When a permanent magnet and a temporary magnet are put together",
+                "correct"   : false
+            },
+            {
+                "text"      : "When the south pole of a magnet is placed near the north pole of another magnet",
+                "correct"   : false
+            },
+            {
+                "text"      : "When the north pole of a magnet is placed near the north pole of another magnet",
+                "correct"   : false
+            }
+        ]
+    }
+    {
+        "text"  : "What are the two most common methods of producing voltage?",
+        "answers"   : [
+            {
+                "text"      : "Chemical and mechanical",
+                "correct"   : true
+            },
+            {
+                "text"      : "Magnetic and heat",
+                "correct"   : false
+            },
+            {
+                "text"      : "Chemical and heat",
+                "correct"   : false
+            },
+            {
+                "text"      : "Magnetic and mechanical",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "What type of current flow is the result of voltages produced by batteries and thermocouples?",
+        "answers"   : [
+            {
+                "text"      : "Direct current",
+                "correct"   : true
+            },
+            {
+                "text"      : "Open current",
+                "correct"   : false
+            },
+            {
+                "text"      : "Latent current",
+                "correct"   : false
+            },
+            {
+                "text"      : "Alternating current",
+                "correct"   : false
+            }
+        ]
+    }
+]
