@@ -1491,27 +1491,6 @@
         ]
     },
     {
-        "text"  : "",
-        "answers"   : [
-            {
-                "text"      : "",
-                "correct"   : true
-            },
-            {
-                "text"      : "",
-                "correct"   : false
-            },
-            {
-                "text"      : "",
-                "correct"   : false
-            },
-            {
-                "text"      : "",
-                "correct"   : false
-            }
-        ]
-    },
-    {
         "text"  : "During concurrent servicing of cargo or passenger aircraft, deplanning personnel should not come closer than how many feet from any aircraft fuel vent outlet?",
         "answers"   : [
             {
