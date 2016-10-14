@@ -1174,5 +1174,257 @@
                 "correct"   : false
             }
         ]
+    },
+    {
+        "text"  : "When performing a periodic cryotainer inspection, which items listed in Technical Order (TO) 37C2-8-1-1 16 WC-1 should you complete?",
+        "answers"   : [
+            {
+                "text"      : "All items",
+                "correct"   : false
+            },
+            {
+                "text"      : "All items preceded by an asterisk (*)",
+                "correct"   : true
+            },
+            {
+                "text"      : "All items listed under the \"Periodic Inspection\" heading",
+                "correct"   : false
+            },
+            {
+                "text"      : "All items followed by an ampersand (&)",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "When preparing to perform an annual inspection, review all of the following forms for annotated discepencies except...",
+        "answers"   : [
+            {
+                "text"      : "AFTO Form 134",
+                "correct"   : true
+            },
+            {
+                "text"      : "AFTO Form 95",
+                "correct"   : false
+            },
+            {
+                "text"      : "AFTO Form 244",
+                "correct"   : false
+            },
+            {
+                "text"      : "AFTO Form 255",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "Which condition would require you to clean a cryotainer filter?",
+        "answers"   : [
+            {
+                "text"      : "A decrease in liquid flow",
+                "correct"   : true
+            },
+            {
+                "text"      : "A negative odor test result",
+                "correct"   : false
+            },
+            {
+                "text"      : "A negative particulate test result",
+                "correct"   : false
+            },
+            {
+                "text"      : "A decrease in the annular space micron reading",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "What symbol should you enter on the Air Force Technical Order (AFTO) Form 244/245 if a routine inspection on a cryotainer goes overdue?",
+        "answers"   : [
+            {
+                "text"      : "Red dash",
+                "correct"   : true
+            },
+            {
+                "text"      : "Red cross",
+                "correct"   : false
+            },
+            {
+                "text"      : "Red diagonal",
+                "correct"   : false
+            },
+            {
+                "text"      : "Red X",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "When documenting a significant maintenance action on an Air Force Technical Order (AFTO) Form 95, what information should you enter in block 1?",
+        "answers"   : [
+            {
+                "text"      : "The mission , design, series (MDS) of the equipment",
+                "correct"   : true
+            },
+            {
+                "text"      : "The appropriate page number",
+                "correct"   : false
+            },
+            {
+                "text"      : "The serial number of the item",
+                "correct"   : false
+            },
+            {
+                "text"      : "The name of the equipment manufacturer",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "What action, if any, should be taken if a commercial delivery operator does not provide a Department of Defense (DD) Form 250 with a liquid oxygen (LOX) shipment?",
+        "answers"   : [
+            {
+                "text"      : "Inform the FSC and await further guidance",
+                "correct"   : true
+            },
+            {
+                "text"      : "No action is required",
+                "correct"   : false
+            },
+            {
+                "text"      : "Notify the FMT and obtain an odor sample",
+                "correct"   : false
+            },
+            {
+                "text"      : "Contact AFPET for disposition instructions",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "When preparing to issue LOX, what action, if any, shoudl be taken if a review of a receiving tank's AFTO Form 134 finds that the form is not properly filled out?",
+        "answers"   : [
+            {
+                "text"      : "Do no service the receiving tank",
+                "correct"   : true
+            },
+            {
+                "text"      : "No action is required",
+                "correct"   : false
+            },
+            {
+                "text"      : "Conctact the FSC and await further instructions",
+                "correct"   : false
+            },
+            {
+                "text"      : "Inform aircraft maintenance of the discepency",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "When preparing to issue LIN, what action, if any, should you take if a receiving tank's AFTO Forms 244/245 lists an open Red X condition?",
+        "answers"   : [
+            {
+                "text"      : "Do not fill the receiving tank",
+                "correct"   : true
+            },
+            {
+                "text"      : "No action is required",
+                "correct"   : false
+            },
+            {
+                "text"      : "Inform the FMT and await further instructions",
+                "correct"   : false
+            },
+            {
+                "text"      : "Notify the FSC and request line expediter assistance",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "When documenting a cryogenic product issue to a LOX cart on the AFTO Form 134, what information should be entered block 4?",
+        "answers"   : [
+            {
+                "text"      : "The initials of the individual that filled the cart",
+                "correct"   : true
+            },
+            {
+                "text"      : "The date the cart was filled",
+                "correct"   : false
+            },
+            {
+                "text"      : "The quantity issued to the cart",
+                "correct"   : false
+            },
+            {
+                "text"      : "The tank number of the issuing cryotainer",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "When documenting a cryogenic product issue to a LOX cart on the AFTO Form 134, how should odor test results be annotated in block 2?",
+        "answers"   : [
+            {
+                "text"      : "As either \"POS\" or \"NEG\" in column D",
+                "correct"   : true
+            },
+            {
+                "text"      : "As either \"+\" or \"-\" in column A",
+                "correct"   : false
+            },
+            {
+                "text"      : "As either \"PASS\" or \"FAIL\" in column B",
+                "correct"   : false
+            },
+            {
+                "text"      : "As either \"GO\" or \"NO GO\" in column C",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "When documenting a cryogenic product receipt on the Air Force Form 1231, from which of the following documents is the contract number obtained?",
+        "answers"   : [
+            {
+                "text"      : "DD Form 250",
+                "correct"   : true
+            },
+            {
+                "text"      : "DD From 250-1",
+                "correct"   : false
+            },
+            {
+                "text"      : "DD Form 1348",
+                "correct"   : false
+            },
+            {
+                "text"      : "DD Form 1348-1",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "When, if ever, is a particulate test on a LOX cart required?",
+        "answers"   : [
+            {
+                "text"      : "When particulate contamination is suspected",
+                "correct"   : true
+            },
+            {
+                "text"      : "After a LOX cart has been filled",
+                "correct"   : false
+            },
+            {
+                "text"      : "Once every 90 days",
+                "correct"   : false
+            },
+            {
+                "text"      : "Never",
+                "correct"   : false
+            }
+        ]
     }
 ]
