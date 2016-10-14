@@ -1426,5 +1426,215 @@
                 "correct"   : false
             }
         ]
+    },
+    {
+        "text"  : "How often should hot refueling personnel undergo certification for hot refueling operation?",
+        "answers"   : [
+            {
+                "text"      : "Annually",
+                "correct"   : true
+            },
+            {
+                "text"      : "Semiannually",
+                "correct"   : false
+            },
+            {
+                "text"      : "Quarterly",
+                "correct"   : false
+            },
+            {
+                "text"      : "Monthly",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "Who may approve deviations from hot refueling policies when combat or emergency?",
+        "answers"   : [
+            {
+                "text"      : "MAJCOM commander",
+                "correct"   : true
+            },
+            {
+                "text"      : "FMFC",
+                "correct"   : false
+            },
+            {
+                "text"      : "HQ USAF/A4",
+                "correct"   : false
+            },
+            {
+                "text"      : "Air Force Petroleum Agency",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "Which aircraft does not require a hot brake check before entering the hot refueling pad?",
+        "answers"   : [
+            {
+                "text"      : "F-15",
+                "correct"   : true
+            },
+            {
+                "text"      : "B-1",
+                "correct"   : false
+            },
+            {
+                "text"      : "F-16",
+                "correct"   : false
+            },
+            {
+                "text"      : "F-22",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "",
+        "answers"   : [
+            {
+                "text"      : "",
+                "correct"   : true
+            },
+            {
+                "text"      : "",
+                "correct"   : false
+            },
+            {
+                "text"      : "",
+                "correct"   : false
+            },
+            {
+                "text"      : "",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "During concurrent servicing of cargo or passenger aircraft, deplanning personnel should not come closer than how many feet from any aircraft fuel vent outlet?",
+        "answers"   : [
+            {
+                "text"      : "25 feet",
+                "correct"   : true
+            },
+            {
+                "text"      : "10 feet",
+                "correct"   : false
+            },
+            {
+                "text"      : "20 feet",
+                "correct"   : false
+            },
+            {
+                "text"      : "50 feet",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "During multiple source refueling, what action, if any, should be taken if backflow is detected?",
+        "answers"   : [
+            {
+                "text"      : "Stop the operation immediately",
+                "correct"   : true
+            },
+            {
+                "text"      : "Decrease the engine RPMs",
+                "correct"   : false
+            },
+            {
+                "text"      : "Increase the engine RPMs",
+                "correct"   : false
+            },
+            {
+                "text"      : "No action is required",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "Concurrent servicing operations supporting sortie generation operations (CSO/SGO) are authorized on all following aircraft except the...",
+        "answers"   : [
+            {
+                "text"      : "F-117",
+                "correct"   : true
+            },
+            {
+                "text"      : "A-10",
+                "correct"   : false
+            },
+            {
+                "text"      : "F-15",
+                "correct"   : false
+            },
+            {
+                "text"      : "F-22",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "What maximum number of base stations may be configured to operate with the automated data collection (ADC) system?",
+        "answers"   : [
+            {
+                "text"      : "10",
+                "correct"   : true
+            },
+            {
+                "text"      : "5",
+                "correct"   : false
+            },
+            {
+                "text"      : "6",
+                "correct"   : false
+            },
+            {
+                "text"      : "12",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "When configuring the automated data collection (ADC) system, what maximum number of dial retries can you configure the user interface terminal (UIT) to attempt?",
+        "answers"   : [
+            {
+                "text"      : "99",
+                "correct"   : true
+            },
+            {
+                "text"      : "60",
+                "correct"   : false
+            },
+            {
+                "text"      : "49",
+                "correct"   : false
+            },
+            {
+                "text"      : "30",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "Who should you notify if, while performing fuels expediter duties, you use the spill response kit?",
+        "answers"   : [
+            {
+                "text"      : "Fuels Environment coordinator",
+                "correct"   : true
+            },
+            {
+                "text"      : "NCOIC fuels distribution",
+                "correct"   : false
+            },
+            {
+                "text"      : "FOD prevention monitor",
+                "correct"   : false
+            },
+            {
+                "text"      : "FSC",
+                "correct"   : false
+            }
+        ]
     }
 ]
