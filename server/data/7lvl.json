@@ -523,5 +523,341 @@
                 "correct"   : false
             }
         ]
+    },
+    {
+        "text"  : "What type(s) of current flow cannot be transformed from a higher voltage to a lower voltage?",
+        "answers"   : [
+            {
+                "text"      : "Direct current",
+                "correct"   : true
+            },
+            {
+                "text"      : "Latent current",
+                "correct"   : false
+            },
+            {
+                "text"      : "Latent and open current",
+                "correct"   : false
+            },
+            {
+                "text"      : "Alternating and direct current",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "What are the three things needed to produce voltage by the principle of electromagnetic induction?",
+        "answers"   : [
+            {
+                "text"      : "Magnetic field, conductor, and relative motion",
+                "correct"   : true
+            },
+            {
+                "text"      : "Coil, core, and current",
+                "correct"   : false
+            },
+            {
+                "text"      : "Magnet, housing, and prime mover",
+                "correct"   : false
+            },
+            {
+                "text"      : "Coil, conductors and relative motion",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "What type of material is used to construct the fuel tank on the R-11?",
+        "answers"   : [
+            {
+                "text"      : "Sheet alluminum alloy",
+                "correct"   : true
+            },
+            {
+                "text"      : "Titanium",
+                "correct"   : false
+            },
+            {
+                "text"      : "Stainless steel",
+                "correct"   : false
+            },
+            {
+                "text"      : "Steel-reinforced carbon fiber",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "Which is not a type of positive displacement pump?",
+        "answers"   : [
+            {
+                "text"      : "Centrifugal",
+                "correct"   : true
+            },
+            {
+                "text"      : "Gear",
+                "correct"   : false
+            },
+            {
+                "text"      : "Piston",
+                "correct"   : false
+            },
+            {
+                "text"      : "Rotary",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "What term is used to define the process that takes place when water forms into droplets after passing through filter elements?",
+        "answers"   : [
+            {
+                "text"      : "Coalescing",
+                "correct"   : true
+            },
+            {
+                "text"      : "Separation",
+                "correct"   : false
+            },
+            {
+                "text"      : "Integration",
+                "correct"   : false
+            },
+            {
+                "text"      : "Commingling",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "What filter separator component prevents pressure surges from damaging dispensing pressure control systems?",
+        "answers"   : [
+            {
+                "text"      : "Air eliminator",
+                "correct"   : true
+            },
+            {
+                "text"      : "Water slug valve",
+                "correct"   : false
+            },
+            {
+                "text"      : "Float control valve",
+                "correct"   : false
+            },
+            {
+                "text"      : "Mainline control valve",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "What type of meter is used on the most fuel dispensing systems?",
+        "answers"   : [
+            {
+                "text"      : "Bi-rotor, positive displacement",
+                "correct"   : true
+            },
+            {
+                "text"      : "Tri-rotor, positive displacement",
+                "correct"   : false
+            },
+            {
+                "text"      : "Single-stage, bi-directional",
+                "correct"   : false
+            },
+            {
+                "text"      : "Dual-stage, bi-directional",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "What item protects fuel dispensing system eletrical components against overload?",
+        "answers"   : [
+            {
+                "text"      : "Automatic reset-type circuit breakers",
+                "correct"   : true
+            },
+            {
+                "text"      : "Manual reset-type circuit breakers",
+                "correct"   : false
+            },
+            {
+                "text"      : "Twenty-five amp Bosch-type fuse",
+                "correct"   : false
+            },
+            {
+                "text"      : "Ten amp ATO fuse",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "What type of lubricant is used to lubricate the power takeoff (PTO) on a fuel dispensing system?",
+        "answers"   : [
+            {
+                "text"      : "Ninety-weight gear oil",
+                "correct"   : true
+            },
+            {
+                "text"      : "Thirty-weight motor oil",
+                "correct"   : false
+            },
+            {
+                "text"      : "Synthetic gear lube",
+                "correct"   : false
+            },
+            {
+                "text"      : "Silicone grease",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "What component found on R-11s and R-12s prevents the auxiliary throttle from operating unless the power takeoff (PTO) is engaged?",
+        "answers"   : [
+            {
+                "text"      : "Throttle interlock system",
+                "correct"   : true
+            },
+            {
+                "text"      : "PTO interlock system",
+                "correct"   : false
+            },
+            {
+                "text"      : "Emergency shutdown switch",
+                "correct"   : false
+            },
+            {
+                "text"      : "Emergency engine kill switch",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "What fuel dispensing system component controls system fuel pressure?",
+        "answers"   : [
+            {
+                "text"      : "Bypass system",
+                "correct"   : true
+            },
+            {
+                "text"      : "Mainline system",
+                "correct"   : false
+            },
+            {
+                "text"      : "Hose reel control",
+                "correct"   : false
+            },
+            {
+                "text"      : "Deadman control",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "During bottom loading operations, what occurs when the signal to the bottom loading optic probe is lost?",
+        "answers"   : [
+            {
+                "text"      : "The electric control module cuts power to the bottom loading electric air solenoid",
+                "correct"   : true
+            },
+            {
+                "text"      : "The bottom loading valve modulates to prevent deadheading",
+                "correct"   : false
+            },
+            {
+                "text"      : "The electronic control module cuts power to the fillstand pump",
+                "correct"   : false
+            },
+            {
+                "text"      : "The bottom loading valve cuts power to the electronic control module",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "When should Bourdon gauges be calibrated?",
+        "answers"   : [
+            {
+                "text"      : "Annually",
+                "correct"   : true
+            },
+            {
+                "text"      : "Quarterly",
+                "correct"   : false
+            },
+            {
+                "text"      : "Semiannually",
+                "correct"   : false
+            },
+            {
+                "text"      : "Biennially",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "What may a filter separator differential pressure reading below 3 psi indicate?",
+        "answers"   : [
+            {
+                "text"      : "A defective O-ring or ruptured coalescers",
+                "correct"   : true
+            },
+            {
+                "text"      : "Clean coalescer elements",
+                "correct"   : false
+            },
+            {
+                "text"      : "Damaged coalescer screens",
+                "correct"   : false
+            },
+            {
+                "text"      : "Clogged of dirty coalescers",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "When performing meter calibrations, what is the accetable difference between the master meter and the meter being calibrated?",
+        "answers"   : [
+            {
+                "text"      : "1/2 gallon for each 100 gallons passing through the meter",
+                "correct"   : true
+            },
+            {
+                "text"      : "1/2 gallon for each 500 gallons passing through the meter",
+                "correct"   : false
+            },
+            {
+                "text"      : "1 gallon for each 100 gallons passing through the meter",
+                "correct"   : false
+            },
+            {
+                "text"      : "1 gallong for each 500 gallons passing through the meter",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "Initial tool listings for individual tool kits (ITK) and composite tool kits (CTK) include all of the following except...",
+        "answers"   : [
+            {
+                "text"      : "Quantity on hand",
+                "correct"   : true
+            },
+            {
+                "text"      : "Nomenclature",
+                "correct"   : false
+            },
+            {
+                "text"      : "Quantity authorized",
+                "correct"   : false
+            },
+            {
+                "text"      : "Tool national stock number (NSN)",
+                "correct"   : false
+            }
+        ]
     }
 ]
