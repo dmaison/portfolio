@@ -1615,5 +1615,257 @@
                 "correct"   : false
             }
         ]
+    },
+    {
+        "text"  : "When posting changes and supplements to publications, within what maximum unmber of days of receipt should you file technical order (TO) changes and supplements?",
+        "answers"   : [
+            {
+                "text"      : "5",
+                "correct"   : true
+            },
+            {
+                "text"      : "1",
+                "correct"   : false
+            },
+            {
+                "text"      : "7",
+                "correct"   : false
+            },
+            {
+                "text"      : "10",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "When posting changes to publications, when, if ever, are \"List of Effective Pages\" checks mandatory?",
+        "answers"   : [
+            {
+                "text"      : "When changes and revisions are posted to paper TOs are posted",
+                "correct"   : true
+            },
+            {
+                "text"      : "Never",
+                "correct"   : false
+            },
+            {
+                "text"      : "As directed by MAJCOM",
+                "correct"   : false
+            },
+            {
+                "text"      : "At the discretion of the TO manager",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "What environment regulation establishes \"cradle to grave\" control of hazardous substances?",
+        "answers"   : [
+            {
+                "text"      : "Resource Concservation and Recovery Act (RCRA)",
+                "correct"   : true
+            },
+            {
+                "text"      : "40 Code of Federal Regulations (CFR) 280",
+                "correct"   : false
+            },
+            {
+                "text"      : "Technical Order (TO) 42B-1-23",
+                "correct"   : false
+            },
+            {
+                "text"      : "Department of Defense (DoD) Directive 4140.25M",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "At a minimum, how often should underground storage tanks be monitored to detect releases?",
+        "answers"   : [
+            {
+                "text"      : "Every 30 days",
+                "correct"   : true
+            },
+            {
+                "text"      : "Every 60 days",
+                "correct"   : false
+            },
+            {
+                "text"      : "Every 90 days",
+                "correct"   : false
+            },
+            {
+                "text"      : "Every 120 days",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "How often should dikes be checked for deterioration?",
+        "answers"   : [
+            {
+                "text"      : "Weekly",
+                "correct"   : true
+            },
+            {
+                "text"      : "Daily",
+                "correct"   : false
+            },
+            {
+                "text"      : "Monthly",
+                "correct"   : false
+            },
+            {
+                "text"      : "Quarterly",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "When conducting internal inspections, within what maximum number of days should an element be inspected if it receives unsatisfactory rating?",
+        "answers"   : [
+            {
+                "text"      : "45 days",
+                "correct"   : true
+            },
+            {
+                "text"      : "30 days",
+                "correct"   : false
+            },
+            {
+                "text"      : "60 days",
+                "correct"   : false
+            },
+            {
+                "text"      : "90 days",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "When rating an inspection, the compliance and environmental element may use the five-tier rating system at the discretion of the...",
+        "answers"   : [
+            {
+                "text"      : "FMT",
+                "correct"   : true
+            },
+            {
+                "text"      : "Squadron commander",
+                "correct"   : false
+            },
+            {
+                "text"      : "Group commander",
+                "correct"   : false
+            },
+            {
+                "text"      : "Parent MAJCOM",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "When reporting inspection results, what form should be used to report inspection result findings?",
+        "answers"   : [
+            {
+                "text"      : "AF Form 2420",
+                "correct"   : true
+            },
+            {
+                "text"      : "AF Form 2419",
+                "correct"   : false
+            },
+            {
+                "text"      : "AF Form 2605",
+                "correct"   : false
+            },
+            {
+                "text"      : "AF Form 2606",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "How are all satisfying spot checks without significant findings reported?",
+        "answers"   : [
+            {
+                "text"      : "They are consolidated weekly on one AF Form 2419",
+                "correct"   : true
+            },
+            {
+                "text"      : "They are consolidated weekly on one AF Form 2420",
+                "correct"   : false
+            },
+            {
+                "text"      : "They are consolidated monthly on one AF From 2419",
+                "correct"   : false
+            },
+            {
+                "text"      : "They are consolidated monthly on one AF Form 2420",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "Who may authorized bases to use computer products in lieu of AF Forms 2419 and 2420?",
+        "answers"   : [
+            {
+                "text"      : "Parent MAJCOM",
+                "correct"   : true
+            },
+            {
+                "text"      : "FMT",
+                "correct"   : false
+            },
+            {
+                "text"      : "DESC",
+                "correct"   : false
+            },
+            {
+                "text"      : "AFPET",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "Within what maximum number of days of a mishap should the fuels management team (FMT) send an advisory message to the parent major command (MAJCOM)/A4 on the outcome of the mishap investigation?",
+        "answers"   : [
+            {
+                "text"      : "30",
+                "correct"   : true
+            },
+            {
+                "text"      : "15",
+                "correct"   : false
+            },
+            {
+                "text"      : "45",
+                "correct"   : false
+            },
+            {
+                "text"      : "60",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "What agency should the fuels management team (FMT) consult with on all matters regarding the provision of or changes to personal protective equipment (PPE) for workers?",
+        "answers"   : [
+            {
+                "text"      : "Base bioenvironmental engineer",
+                "correct"   : true
+            },
+            {
+                "text"      : "Base environmental manager",
+                "correct"   : false
+            },
+            {
+                "text"      : "Group environmental coordinator",
+                "correct"   : false
+            },
+            {
+                "text"      : "Environmental protection committee",
+                "correct"   : false
+            }
+        ]
     }
 ]
