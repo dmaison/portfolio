@@ -18,6 +18,7 @@ angular
 		$scope.answer		= {};
 		var score			= 0;
 		var passing 		= 0;
+		var total			= 0;
 
 		$http
 			.get( '/api/7lvl' )
@@ -30,7 +31,8 @@ angular
 				
 				$scope.questions	= res.data;
 				$scope.question 	= randomQuestion();
-				passing 			= ( $scope.questions.length * .75);
+				total				= $scope.questions.length;
+				passing 			= ( total * .75);
 			},function( err ){
 				$rootScope.error	= err.data.message;
 			});
@@ -50,9 +52,9 @@ angular
 				$scope.question 	= randomQuestion();
 			} else {
 				if( score >= passing ){
-					$rootScope.success = 'You passed and scored a ' + score;
+					$rootScope.success = 'You passed and scored a ' + score + ' out of ' + total;
 				} else {
-					$rootScope.error = 'You failed and scored a ' + score;
+					$rootScope.error = 'You failed and scored a ' + score + ' out of ' + total;
 				}
 			}
 		};
