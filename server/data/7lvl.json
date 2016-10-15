@@ -1867,5 +1867,131 @@
                 "correct"   : false
             }
         ]
+    },
+    {
+        "text"  : "What agency serves as the link between the Defense Energy Support Center (DESC) and its customers?",
+        "answers"   : [
+            {
+                "text"      : "DESC regions",
+                "correct"   : true
+            },
+            {
+                "text"      : "BFMO",
+                "correct"   : false
+            },
+            {
+                "text"      : "AFPET",
+                "correct"   : false
+            },
+            {
+                "text"      : "HQ USAF",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "Which Air Force Petroleum Agency (AFPET) division provides oversight and remedy for fuels mishaps and safety incidents?",
+        "answers"   : [
+            {
+                "text"      : "Facilities and Distribution division",
+                "correct"   : true
+            },
+            {
+                "text"      : "Science and technology division",
+                "correct"   : false
+            },
+            {
+                "text"      : "Plans and Programs division",
+                "correct"   : false
+            },
+            {
+                "text"      : "Technical division",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "What agency is responsible for formulating and disseminating instructions and other directives that cover operations not specified in detail in Air Force Manual (AFMAN) 23-110, Volume 2?",
+        "answers"   : [
+            {
+                "text"      : "MAJCOM",
+                "correct"   : true
+            },
+            {
+                "text"      : "DESC",
+                "correct"   : false
+            },
+            {
+                "text"      : "AFPET",
+                "correct"   : false
+            },
+            {
+                "text"      : "HQ USAF",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "Who is responsible for maintaining the fuels account as outlined in AFMAN 23-110, Vol. 2 Part 2?",
+        "answers"   : [
+            {
+                "text"      : "FSC",
+                "correct"   : true
+            },
+            {
+                "text"      : "DESC",
+                "correct"   : false
+            },
+            {
+                "text"      : "FMT",
+                "correct"   : false
+            },
+            {
+                "text"      : "MAJCOM",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "When you are maintaining and updating statuses in BSME which status board should you use to document transfers?",
+        "answers"   : [
+            {
+                "text"      : "Move",
+                "correct"   : true
+            },
+            {
+                "text"      : "Hydrants",
+                "correct"   : false
+            },
+            {
+                "text"      : "Inventory",
+                "correct"   : false
+            },
+            {
+                "text"      : "General Purpose",
+                "correct"   : false
+            }
+        ]
+    },
+    {
+        "text"  : "When you are inputting a transaction in the BSME log sheet, what information should you enter in the Defuel field when entering a defuel request?",
+        "answers"   : [
+            {
+                "text"      : "Enter \"Y\" in place of the defaulted \"N\"",
+                "correct"   : true
+            },
+            {
+                "text"      : "Enter the word \"Defuel\" in the field",
+                "correct"   : false
+            },
+            {
+                "text"      : "Enter the reason for the defuel request",
+                "correct"   : false
+            },
+            {
+                "text"      : "Enter the estimated gallon amount of the defuel",
+                "correct"   : false
+            }
+        ]
     }
 ]
