@@ -20,7 +20,7 @@
  	</div>
 
  	<div ng-show="( page == 'about' )">
-		<div class="ui grid">
+		<div class="ui stackable grid">
 			<div class="three wide column">
 				<div class="ui fluid card">
 					<div class="image">
@@ -115,7 +115,7 @@
 	</div>
 
 	<div ng-show="( page == 'experience' )">
-		<div class="ui grid">
+		<div class="ui stackable grid">
 			<div class="four wide stretched column" ng-repeat="job in jobs">
 				<div class="ui fluid card">
 					<div class="content">
@@ -140,7 +140,7 @@
 	</div>
 
 	<div ng-show="( page == 'expertise' )">
-		<div class="ui grid">
+		<div class="ui stackable grid">
 			<div class="sixteen wide column">
 				<paginate list="languages" items-per-page="4"></paginate>
 			</div>
