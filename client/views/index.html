@@ -70,32 +70,43 @@
 </head>
 <body>
     <div>
-
+        
         <!-- menu -->
         <div class="ui top fixed inverted menu" id="main-menu">
             <a href="/" class="active item">
                 dave.maison
             </a>
-
+            
             <!-- responsive menu -->
-            <div class="ui simple dropdown item" id="responsive-menu">
-                <i class="sidebar icon"></i>
-                <div class="menu">
-                    <a ng-repeat="item in menu" href="{{item.path}}" class="item">
-                        {{item.title}}
-                    </a>
+            <div class="ui right inverted menu" ng-show="isMobile">
+                <div class="ui simple dropdown icon item">
+                    <i class="sidebar icon"></i>
+                    <div class="menu">
+                        <a ng-repeat="item in menu" href="{{item.path}}" class="item">
+                            {{item.title}}
+                        </a>
+                        <a target="_blank" class="icon item" href="https://github.com/dmaison">
+                            Github
+                        </a>
+                        <a target="_blank" class="icon item" href="https://www.linkedin.com/pub/david-maison/57/70b/859">
+                            LinkedIn
+                        </a>
+                        <a target="_blank" class="icon item" href="https://www.facebook.com/dave.maison">
+                            Facebook
+                        </a>
+                    </div>
                 </div>
             </div>
-            <a ng-repeat="item in menu" href="{{item.path}}" class="icon item">
+            <a ng-repeat="item in menu" href="{{item.path}}" class="icon item" ng-show="!isMobile">
                 <i class="large {{item.icon}} icon"></i>
             </a>
-            <a target="_blank" class="icon item popup" href="https://github.com/dmaison">
+            <a target="_blank" class="icon item" href="https://github.com/dmaison" ng-show="!isMobile">
                 <i class="large github icon"></i>
             </a>
-            <a target="_blank" class="icon item popup" href="https://www.linkedin.com/pub/david-maison/57/70b/859">
+            <a target="_blank" class="icon item" href="https://www.linkedin.com/pub/david-maison/57/70b/859" ng-show="!isMobile">
                 <i class="large linkedin icon"></i>
             </a>
-            <a target="_blank" class="icon item popup" href="https://www.facebook.com/dave.maison">
+            <a target="_blank" class="icon item" href="https://www.facebook.com/dave.maison" ng-show="!isMobile">
                 <i class="large facebook icon"></i>
             </a>
         </div>

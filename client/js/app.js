@@ -18,7 +18,7 @@ angular
 			};
 		});
     })
-	.run(function( $rootScope, $http ) {
+	.run(function( $rootScope, $http, $window ) {
 		
 		/* global $ angular */
 		
@@ -29,8 +29,6 @@ angular
 			}, function( err ){
 				$rootScope.error = err.data.message;	
 			});
-		
-		$( '.top.menu .popup' ).popup();
 		
 		$rootScope.$watch( 'error', function( value ){
 			if( !value ) return;
@@ -58,6 +56,17 @@ angular
 					}
 				})
 				.modal( 'show' );
+		});
+		
+		$rootScope.width = $window.innerWidth;
+		
+       	angular.element( $window ).bind( 'resize', function(){
+         	$rootScope.width = $window.innerWidth;
+			$rootScope.$digest();
+       	});
+		
+		$rootScope.$watch( 'width', function( width ){
+			$rootScope.isMobile = ( width <= 768 );
 		});
 		
 	});
