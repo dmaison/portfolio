@@ -103,7 +103,7 @@
         <!-- content -->
         <div id="content" ng-view></div>    
         
-        <div class="ui basic modal" id="error">
+        <div class="ui modal" id="error">
             <div class="ui icon header">
                 <i class="red warning circle icon"></i>
                 Error
@@ -111,7 +111,7 @@
             <div class="center aligned content">
                 <p>{{error}}</p>
             </div>
-            <div class="center aligned actions">
+            <div class="actions">
                 <div class="ui ok labeled icon button">
                     <i class="check icon"></i>
                     Got it!
@@ -119,7 +119,7 @@
             </div>
         </div>
         
-        <div class="ui basic modal" id="success">
+        <div class="ui modal" id="success">
             <div class="ui icon header">
                 <i class="green check circle icon"></i>
                 Success
@@ -127,7 +127,7 @@
             <div class="center aligned content">
                 <p>{{success}}</p>
             </div>
-            <div class="center aligned actions">
+            <div class="actions">
                 <div class="ui ok labeled icon button">
                     <i class="check icon"></i>
                     Got it!

@@ -57,9 +57,9 @@ module.exports = function( app, dir ){
 	app.post( '/api/contact/', function( req, res ){
 		
 		// Error checking
-		if( !req.body.email ) return Error.send( res, req.method, 400, '/contact/', 'No email provided.' );
+		if( !req.body.sender ) return Error.send( res, req.method, 400, '/contact/', 'No email provided.' );
 		if( !req.body.subject ) return Error.send( res, req.method, 400, '/contact/', 'No subject provided.' );
-		if( !req.body.message ) return Error.send( res, req.method, 400, '/contact/', 'No message provided.' );
+		if( !req.body.body ) return Error.send( res, req.method, 400, '/contact/', 'No message provided.' );
 		if( String( req.body.subject ).length > 78 ) return Error.send( res, req.method, 400, '/contact/', 'The provided subject exceeds 78 characters.' );
 		
 		async.waterfall([
@@ -86,17 +86,17 @@ module.exports = function( app, dir ){
 				});
 				
 				var options = {
-					from: req.body.email,
+					from: req.body.sender,
 					to: config.gmail.username,
-					cc: req.body.email,
+					cc: req.body.body,
 					subject: req.body.subject,
-					text: req.body.message,
+					text: req.body.body,
 					html: html
 				};
 				
 				transporter.sendMail( options, function( err, info ){
-				    if( err ) return callback( err, null );
-				    return callback( null, info.response );
+					if( err ) return callback( err, null );
+					return callback( null, info.response );
 				});
 			}
 			

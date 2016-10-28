@@ -1,46 +1,37 @@
 angular
 	.module( 'app.contact', [] )
 	.config( [ '$routeProvider', '$locationProvider', function( $routeProvider, $locationProvider ){
-
+		
 		$locationProvider.html5Mode( true );
-
+		
 		$routeProvider
 			.when( '/contact', {
 				templateUrl	: 'views/contact.html',
 				controller 	: 'contact'
 			});
-
+			
 	}])
-	.controller( 'contact', [ '$scope', '$http', '$window', function( $scope, $http, $window ) {
-
-		$scope.emailSent 	= false;
-		$scope.emailError 	= false;
-		$scope.hideForm 	= false;
-		$scope.loading 		= false;
-
+	.controller( 'contact', [ '$scope', '$http', '$rootScope', function( $scope, $http, $rootScope ) {
+		
+		/* global angular */
+		
+		$scope.loading 	= false;
+		$scope.email	= {};
+		
 		$scope.send = function( form ){
-
-			if( !form.$valid || $scope.emailSent ) return;
+			
+			if( !form.$valid  ) return;
 			$scope.loading = true;
-
+			
 			$http
-				.post( '/api/contact', {
-					email: $scope.email,
-					subject: $scope.subject,
-					message: $scope.message
-				})
-				.success(function( res ){
-					$scope.hideForm 	= true;
-					$scope.emailSent 	= true;
-					$scope.sendMessage 	= res.message;
+				.post( '/api/contact', $scope.email )
+				.then(function( res ){
+					$rootScope.success 	= res.data.message;
 					$scope.loading 		= false;
-				})
-				.error(function( res ){
-					$scope.hideForm 	= true;
-					$scope.emailError 	= true;
-					$scope.sendMessage 	= res.message;
+				}, function( res ){
+					$rootScope.error 	= res.data.message;
 					$scope.loading 		= false;
 				});
-		}
+		};
 		
 	}]);
