@@ -20,7 +20,7 @@ angular
 		var score			= 0;
 		var passing 		= 0;
 		var total			= 0;
-
+		
 		$http
 			.get( '/api/7lvl' )
 			.then(function( res ){
@@ -68,7 +68,7 @@ angular
 		$scope.answerSelect = function( answer ){
 			$scope.answer = answer;
 		};
-
+		
 		function randomQuestion(){
 			var length		= ( $scope.questions.length - 1 );
 			var index		= Math.floor( Math.random() * length );
@@ -76,7 +76,7 @@ angular
 			$scope.questions.splice( index, 1 );
 			return question;
 		}
-
+		
 		function shuffle( array ) {
 			var currentIndex = array.length, temporaryValue, randomIndex;
 			
@@ -91,8 +91,8 @@ angular
 				array[currentIndex] = array[randomIndex];
 				array[randomIndex] = temporaryValue;
 			}
-		
+			
 			return array;
 		}
-
+		
 	}]);
