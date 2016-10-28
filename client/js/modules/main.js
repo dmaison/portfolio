@@ -1,6 +1,8 @@
 angular
 	.module( 'app.main', [ 'chart.js' ] )
-	.controller( 'main', [ '$scope', '$http', '$window', function( $scope, $http, $window ) {
+	.controller( 'main', [ '$scope', '$http', '$rootScope', function( $scope, $http, $rootScope ) {
+		
+		/* global angular */
 		
 		$scope.loading		= true;
 		$scope.percents 	= [];
@@ -23,13 +25,16 @@ angular
 		
 		$http
 			.get( '/api/dna' )
-			.success(function( res ){
+			.then(function( res ){
 				$scope.loading 	= false;
-				$scope.dna 		= res;
-				res.composition.forEach(function( compote ){
+				$scope.dna 		= res.data;
+				res.data.composition.forEach(function( compote ){
 					$scope.percents.push( compote.percentage );
 					$scope.ethnicities.push( compote.ethnicity );
 				});
+			}, function( err ){
+				$rootScope.error	= err.data.message;
+				$scope.loading 		= false;
 			});
 			
 		$scope.time = {
