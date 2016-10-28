@@ -19,7 +19,9 @@ angular
 		});
     })
 	.run(function( $rootScope, $http ) {
-
+		
+		/* global $ angular */
+		
 		$http
 			.get( 'api/menu' )
 			.then(function( res ){
@@ -57,4 +59,5 @@ angular
 				})
 				.modal( 'show' );
 		});
+		
 	});
