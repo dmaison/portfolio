@@ -1,5 +1,29 @@
 angular
-	.module( 'app', [ 'pagination', 'dropdown', 'semantic', 'ngRoute', 'ngAnimate', 'routes', 'app.main', 'app.resume', 'app.portfolio', 'app.examples', 'app.contact', 'app.dna', 'app.study', 'angulartics', 'angulartics.google.analytics' ])
+	.module( 'app', [ 
+		
+		//directives
+		'pagination', 
+		'dropdown', 
+		'semantic', 
+		
+		//libs
+		'ngRoute', 
+		'ngAnimate', 
+		'angulartics', 
+		'angulartics.google.analytics',
+		
+		//controllers
+		'routes', 
+		'app.main', 
+		'app.resume', 
+		'app.portfolio', 
+		'app.examples', 
+		'app.contact', 
+		'app.dna', 
+		'app.study',
+		'app.chasingBallmer'
+		
+	])
 	.config(function( $analyticsProvider, $httpProvider ){
         
         $analyticsProvider.firstPageview( true ); 
