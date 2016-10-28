@@ -74,8 +74,8 @@ module.exports = function( app, dir ){
 			function( html, callback ){
 				
 				html = html
-						.replace( /{{message}}/gi, req.body.message )
-						.replace( /{{email}}/gi, req.body.email );
+						.replace( /{{message}}/gi, req.body.body )
+						.replace( /{{email}}/gi, req.body.sender );
 						
 				var transporter = nodemailer.createTransport({
 					service: 'Gmail',
