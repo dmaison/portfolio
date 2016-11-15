@@ -43,4 +43,4 @@ body {
 
 .ui.tabular.menu .item:not( .active ) { color: rgba(255,255,255,.9) !important; }
 
-.ui.statistic .value { word-break: break-all; }
+.ui.statistic .value { word-break: break-word; }
