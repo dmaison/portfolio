@@ -6,9 +6,17 @@ var config 		= require( './config' );
 
 module.exports = function( app, dir ){
 	
+	app.get( '/api/presents', function( req, res ){
+		fs.readFile('./server/data/presents.json', function( err, items ){
+            if( err ) return Error.send( res, req.method, 500, '/presents/', err );
+			res.status( 200 );
+			res.send( items );
+		});
+	});
+	
 	app.get( '/api/7lvl', function( req, res ){
 		fs.readFile('./server/data/7lvl.json', function( err, items ){
-            if( err ) return Error.send( res, req.method, 500, '/menu/', err );
+            if( err ) return Error.send( res, req.method, 500, '/7lvl/', err );
 			res.status( 200 );
 			res.send( items );
 		});

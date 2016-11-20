@@ -21,7 +21,8 @@ angular
 		'app.contact', 
 		'app.dna', 
 		'app.study',
-		'app.chasingBallmer'
+		'app.chasingBallmer',
+		'app.presents'
 		
 	])
 	.config(function( $analyticsProvider, $httpProvider ){
