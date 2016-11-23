@@ -15,23 +15,17 @@ angular
 		
 		/* global angular */
 		
-		$scope.loading 	= false;
-		$scope.email	= {};
+		$scope.loading 	= true;
+		$scope.drinks	= [];
 		
-		$scope.send = function( form ){
-			
-			if( !form.$valid  ) return;
-			$scope.loading = true;
-			
-			$http
-				.post( '/api/contact', $scope.email )
-				.then(function( res ){
-					$rootScope.success 	= res.data.message;
-					$scope.loading 		= false;
-				}, function( res ){
-					$rootScope.error 	= res.data.message;
-					$scope.loading 		= false;
-				});
-		};
+		$http
+			.get( '/api/drinks' )
+			.then(function( res ){
+				$scope.drinks 	= res.data;
+				$scope.loading 	= false;
+			}, function( res ){
+				$rootScope.error 	= res.data.message;
+				$scope.loading 		= false;
+			});
 		
 	}]);

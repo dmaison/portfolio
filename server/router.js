@@ -6,6 +6,14 @@ var config 		= require( './config' );
 
 module.exports = function( app, dir ){
 	
+	app.get( '/api/drinks', function( req, res ){
+		fs.readFile('./server/data/drinks.json', function( err, items ){
+            if( err ) return Error.send( res, req.method, 500, '/drinks/', err );
+			res.status( 200 );
+			res.send( items );
+		});
+	});
+	
 	app.get( '/api/presents', function( req, res ){
 		fs.readFile('./server/data/presents.json', function( err, items ){
             if( err ) return Error.send( res, req.method, 500, '/presents/', err );

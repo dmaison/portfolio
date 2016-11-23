@@ -14,8 +14,8 @@ body {
 	box-shadow: 0 5px 5px #000 !important;
 }
 
-.header,
-.header > .content,
+:not(div).header,
+:not(div).header > .content,
 .top.menu .item { font-family: 'Amatica SC' !important; }
 
 #main-menu .item { font-size: 2em; }
