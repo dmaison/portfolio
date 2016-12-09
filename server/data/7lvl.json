@@ -834,7 +834,7 @@
                 "correct"   : false
             },
             {
-                "text"      : "1 gallong for each 500 gallons passing through the meter",
+                "text"      : "1 gallon for each 500 gallons passing through the meter",
                 "correct"   : false
             }
         ]
@@ -966,7 +966,7 @@
         ]
     },
     {
-        "text"  : "Qhat type of time compliance technical order (TCTO) is issued for safety conditions which, if left uncorrected, could result in fatality or serious injury to personnel or extensive damage to or destruction of valuable property",
+        "text"  : "What type of time compliance technical order (TCTO) is issued for safety conditions which, if left uncorrected, could result in fatality or serious injury to personnel or extensive damage to or destruction of valuable property",
         "answers"   : [
             {
                 "text"      : "Immediate action",
