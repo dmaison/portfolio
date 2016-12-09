@@ -1662,7 +1662,7 @@
         "text"  : "What environment regulation establishes \"cradle to grave\" control of hazardous substances?",
         "answers"   : [
             {
-                "text"      : "Resource Concservation and Recovery Act (RCRA)",
+                "text"      : "Resource Conservation and Recovery Act (RCRA)",
                 "correct"   : true
             },
             {
@@ -1806,7 +1806,7 @@
         ]
     },
     {
-        "text"  : "Who may authorized bases to use computer products in lieu of AF Forms 2419 and 2420?",
+        "text"  : "Who may authorize bases to use computer products in lieu of AF Forms 2419 and 2420?",
         "answers"   : [
             {
                 "text"      : "Parent MAJCOM",
