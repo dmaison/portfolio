@@ -23,7 +23,16 @@
 </div>
 
 <div class="ui segment">
-	<div class="ui blue tiny progress" data-value="{{ number }}" data-total="{{ questions.length }}" style="margin-bottom: 0;">
+	<div class="ui blue tiny progress" data-value="{{ number }}" data-total="{{ total }}" style="margin-bottom: 0;">
 		<div class="bar"></div>
+	</div>
+</div>
+
+<div class="ui inverted statistic" style="width: 100%;">
+	<div class="value">
+		{{ score || 0 }} of {{ total }}
+	</div>
+	<div class="label">
+		Score
 	</div>
 </div>

@@ -18,9 +18,9 @@ angular
 		$scope.questions	= [];
 		$scope.answer		= {};
 		$scope.number		= 1;
-		var score			= 0;
+		$scope.score			= 0;
 		var passing 		= 0;
-		var total			= 0;
+		$scope.total			= 0;
 		
 		$http
 			.get( '/api/7lvl' )
@@ -33,8 +33,8 @@ angular
 				
 				$scope.questions	= res.data;
 				$scope.question 	= randomQuestion();
-				total				= $scope.questions.length;
-				passing 			= ( total * .75 );
+				$scope.total		= $scope.questions.length;
+				passing 			= ( $scope.total * .75 );
 				
 				$( '.ui.progress' ).progress({ value: $scope.number });
 				
@@ -47,7 +47,7 @@ angular
 			if( $scope.answer.text == undefined ) return $rootScope.error = 'You must select an answer before continuing...';
 			
 			if( $scope.answer.correct ){
-				++score;
+				++$scope.score;
 			} else {
 				var correct 		= $scope.question.answers.find(function( answer ){
 					return answer.correct;
@@ -59,10 +59,10 @@ angular
 			if( $scope.questions.length > 0 ){
 				$scope.question 	= randomQuestion();
 			} else {
-				if( score >= passing ){
-					$rootScope.success = 'You passed and scored a ' + score + ' out of ' + total;
+				if( $scope.score >= passing ){
+					$rootScope.success = 'You passed and scored a ' + $scope.score + ' out of ' + $scope.total;
 				} else {
-					$rootScope.error = 'You failed and scored a ' + score + ' out of ' + total;
+					$rootScope.error = 'You failed and scored a ' + $scope.score + ' out of ' + $scope.total;
 				}
 			}
 			++$scope.number;
