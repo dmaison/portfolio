@@ -1,3 +1,4 @@
+/* global angular $ */
 angular
 	.module( 'app.study', [] )
 	.config( [ '$routeProvider', '$locationProvider', function( $routeProvider, $locationProvider ){
@@ -33,7 +34,10 @@ angular
 				$scope.questions	= res.data;
 				$scope.question 	= randomQuestion();
 				total				= $scope.questions.length;
-				passing 			= ( total * .75);
+				passing 			= ( total * .75 );
+				
+				$( '.ui.progress' ).progress({ value: $scope.number });
+				
 			},function( err ){
 				$rootScope.error	= err.data.message;
 			});
@@ -45,9 +49,9 @@ angular
 			if( $scope.answer.correct ){
 				++score;
 			} else {
-				var correct 		= $scope.question.answers.filter(function( answer ){
+				var correct 		= $scope.question.answers.find(function( answer ){
 					return answer.correct;
-				})[ 0 ].text;
+				}).text;
 				
 				$rootScope.error	= 'Wrong! The correct answer was, "' + correct + '"';
 			}
@@ -63,6 +67,7 @@ angular
 			}
 			++$scope.number;
 			$scope.answer = {};
+			$( '.ui.progress' ).progress({ value: $scope.number });
 		};
 		
 		$scope.answerSelect = function( answer ){
