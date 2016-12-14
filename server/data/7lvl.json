@@ -234,7 +234,7 @@
         "text"  : "Which gas law declares that cooling a gas decreases its volume?",
         "answers"   : [
             {
-                "text"      : "Charle's law",
+                "text"      : "Charles's law",
                 "correct"   : true
             },
             {
@@ -813,7 +813,7 @@
                 "correct"   : false
             },
             {
-                "text"      : "Clogged of dirty coalescers",
+                "text"      : "Clogged or dirty coalescers",
                 "correct"   : false
             }
         ]
