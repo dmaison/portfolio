@@ -234,7 +234,7 @@
         "text"  : "Which gas law declares that cooling a gas decreases its volume?",
         "answers"   : [
             {
-                "text"      : "Charles's law",
+                "text"      : "Charles' law",
                 "correct"   : true
             },
             {
