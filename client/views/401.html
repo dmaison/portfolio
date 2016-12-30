@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>401 - Unauthorized</title>
+        <link rel="stylesheet" type="text/css" href="css/401.css">
+    </head>
+    <body>
+        <iframe id="nope" src="https://www.youtube.com/embed/fmz-K2hLwSI?autoplay=true" frameborder="0"></iframe>
+        <div id="console">
+            <p>Jurasic Park, System Security Interface</p>
+            <p>Version 4.0.5, Alpha E</p>
+            <p>Ready...</p>
+            <p>&gt; access security</p>
+            <p>access: PERMISSION DENIED.</p>
+            <p>&gt; access security grid</p>
+            <p>access: PERMISSION DENIED.</p>
+            <p>&gt; access main security grid</p>
+            <p>access: PERMISSION DENIED....and....</p>
+        </div>
+        <script>
+            console.error( 'YOU DIDN\'T SAY THE MAGIC WORD!' );
+            youDidntSayTheMagicWord();
+            function youDidntSayTheMagicWord(){
+                window.scrollTo( 0, document.body.scrollHeight );
+                var str     = 'YOU DIDN\'T SAY THE MAGIC WORD!';
+                var text    = document.createElement( 'p' );
+                document.getElementById( 'console' ).appendChild( text );
+                var type = setInterval(function(){
+                    if( str.length == 0 ) clearInterval( type );
+                    ( str[ 0 ] ) ? text.innerHTML += str[ 0 ] : youDidntSayTheMagicWord();
+                    str = str.slice( 1 );
+                }, 10 );
+            }
+        </script>
+    </body>
+</html>

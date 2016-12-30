@@ -47,6 +47,15 @@ angular
 		
 		/* global $ angular */
 		
+		/*$http
+			.get( 'api/console' )
+			.then(function( res ){
+				console.log( '%c' + window.atob( res.data.message ), window.atob( res.data.style ) );
+				console.log( res.data.cipher );
+			}, function( err ){
+				console.error( err.data );
+			});*/
+		
 		$http
 			.get( 'api/menu' )
 			.then(function( res ){

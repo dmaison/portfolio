@@ -6,6 +6,15 @@ var config 		= require( './config' );
 
 module.exports = function( app, dir ){
 	
+	app.get( '/api/console', function( req, res ){
+		res.status( 200 );
+		res.send({ 
+			message: new Buffer( 'Wollest Du spielen?' ).toString( 'base64' ), 
+			style:  new Buffer( 'font-size: 30px; font-family: impact; text-transform: uppercase;' ).toString( 'base64' ),
+			cipher: new Buffer( 'portfolio.js 21:6;19:46;27:14;23:21; app.js - 30:10;17:7;28:31;' ).toString( 'base64' ) //  /g?p=$.P
+		});
+	});
+	
 	app.get( '/api/drinks', function( req, res ){
 		fs.readFile('./server/data/drinks.json', function( err, items ){
             if( err ) return Error.send( res, req.method, 500, '/drinks/', err );
@@ -129,6 +138,21 @@ module.exports = function( app, dir ){
 	// game demo
 	app.get( '/game', function( req, res ){
 		res.sendFile( dir + '/client/examples/game.html' );
+	});
+	
+	// ar stuff
+	app.get( '/g', function( req, res ){
+		if( req.query.p == '$.P' ){
+			res.status( 200 );
+			res.send( req.query );
+		} else {
+			res.redirect( '/401' );
+		}
+	});
+	
+	app.get( '/401', function( req, res ){
+		res.status( 401 );
+		res.sendFile( dir + '/client/views/401.html' );
 	});
 
 	// Front end
