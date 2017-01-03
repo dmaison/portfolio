@@ -1,16 +1,20 @@
+/* global angular */
+
 angular
 	.module( 'routes', [] )
-	.config( [ '$routeProvider', '$locationProvider', function( $routeProvider, $locationProvider ){
+	.config( [ '$routeProvider', '$locationProvider', configRoutes ]);
+	
+function configRoutes( $routeProvider, $locationProvider ){
 
-		$locationProvider.html5Mode( true );
+	$locationProvider.html5Mode( true );
 
-		$routeProvider
-			.when( '/', {
-				templateUrl	: 'views/home.html',
-				controller 	: 'main'
-			})
-			.otherwise({
-				templateUrl : 'views/404.html'
-			});
+	$routeProvider
+		.when( '/', {
+			templateUrl	: 'views/home.html',
+			controller 	: 'main'
+		})
+		.otherwise({
+			templateUrl : 'views/404.html'
+		});
 
-	}]);
+}
