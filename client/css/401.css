@@ -30,3 +30,7 @@ body {
     height: 315px;
     width: 560px;
 }
+
+@media screen and (max-width: 900px) {
+    #nope { display: none; }
+}
