@@ -12,16 +12,16 @@
    	<div class="ui loader"></div>
 </div>
 
-<div class="ui stackable grid">
-	<div class="three wide stretched column" ng-repeat="site in sites">
+<div class="ui stackable four column grid">
+	<div class="stretched column" ng-repeat="site in sites">
 		<div class="ui fluid card">
-			<a href="{{site.url}}" class="image">
+			<a href="{{site.url}}" target="_blank" class="image">
 				<img src="{{site.thumbnail}}">
 			</a>
 			<div class="content">
 				<span class="header">{{site.description}}</span>
 				<div class="meta">
-					<a href="{{site.url}}" class="date">{{site.url}}</a>
+					<a href="{{site.url}}" class="date" target="_blank">{{site.url}}</a>
 				</div>
 			</div>
 			<div class="extra content" ng-repeat="item in site.technologies">

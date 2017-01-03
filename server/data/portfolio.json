@@ -1,12 +1,12 @@
 [
 	{
-		"description": "My Portfolio site",
+		"description": "dave.maison",
 		"url": "http://dave.maison",
 		"thumbnail": "img/portfolio/portfolio.png",
 		"technologies": [
 			{
 				"icon": "code",
-				"description": "Node.js w/ Express.js" 
+				"description": "Node.js w/ Express" 
 			},
 			{
 				"icon": "html5",
@@ -14,19 +14,14 @@
 			},
 			{
 				"icon": "css3",
-				"description": "CSS 3" 
-			},
-			{
-				"icon": "css3",
 				"description": "Semantic UI" 
 			},
 			{
 				"icon": "code",
-				"description": "Javascript/Angular" 
+				"description": "AngularJS" 
 			}
 		]
 	},
-
 	{
 		"description": "interlinkONE, Inc.",
 		"url": "http://www.interlinkone.com",
@@ -50,43 +45,18 @@
 			},
 			{
 				"icon": "code",
-				"description": "Javascript/jQuery" 
+				"description": "jQuery" 
 			}
 		]
 	},
-
-	{
-		"description": "youthand.asia",
-		"url": "http://youthand.asia",
-		"thumbnail": "img/portfolio/youthand.asia.png",
-		"technologies": [
-			{
-				"icon": "html5",
-				"description": "HTML 5"
-			},
-			{
-				"icon": "css3",
-				"description": "CSS 3" 
-			},
-			{
-				"icon": "code",
-				"description": "Javascript" 
-			}
-		]
-	},
-
 	{
 		"description": "MAX",
-		"url": "http://www.marketwithmax.com",
+		"url": "https://app.marketwithmax.com",
 		"thumbnail": "img/portfolio/max.png",
 		"technologies": [
 			{
-				"icon": "server",
-				"description": "PHP"
-			},
-			{
-				"icon": "wordpress",
-				"description": "Wordpress"
+				"icon": "code",
+				"description": "Node.js w/ Express" 
 			},
 			{
 				"icon": "html5",
@@ -94,14 +64,16 @@
 			},
 			{
 				"icon": "css3",
-				"description": "CSS 3" 
+				"description": "Semantic UI" 
 			},
 			{
 				"icon": "code",
-				"description": "Javascript/jQuery" 
+				"description": "AngularJS" 
+			},
+			{
+				"icon": "database",
+				"description": "MongoDB & Redis" 
 			}
 		]
 	}
-  
-
 ]
