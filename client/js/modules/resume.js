@@ -56,7 +56,6 @@ function controllerResume( $scope, $http, $rootScope, $location ) {
 							job.date	= new Date( job.date );
 							job.dateEnd = ( job.dateEnd ) ? new Date( job.dateEnd ) : new Date();
 							job.years	= job.dateEnd.getFullYear() - job.date.getFullYear();
-							console.log( job.date );
 							return job;
 						});
 						$scope.loading = false;
