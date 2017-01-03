@@ -52,7 +52,13 @@ function controllerResume( $scope, $http, $rootScope, $location ) {
 				$http
 					.get( '/api/experience/' )
 					.then(function( res ){
-						$scope.jobs = res.data;
+						$scope.jobs = res.data.map(function( job ){
+							job.date	= new Date( job.date );
+							job.dateEnd = ( job.dateEnd ) ? new Date( job.dateEnd ) : new Date();
+							job.years	= job.dateEnd.getFullYear() - job.date.getFullYear();
+							console.log( job.date );
+							return job;
+						});
 						$scope.loading = false;
 					}, function( err ){
 						$rootScope.error = err.data.message;

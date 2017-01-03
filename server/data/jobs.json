@@ -3,7 +3,7 @@
 		"title": "Senior Developer / Tech Support",
 		"employer": "interlinkONE, inc.",
 		"site": "http://interlinkone.com",
-		"years": "5",
+		"date": "6/1/2013",
 		"description": "Used skills with SQL, ASP, XHTML, CSS, Javascript, and AJAX, while working as part of a team to develop innovative logistics, marketing, and contact management technologies.",
 		"bullets": [
 			"Designed and implemented development conventions for new application",
@@ -19,7 +19,7 @@
 		"title": "Fuels Specialist",
 		"employer": "USAF Reserves",
 		"site": "http://www.airforce.com/careers/detail/fuels-specialist/",
-		"years": "3",
+		"date": "6/1/2013",
 		"description": "Worked with the mission operations control center at Dover AFB & Westover ARB to coordinate and dispatch personnel to successfully refuel aircraft in a timely and efficient manner. Also, maintained accurate billing records and accounting for all fuels and cryogenics products.",
 		"bullets": [
 			"Processed over 12 thousand fueling transactions, ensuring timely and accurate billing",
@@ -34,7 +34,8 @@
 		"title": "Fuels Specialist",
 		"employer": "USAF",
 		"site": "http://www.airforce.com/careers/detail/fuels-specialist/",
-		"years": "4",
+		"date": "12/1/2009",
+		"dateEnd" : "6/1/2013",
 		"description": "Worked directly with the Fuels Service Center at Dover AFB and Westover ARB to distribute jet fuel and ground fuels, as well as issuing cryogenics products in a timely manner. Also, performed hydrant systems operations, including refuels, defuels, flushes, transfers, and receipts.",
 		"bullets": []
 	}
