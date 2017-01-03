@@ -47,3 +47,7 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Minified files
+client/css/dave.maison.min.css
+client/js/dave.maison.min.js
