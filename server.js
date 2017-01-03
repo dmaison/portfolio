@@ -28,7 +28,8 @@ app.use( express.static(__dirname + '/client') );
 /* ROUTES -------------------- */
 
 // set routes
-require( './server/router' )( app, __dirname );
+app.use( '/api', require( './server/router.api' ) );
+app.use( '/', require( './server/router' ) );
 
 /* START APP -------------------- */
 app.listen( port );
