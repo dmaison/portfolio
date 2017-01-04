@@ -136,7 +136,7 @@
 		<div class="field">
 			<label>Select Single Icon</label>
 			<dropdown ng-model="dropValue" placeholder="Please select a single icon">
-				<choice ng-repeat="item in drops" choice-value="item.icon" display="item.icon"></choice>
+				<div class="item" ng-repeat="item in drops" data-value="{{item.icon}}">{{ item.icon }}</div>
 			</dropdown>
 			<div class="ui info message">{{dropValue}} <i class="{{dropValue}} icon"></i></div>
 		</div>
@@ -144,7 +144,7 @@
 		<div class="field">
 			<label>Select Multiple Icons</label>
 			<dropdown ng-model="dropValueMulti" placeholder="Please select multiple icons" multiple="true">
-				<choice ng-repeat="item in drops" choice-value="item.icon" display="item.icon"></choice>
+				<div class="item" ng-repeat="item in drops" data-value="{{item.icon}}">{{ item.icon }}</div>
 			</dropdown>
 			<div class="ui info message">{{dropValueMulti}} <div ng-repeat="item in dropValueMulti"><i class="{{item}} icon"></i></div></div>
 		</div>
@@ -153,7 +153,7 @@
 &lt;div class="field">
 	&lt;label>Select Single Icon&lt;/label>
 	&lt;dropdown ng-model="dropValue" placeholder="Please select a single icon">
-		&lt;choice ng-repeat="item in drops" choice-value="item.icon" display="item.icon">&lt;/choice>
+		&lt;div class="item" ng-repeat="item in drops" data-value="item.icon">{{item.icon}}&lt;/div>
 	&lt;/dropdown>
 	&lt;div class="ui info message">{{dropValue}} &lt;i class="{{dropValue}} icon">&lt;/i>&lt;/div>
 &lt;/div>
@@ -161,7 +161,7 @@
 &lt;div class="field">
 	&lt;label>Select Multiple Icons&lt;/label>
 	&lt;dropdown ng-model="dropValueMulti" multiple="true">
-		&lt;choice ng-repeat="item in drops" choice-value="item.icon" display="item.icon">&lt;/choice>
+		&lt;div class="item" ng-repeat="item in drops" data-value="item.icon">{{item.icon}}&lt;/div>
 	&lt;/dropdown>
 	&lt;div class="ui info message">{{dropValueMulti}} &lt;div ng-repeat="item in dropValueMulti">&lt;i class="{{item}} icon">&lt;/i>&lt;/div>&lt;/div>
 &lt;/div>

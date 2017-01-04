@@ -1,5 +1,5 @@
-<div class="ui selection dropdown">
-    <input type="hidden" name="name">
+<div class="ui selection dropdown" ng-class="{ 'multiple' : multiple, 'fluid' : fluid, 'search' : search, 'additions' : additions }">
+    <input type="hidden" name="input">
     <i class="dropdown icon"></i>
     <div class="default text">{{placeholder}}</div>
     <div class="menu" ng-transclude></div>
