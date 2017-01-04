@@ -10,7 +10,6 @@
 	function controllerResume( $scope, $http, $rootScope, $location, resume ) {
 			
 		$scope.page 	= ( $location.hash() != '' ) ? $location.hash() : 'about';
-		$scope.loading	= true;
 		
 		$scope.navigate = function( page ){
 			$scope.page = page;
@@ -41,8 +40,6 @@
 				}
 				
 			}, function( err, res ){
-				
-				$scope.loading	= false;
 				
 				if( err ) $rootScope.error = err;
 				

@@ -44,6 +44,8 @@
 				console.error( err.data );
 			});*/
 		
+		$rootScope.loading = false;
+		
 		$http
 			.get( 'api/menu' )
 			.then(function( res ){
@@ -54,7 +56,6 @@
 		
 		$rootScope.$watch( 'error', function( value ){
 			if( !value ) return;
-			$rootScope.loading = false;
 			$( '#error' )
 				.modal({
 					onHide: function(){
@@ -67,9 +68,6 @@
 		
 		$rootScope.$watch( 'success', function( value ){
 			if( !value ) return;
-			
-			$rootScope.loading = false;
-			
 			$( '#success' )
 				.modal({
 					onHide: function(){
@@ -92,4 +90,5 @@
 		});
 		
 	}
+	
 })();

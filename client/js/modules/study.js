@@ -10,7 +10,6 @@
 	function controllerStudy( $scope, $http, $rootScope, study ) {
 	
 		var passing 		= 0;
-		$scope.loading		= true;
 		$scope.questions	= [];
 		$scope.answer		= {};
 		$scope.number		= 1;
@@ -20,7 +19,6 @@
 		study
 			.getQuestions()
 			.then(function( res ){
-				$scope.loading 		= false;
 				
 				res.data.forEach(function( question ){
 					question.answers = shuffle( question.answers );

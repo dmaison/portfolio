@@ -21,7 +21,6 @@
 		
 	function controllerMain( $scope, $http, $rootScope, dna, resume ) {
 		
-		$scope.loading		= true;
 		$scope.percents 	= [];
 		$scope.ethnicities	= [];
 		$scope.time 		= time;
@@ -50,8 +49,6 @@
 				}
 				
 			}, function( err, res ){
-				
-				$scope.loading = false;
 				
 				if( err ) return $rootScope.error = err;
 				

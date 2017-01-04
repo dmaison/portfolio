@@ -10,17 +10,14 @@
 	
 	function controllerBallmer( $scope, $http, $rootScope, chasingBallmer ){
 		
-		$scope.loading 	= true;
 		$scope.drinks	= [];
 		
 		chasingBallmer
 			.getDrinks()
 			.then(function( res ){
 				$scope.drinks 	= res.data;
-				$scope.loading 	= false;
 			}, function( res ){
 				$rootScope.error 	= res.data.message;
-				$scope.loading 		= false;
 			});
 		
 	}
