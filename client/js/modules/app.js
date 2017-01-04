@@ -1,4 +1,4 @@
-/* global $ angular */
+/* global $ angular async */
 
 (function() {
     'use strict';
@@ -34,24 +34,32 @@
 		.run([ '$rootScope', '$http', '$window', runApp ]);
 	
 	function runApp( $rootScope, $http, $window ) {
-		
-		/*$http
-			.get( 'api/console' )
-			.then(function( res ){
-				console.log( '%c' + window.atob( res.data.message ), window.atob( res.data.style ) );
-				console.log( res.data.cipher );
-			}, function( err ){
-				console.error( err.data );
-			});*/
-		
-		$rootScope.loading = false;
-		
-		$http
-			.get( 'api/menu' )
-			.then(function( res ){
-				$rootScope.menu = res.data;
-			}, function( err ){
-				$rootScope.error = err.data.message;	
+	
+		async
+			.parallel({
+				menu: function( callback ){
+					$http
+						.get( 'api/menu' )
+						.then(function( res ){
+							 return callback( null, res.data );
+						}, function( err ){
+							return callback( err.data.message, null );
+						});
+				},
+				console: function( callback ){
+					$http
+						.get( 'api/console' )
+						.then(function( res ){
+							 return callback( null, res.data );
+						}, function( err ){
+							return callback( err.data.message, null );
+						});
+				}
+			}, function( err, res ){
+				if( err ) $rootScope.error = err;
+				$rootScope.menu = res.menu;
+				console.log( '%c' + window.atob( res.console.message ), window.atob( res.console.style ) );
+				console.log( res.console.cipher );
 			});
 		
 		$rootScope.$watch( 'error', function( value ){

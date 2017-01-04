@@ -12,7 +12,7 @@ router.get( '/game', function( req, res ){
 router.get( '/g', function( req, res ){
 	if( req.query.p == '$.P' ){
 		res.status( 200 );
-		res.send( req.query );
+		res.sendFile( path + '/client/views/stegosaurus.html' );
 	} else {
 		res.redirect( '/401' );
 	}

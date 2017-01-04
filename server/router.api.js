@@ -8,11 +8,19 @@ var express 	= require( 'express' );
 var router		= express.Router();
 
 router.get( '/console', function( req, res ){
+	var list =	'./js/modules/portfolio.js:13:5;\n' +
+				'./js/directives/dropdown.js:57:35;\n' +
+				'./index.html:66:54\n' +
+				'./js/modules/examples.js:12:40\n' +
+				'./js/factories/chasing-ballmer.js:14:24\n' +
+				'./css/style.css:44:29\n' +
+				'./views/grab-em-by-the-presents.html:4:19';
+				
 	res.status( 200 );
 	res.send({ 
-		message: new Buffer( 'Wollest Du spielen?' ).toString( 'base64' ), 
+		message: new Buffer( 'portfolio encryption puzzle' ).toString( 'base64' ), 
 		style:  new Buffer( 'font-size: 30px; font-family: impact; text-transform: uppercase;' ).toString( 'base64' ),
-		cipher: new Buffer( 'portfolio.js 21:6;19:46;27:14;23:21; router.js - 30:10;17:7;28:31;' ).toString( 'base64' ) //  /g?p=$.P
+		cipher: new Buffer( 'GET: \n' + list ).toString( 'base64' ) //  /g?p=$.P
 	});
 });
 
