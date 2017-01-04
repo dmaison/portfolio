@@ -48,10 +48,10 @@
 			if( !input.value ) input.value = scope.model;
 		});
 		
-		if( scope.multiple ) dropdown.className += ' multiple';
-		if( scope.search ) dropdown.className += ' search';
-		if( scope.fluid ) dropdown.className += ' fluid';
-		if( scope.allowAdditions ) dropdown.className += ' additions';
+		if( scope.multiple ) dropdown.classList.add( 'multiple' );
+		if( scope.search ) dropdown.classList.add( 'search' );
+		if( scope.fluid ) dropdown.classList.add( 'fluid' );
+		if( scope.allowAdditions ) dropdown.classList.add( 'additions' );
 		
 		input.onchange = function(){
 			var value = ( scope.multiple ) ? this.value.split( ',' ) : this.value;
