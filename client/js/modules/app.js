@@ -16,8 +16,7 @@
 		'angulartics', 
 		'angulartics.google.analytics',
 		
-		//controllers
-		'app.routes', 
+		//modules
 		'app.main', 
 		'app.resume', 
 		'app.portfolio', 

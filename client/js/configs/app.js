@@ -5,12 +5,20 @@
     
 	angular
 		.module( 'app' )
-		.config([ '$analyticsProvider', '$httpProvider', configApp ]);
+		.config([ '$analyticsProvider', '$httpProvider', '$routeProvider', '$locationProvider', config ]);
 	
-	function configApp( $analyticsProvider, $httpProvider ){
+	function config( $analyticsProvider, $httpProvider, $routeProvider, $locationProvider ){
 		$analyticsProvider.firstPageview( true );
 		$analyticsProvider.withAutoBase( true );
 		$httpProvider.interceptors.push([ '$q', '$location', '$rootScope', interceptor ]);
+		
+		$locationProvider.html5Mode( true );
+		
+		$routeProvider
+			.otherwise({
+				templateUrl : 'views/404.html'
+			});
+		
 	}
 	
 	function interceptor( $q, $location, $rootScope ){
