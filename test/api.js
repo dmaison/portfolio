@@ -185,7 +185,7 @@ describe( 'API Routes', function(){
 			});
 		});
 		
-		it( 'Returns an array of objects', function( done ){
+		it( 'Returns an object', function( done ){
 			get( route, function( error, res, body ) {
 				expect( error ).to.equal( null );
 				body = JSON.parse( body ); 
