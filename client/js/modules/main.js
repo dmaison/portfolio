@@ -1,23 +1,8 @@
-/* global angular */
+/* global angular async */
 
 (function() {
     'use strict';
     
-    var USAF			= {
-		start	: new Date( '12/1/2009' ).getFullYear(),
-		end		: new Date( '6/1/2013' ).getFullYear()
-	};
-	
-	var interlink		= {
-		start	: new Date( '6/1/2013' ).getFullYear(),
-		end		: new Date().getFullYear()
-	};
-	
-	var USAFR		= {
-		start	: new Date( '6/1/2013' ).getFullYear(),
-		end		: new Date().getFullYear()
-	};
-	
 	var time	= {
 		labels	: [ 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday' ],
 		series	: [ 'Work', 'Krav Maga', 'Gym', 'Girlfriend', 'Band Practice' ],
@@ -32,40 +17,67 @@
     
 	angular
 		.module( 'app.main', [ 'chart.js' ] )
-		.controller( 'main', [ '$scope', '$http', '$rootScope', 'dna', controllerMain ]);
+		.controller( 'main', [ '$scope', '$http', '$rootScope', 'dna', 'resume', controllerMain ]);
 		
-	function controllerMain( $scope, $http, $rootScope, dna ) {
+	function controllerMain( $scope, $http, $rootScope, dna, resume ) {
 		
 		$scope.loading		= true;
 		$scope.percents 	= [];
 		$scope.ethnicities	= [];
+		$scope.time 		= time;
 		
-		dna
-			.get()
-			.then(function( res ){
-				$scope.loading 	= false;
-				$scope.dna 		= res.data;
-				res.data.composition.forEach(function( compote ){
+		async
+			.parallel({
+				
+				dna: function( callback ){
+					dna
+						.get()
+						.then(function( res ){
+							return callback( null, res.data );
+						}, function( err ){
+							return callback( err.data.message, null );
+						});
+				},
+				
+				experience: function( callback ){
+					resume
+						.getExperience()
+						.then(function( res ){
+							return callback( null, res.data );
+						}, function( err ){
+							return callback( err.data.message, null );
+						});
+				}
+				
+			}, function( err, res ){
+				
+				$scope.loading = false;
+				
+				if( err ) return $rootScope.error = err;
+				
+				res.dna.composition.forEach(function( compote ){
 					$scope.percents.push( compote.percentage );
 					$scope.ethnicities.push( compote.ethnicity );
 				});
-			}, function( err ){
-				$rootScope.error	= err.data.message;
-				$scope.loading 		= false;
+				
+				$scope.experience = {
+					labels	: [ 'Years' ],
+					series	: res.experience.map( mapCompanies ),
+					data	: res.experience.map( mapYears )
+				};
+				
 			});
-			
-		$scope.time = time;
 		
-		$scope.experience = {
-			labels	: [ 'Years' ],
-			series	: [ 'USAF', 'interlinkONE', 'USAF Reserves' ],
-			data	: [
-				[ ( USAF.end - USAF.start ) ],
-				[ ( interlink.end - interlink.start + 3 ) ],
-				[ ( USAFR.end - USAFR.start ) ]
-			]
-		};
-		
+	}
+	
+	function mapCompanies( job ){
+		return job.employer;
+	}
+	
+	function mapYears( job ){
+		job.date	= new Date( job.date );
+		job.dateEnd = ( job.dateEnd ) ? new Date( job.dateEnd ) : new Date();
+		return [ job.dateEnd.getFullYear() - job.date.getFullYear() ];
 	}
 	
 })();

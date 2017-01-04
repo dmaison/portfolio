@@ -1,4 +1,4 @@
-/* global angular */
+/* global angular async */
 
 (function() {
     'use strict';
@@ -17,50 +17,47 @@
 			$location.hash( page );
 		};
 		
-		$scope.$watch( 'page', function( value ){
-			
-			switch( value ){
+		async
+			.parallel({
 				
-				case 'expertise':
-					if( $scope.languages ) break;
-					
+				expertise: function( callback ){
 					resume
 						.getQualifications()
 						.then(function( res ){
-							$scope.languages = res.data;
-							$scope.loading = false;
+							return callback( null, res.data );
 						}, function( err ){
-							$rootScope.error = err.data.message;
-							$scope.loading = false;
+							return callback( err.data.message, null );
 						});
-					break;
-					
-				case 'experience':
-					if( $scope.jobs ) break;
-					$scope.loading = true;
+				},
+				
+				experience: function( callback ){
 					resume
 						.getExperience()
 						.then(function( res ){
-							$scope.jobs = res.data.map(function( job ){
-								job.date	= new Date( job.date );
-								job.dateEnd = ( job.dateEnd ) ? new Date( job.dateEnd ) : new Date();
-								job.years	= job.dateEnd.getFullYear() - job.date.getFullYear();
-								return job;
-							});
-							$scope.loading = false;
+							return callback( null, res.data );
 						}, function( err ){
-							$rootScope.error = err.data.message;
-							$scope.loading = false;
+							return callback( err.data.message, null );
 						});
-					break;
-					
-				default:
-					$scope.loading = false;
-					break;
-			}
-			
-		});
+				}
+				
+			}, function( err, res ){
+				
+				$scope.loading	= false;
+				
+				if( err ) $rootScope.error = err;
+				
+				$scope.jobs 		= res.experience.map( mapJobs );
+				$scope.languages	= res.expertise;
+				
+			});
 		
+	}
+	
+	function mapJobs( job ){
+		job.date	= new Date( job.date );
+		job.dateEnd = ( job.dateEnd ) ? new Date( job.dateEnd ) : new Date();
+		job.years	= job.dateEnd.getFullYear() - job.date.getFullYear();
+		return job;
 	}
 	
 })();

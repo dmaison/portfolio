@@ -9,6 +9,7 @@
     "angulartics": "~0.20.1",
     "angulartics-google-analytics": "~0.1.1",
     "animate.css": "latest",
-    "semantic-ui": "latest"
+    "semantic-ui": "latest",
+    "async": "^2.1.4"
   }
 }
