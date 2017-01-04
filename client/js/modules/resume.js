@@ -5,9 +5,9 @@
     
 	angular
 		.module( 'app.resume', [] )
-		.controller( 'resume', [ '$scope', '$http', '$rootScope', '$location', controllerResume ]);
+		.controller( 'resume', [ '$scope', '$http', '$rootScope', '$location', 'resume', controllerResume ]);
 	
-	function controllerResume( $scope, $http, $rootScope, $location ) {
+	function controllerResume( $scope, $http, $rootScope, $location, resume ) {
 			
 		$scope.page 	= ( $location.hash() != '' ) ? $location.hash() : 'about';
 		$scope.loading	= true;
@@ -24,8 +24,8 @@
 				case 'expertise':
 					if( $scope.languages ) break;
 					
-					$http
-						.get( '/api/qualifications/' )
+					resume
+						.getQualifications()
 						.then(function( res ){
 							$scope.languages = res.data;
 							$scope.loading = false;
@@ -38,8 +38,8 @@
 				case 'experience':
 					if( $scope.jobs ) break;
 					$scope.loading = true;
-					$http
-						.get( '/api/experience/' )
+					resume
+						.getExperience()
 						.then(function( res ){
 							$scope.jobs = res.data.map(function( job ){
 								job.date	= new Date( job.date );

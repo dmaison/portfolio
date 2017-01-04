@@ -4,16 +4,16 @@
     
 	angular
 		.module( 'app.dna', [ 'chart.js' ] )
-		.controller( 'dna', [ '$scope', '$http', '$rootScope', controllerDNA ]);
+		.controller( 'dna', [ '$scope', '$http', '$rootScope', 'dna', controllerDNA ]);
 		
-	function controllerDNA( $scope, $http, $rootScope ) {
+	function controllerDNA( $scope, $http, $rootScope, dna ) {
 		
 		$scope.loading		= true;
 		$scope.percents 	= [];
 		$scope.ethnicities	= [];
 		
-		$http
-			.get( '/api/dna' )
+		dna
+			.get()
 			.then(function( res ){
 				$scope.loading 	= false;
 				$scope.dna 		= res.data;

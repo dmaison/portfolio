@@ -5,14 +5,14 @@
     
 	angular
 		.module( 'app.portfolio', [] )
-		.controller( 'portfolio', [ '$scope', '$http', '$rootScope', controllerPortfolio ]);
+		.controller( 'portfolio', [ '$scope', '$http', '$rootScope', 'portfolio', controllerPortfolio ]);
 	
-	function controllerPortfolio( $scope, $http, $rootScope ) {
+	function controllerPortfolio( $scope, $http, $rootScope, portfolio ) {
 		
 		$scope.loading = true;
 		
-		$http
-			.get( '/api/portfolio' )
+		portfolio
+			.get()
 			.then(function( res ){
 				$scope.loading	= false;
 				$scope.sites	= res.data;

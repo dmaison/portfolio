@@ -5,16 +5,16 @@
     
 	angular
 		.module( 'app.chasingBallmer', [] )
-		.controller( 'chasingBallmer', [ '$scope', '$http', '$rootScope', controllerBallmer ]);
+		.controller( 'chasingBallmer', [ '$scope', '$http', '$rootScope', 'chasingBallmer', controllerBallmer ]);
 		
 	
-	function controllerBallmer( $scope, $http, $rootScope ){
+	function controllerBallmer( $scope, $http, $rootScope, chasingBallmer ){
 		
 		$scope.loading 	= true;
 		$scope.drinks	= [];
 		
-		$http
-			.get( '/api/drinks' )
+		chasingBallmer
+			.getDrinks()
 			.then(function( res ){
 				$scope.drinks 	= res.data;
 				$scope.loading 	= false;

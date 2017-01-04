@@ -5,9 +5,9 @@
 
 	angular
 		.module( 'app.examples', [] )
-		.controller( 'examples', [ '$scope', '$http', '$rootScope', '$location', controllerExamples ]);
+		.controller( 'examples', [ '$scope', '$http', '$rootScope', '$location', 'resume', controllerExamples ]);
 	
-	function controllerExamples( $scope, $http, $rootScope, $location ){
+	function controllerExamples( $scope, $http, $rootScope, $location, resume ){
 		
 		$scope.loading 			= true;
 		$scope.page				= ( $location.hash() != '' ) ? $location.hash() : 'paginate';
@@ -19,8 +19,8 @@
 			$location.hash( page );
 		};
 		
-		$http
-			.get( '/api/qualifications/' )
+		resume
+			.getQualifications()
 			.then(function( res ){
 				$scope.items	= res.data;
 				$scope.drops	= res.data;

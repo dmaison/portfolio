@@ -5,14 +5,14 @@
     
 	angular
 		.module( 'app.presents', [] )
-		.controller( 'presents', [ '$scope', '$http', '$rootScope', controllerPresents ]);
+		.controller( 'presents', [ '$scope', '$http', '$rootScope', 'presents', controllerPresents ]);
 	
-	function controllerPresents( $scope, $http, $rootScope ) {
+	function controllerPresents( $scope, $http, $rootScope, presents ) {
 	
 		$rootScope.loading = true;
 		
-		$http
-			.get( '/api/presents' )
+		presents
+			.getBuyers()
 			.then(function( res ){
 				$rootScope.loading 	= false;
 				$scope.pairings		= res.data.sort(function( a, b ){

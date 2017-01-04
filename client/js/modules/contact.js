@@ -5,9 +5,9 @@
     
 	angular
 		.module( 'app.contact', [] )
-		.controller( 'contact', [ '$scope', '$http', '$rootScope', controllerContact ]);
+		.controller( 'contact', [ '$scope', '$http', '$rootScope', 'contact', controllerContact ]);
 	
-	function controllerContact( $scope, $http, $rootScope ) {
+	function controllerContact( $scope, $http, $rootScope, contact ) {
 		
 		$scope.loading 	= false;
 		$scope.email	= {};
@@ -17,8 +17,8 @@
 			if( !form.$valid  ) return;
 			$scope.loading = true;
 			
-			$http
-				.post( '/api/contact', $scope.email )
+			contact
+				.send( $scope.email )
 				.then(function( res ){
 					$rootScope.success 	= res.data.message;
 					$scope.loading 		= false;

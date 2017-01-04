@@ -5,20 +5,20 @@
     
 	angular
 		.module( 'app.study', [] )
-		.controller( 'study', [ '$scope', '$http', '$rootScope', controllerStudy ]);
+		.controller( 'study', [ '$scope', '$http', '$rootScope', 'study', controllerStudy ]);
 	
-	function controllerStudy( $scope, $http, $rootScope ) {
+	function controllerStudy( $scope, $http, $rootScope, study ) {
 	
+		var passing 		= 0;
 		$scope.loading		= true;
 		$scope.questions	= [];
 		$scope.answer		= {};
 		$scope.number		= 1;
 		$scope.score		= 0;
-		var passing 		= 0;
 		$scope.total		= 0;
 		
-		$http
-			.get( '/api/7lvl' )
+		study
+			.getQuestions()
 			.then(function( res ){
 				$scope.loading 		= false;
 				
@@ -33,7 +33,7 @@
 				
 				$( '.ui.progress' ).progress({ value: $scope.number });
 				
-			},function( err ){
+			}, function( err ){
 				$rootScope.error	= err.data.message;
 			});
 			
@@ -77,24 +77,24 @@
 			return question;
 		}
 		
-		function shuffle( array ) {
-			var currentIndex = array.length, temporaryValue, randomIndex;
+	}
+	
+	function shuffle( array ) {
+		var currentIndex = array.length, temporaryValue, randomIndex;
+		
+		while( 0 !== currentIndex ){
 			
-			while( 0 !== currentIndex ){
-				
-				// Pick a remaining element...
-				randomIndex = Math.floor(Math.random() * currentIndex);
-				currentIndex -= 1;
-				
-				// And swap it with the current element.
-				temporaryValue = array[currentIndex];
-				array[currentIndex] = array[randomIndex];
-				array[randomIndex] = temporaryValue;
-			}
+			// Pick a remaining element...
+			randomIndex = Math.floor( Math.random() * currentIndex );
+			currentIndex -= 1;
 			
-			return array;
+			// And swap it with the current element.
+			temporaryValue			= array[ currentIndex ];
+			array[ currentIndex ]	= array[ randomIndex ];
+			array[ randomIndex ]	= temporaryValue;
 		}
 		
+		return array;
 	}
 	
 })();
