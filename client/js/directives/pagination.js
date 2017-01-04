@@ -4,7 +4,7 @@
 	'use strict';
 	
 	angular
-		.module( 'pagination', [])
+		.module( 'app.examples' )
 		.directive( 'paginate', directive );
 		
 	function directive() {

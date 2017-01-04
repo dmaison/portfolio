@@ -4,7 +4,7 @@
     'use strict';
     
 	angular
-		.module( 'dropdown', [])
+		.module( 'app.examples' )
 		.directive( 'dropdown', directiveDropdown )
 		.directive( 'choice', directiveChoice );
 		
@@ -56,7 +56,7 @@
 		input.onchange = function(){
 			var value = ( scope.multiple ) ? this.value.split( ',' ) : this.value;
 			scope.model = value;
-			scope.$apply();
+			if( !scope.$$phase ) scope.$apply();
 			if( typeof scope.change == 'function' ) scope.change();
 		};
 	}

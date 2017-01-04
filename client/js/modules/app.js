@@ -4,11 +4,6 @@
     'use strict';
     
 	var modules = [
-			
-		//directives
-		'pagination', 
-		'dropdown', 
-		'semantic', 
 		
 		//libs
 		'ngRoute', 
