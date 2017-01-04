@@ -33,7 +33,7 @@
 		.run([ '$rootScope', '$http', '$window', runApp ]);
 	
 	function runApp( $rootScope, $http, $window ) {
-	
+		
 		async
 			.parallel({
 				menu: function( callback ){
