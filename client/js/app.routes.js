@@ -3,7 +3,7 @@
     'use strict';
     
 	angular
-		.module( 'routes', [] )
+		.module( 'app.routes', [] )
 		.config( [ '$routeProvider', '$locationProvider', configRoutes ]);
 	
 	function configRoutes( $routeProvider, $locationProvider ){
