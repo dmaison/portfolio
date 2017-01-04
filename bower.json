@@ -11,5 +11,6 @@
     "animate.css": "latest",
     "semantic-ui": "latest",
     "async": "^2.1.4"
-  }
+  },
+  "private": true
 }
