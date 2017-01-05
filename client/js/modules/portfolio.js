@@ -4,19 +4,6 @@
     'use strict';
     
 	angular
-		.module( 'app.portfolio', [] )
-		.controller( 'portfolio', [ '$scope', '$http', '$rootScope', 'portfolio', controllerPortfolio ]);
-	
-	function controllerPortfolio( $scope, $http, $rootScope, portfolio ) {
-		
-		portfolio
-			.get()
-			.then(function( res ){
-				$scope.sites	= res.data;
-			}, function( err ){
-				$rootScope.error	= err.data.message;
-			});
-		
-	}
+		.module( 'app.portfolio', [] );
 	
 })();
