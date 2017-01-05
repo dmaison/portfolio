@@ -5,9 +5,9 @@
     
     angular
         .module( 'app.contact' )
-        .factory( 'contact', [ '$http', contact ]);
+        .factory( 'contact', [ '$http', factory ]);
     	
-    function contact( $http ) {
+    function factory( $http ) {
         
         return {
             send: function( email ) {

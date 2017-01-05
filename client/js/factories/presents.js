@@ -5,9 +5,9 @@
     
     angular
         .module( 'app.presents' )
-        .factory( 'presents', [ '$http', presents ]);
+        .factory( 'presents', [ '$http', factory ]);
     	
-    function presents( $http ) {
+    function factory( $http ) {
         
         return {
             getBuyers: function() {

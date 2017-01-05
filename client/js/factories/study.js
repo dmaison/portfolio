@@ -5,9 +5,9 @@
     
     angular
         .module( 'app.study' )
-        .factory( 'study', [ '$http', study ]);
+        .factory( 'study', [ '$http', factory ]);
     	
-    function study( $http ) {
+    function factory( $http ) {
         
         return {
             getQuestions: function() {

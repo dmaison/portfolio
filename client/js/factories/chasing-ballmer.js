@@ -5,9 +5,9 @@
     
     angular
         .module( 'app.chasingBallmer' )
-        .factory( 'chasingBallmer', [ '$http', chasingBallmer ]);
+        .factory( 'chasingBallmer', [ '$http', factory ]);
     	
-    function chasingBallmer( $http ) {
+    function factory( $http ) {
         
         return {
             getDrinks: function() {

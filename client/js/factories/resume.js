@@ -5,9 +5,9 @@
     
     angular
         .module( 'app.resume' )
-        .factory( 'resume', [ '$http', resume ]);
+        .factory( 'resume', [ '$http', factory ]);
     	
-    function resume( $http ) {
+    function factory( $http ) {
         
         return {
             getQualifications: function() {

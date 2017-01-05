@@ -5,9 +5,9 @@
     
     angular
         .module( 'app.portfolio' )
-        .factory( 'portfolio', [ '$http', portfolio ]);
+        .factory( 'portfolio', [ '$http', factory ]);
     	
-    function portfolio( $http ) {
+    function factory( $http ) {
         
         return {
             get: function() {

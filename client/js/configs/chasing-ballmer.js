@@ -4,9 +4,9 @@
     
 	angular
 		.module( 'app.chasingBallmer' )
-		.config( [ '$routeProvider', '$locationProvider', routes ]);
+		.config( [ '$routeProvider', '$locationProvider', config ]);
 	
-	function routes( $routeProvider, $locationProvider ){
+	function config( $routeProvider, $locationProvider ){
 		
 		$locationProvider.html5Mode( true );
 		

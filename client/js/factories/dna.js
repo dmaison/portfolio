@@ -5,9 +5,9 @@
     
     angular
         .module( 'app.dna' )
-        .factory( 'dna', [ '$http', dna ]);
+        .factory( 'dna', [ '$http', factory ]);
     	
-    function dna( $http ) {
+    function factory( $http ) {
         
         return {
             get: function() {
