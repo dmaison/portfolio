@@ -36,44 +36,11 @@
 				console.log( res.console.cipher );
 			});
 		
-		$rootScope.$watch( 'error', function( value ){
-			if( !value ) return;
-			$( '#error' )
-				.modal({
-					onHide: function(){
-						$rootScope.error = undefined;
-						$rootScope.$apply();
-					}
-				})
-				.modal( 'show' );
-		});
-		
-		$rootScope.$watch( 'success', function( value ){
-			if( !value ) return;
-			$( '#success' )
-				.modal({
-					onHide: function(){
-						$rootScope.success 	= undefined;
-						$rootScope.$apply();
-					}
-				})
-				.modal( 'show' );
-		});
-		
 		$rootScope.width = $window.innerWidth;
 		
 		angular.element( $window ).bind( 'resize', function(){
 			$rootScope.width = $window.innerWidth;
 			$rootScope.$digest();
-		});
-		
-		$rootScope.$watch( 'width', function( width ){
-			$rootScope.isMobile = ( width <= 768 );
-			
-			if( $rootScope.isMobile ){
-				$( '#mobile-menu' ).dropdown();
-			}
-			
 		});
 		
 	}

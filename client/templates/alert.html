@@ -1,0 +1,17 @@
+<div class="ui modal" id="alert">
+    <div class="header" ng-if="success">
+        <i class="green check circle icon"></i>
+        Success
+    </div>
+    <div class="header" ng-if="error">
+        <i class="red ban icon"></i>
+        Error
+    </div>
+    <div class="center aligned content" ng-transclude></div>
+    <div class="center aligned actions">
+        <div class="ui primary ok labeled icon button">
+            <i class="check icon"></i>
+            Acknowledge
+        </div>
+    </div>
+</div>

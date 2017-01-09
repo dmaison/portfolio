@@ -13,6 +13,7 @@
 		'angulartics.google.analytics',
 		
 		//modules
+		'app.alert',
 		'app.main', 
 		'app.resume', 
 		'app.portfolio', 

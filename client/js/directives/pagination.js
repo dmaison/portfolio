@@ -10,7 +10,7 @@
 	function directive() {
 		return {
 			restrict: 'E',
-			templateUrl: 'js/directives/templates/pagination.html',
+			templateUrl: 'templates/pagination.html',
 			scope: {
 				list: 			'=',
 				itemsPerPage: 	'=',

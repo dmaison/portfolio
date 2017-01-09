@@ -12,7 +12,7 @@
 			restrict: 'E',
 			transclude: true,
 			replace: true,
-			templateUrl: 'js/directives/templates/dropdown.html',
+			templateUrl: 'templates/dropdown.html',
 			scope: {
 				model: 			'=ngModel',
 				placeholder: 	'@',
