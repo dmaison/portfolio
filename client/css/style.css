@@ -19,6 +19,7 @@ body {
 .top.menu .item { font-family: 'Amatica SC' !important; }
 
 #main-menu .item { font-size: 2em; }
+#main-menu #mobile-menu .item { font-size: 1.5rem !important; }
 
 #main-menu .item:nth-child( 3 ):hover { background-color: rgba( 255, 0, 0, .3 ) !important; }
 #main-menu .item:nth-child( 4 ):hover { background-color: rgba( 0, 255, 0, .3 ) !important; }

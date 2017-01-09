@@ -17,7 +17,7 @@
 
 	<div ng-show="( page == 'game' )">
 
-		<a href="https://github.com/dmaison/vidya-platformer" class="ui primary labeled icon button" target="_blank" style="margin-bottom: 1em;">
+		<a href="https://github.com/dmaison/vidya-platformer" class="ui primary labeled icon button" target="_blank" style="margin-bottom: 1em;" ng-class="{ 'fluid' : isMobile }">
 			<i class="github icon"></i>
 			View it on GitHub
 		</a>
@@ -72,7 +72,7 @@
 
 	<div ng-show="( page == 'paginate' )">
 
-		<a href="https://github.com/dmaison/portfolio/blob/master/client/js/directives/pagination.js" class="ui primary labeled icon button" target="_blank">
+		<a href="https://github.com/dmaison/portfolio/blob/master/client/js/directives/pagination.js" class="ui primary labeled icon button" target="_blank" ng-class="{ 'fluid' : isMobile }">
 			<i class="github icon"></i>
 			View Pagination on GitHub
 		</a>
@@ -115,7 +115,7 @@
 	</div>
 
 	<div ng-show="( page == 'drop' )" class="ui form">
-		<a href="https://github.com/dmaison/portfolio/blob/master/client/js/directives/dropdown.js" class="ui primary labeled icon button" target="_blank">
+		<a href="https://github.com/dmaison/portfolio/blob/master/client/js/directives/dropdown.js" class="ui primary labeled icon button" target="_blank" ng-class="{ 'fluid' : isMobile }">
 			<i class="github icon"></i>
 			View Dropdown on GitHub
 		</a>

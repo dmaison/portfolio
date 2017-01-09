@@ -69,6 +69,11 @@
 		
 		$rootScope.$watch( 'width', function( width ){
 			$rootScope.isMobile = ( width <= 768 );
+			
+			if( $rootScope.isMobile ){
+				$( '#mobile-menu' ).dropdown();
+			}
+			
 		});
 		
 	}
