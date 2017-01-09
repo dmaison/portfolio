@@ -20,8 +20,7 @@
 				multiple: 		'=',
 				fluid: 			'=',
 				search: 		'=',
-				allowAdditions: '=',
-				change: 		'='
+				allowAdditions: '='
 			},
 			link: link
 		};
@@ -29,21 +28,20 @@
 	
 	function link( scope, element, attrs ){
 		
-		var dropdown	= element[ 0 ];
-		var input		= dropdown.children.input;
+		var drop = element[ 0 ];
 		
-		scope.$watch( 'model', function( newValue, oldValue ){
-			if( !input.value ) input.value = scope.model;
-		});
+		if( scope.multiple ) drop.classList.add( 'multiple' );
+		if( scope.fluid ) drop.classList.add( 'fluid' );
+		if( scope.search ) drop.classList.add( 'search' );
+		if( scope.allowAdditions ) drop.classList.add( 'additions' );
 		
-		input.onchange = function(){
-			var value = ( scope.multiple ) ? this.value.split( ',' ) : this.value;
-			scope.model = value;
-			if( !scope.$$phase ) scope.$apply();
-			if( typeof scope.change == 'function' ) scope.change();
-		};
-		
-		$( dropdown ).dropdown();
+		$( drop )
+			.dropdown({
+				onChange: function( value ){
+					scope.model = ( scope.multiple ) ? value.split( ',' ) : value;
+					if( !scope.$$phase ) scope.$apply();
+				}
+			});
 	}
 	
 })();
