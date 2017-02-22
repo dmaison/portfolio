@@ -31,6 +31,7 @@
 				}
 			}, function( err, res ){
 				if( err ) $rootScope.error = err;
+				return; // don't do this for now
 				$rootScope.menu = res.menu;
 				console.log( '%c' + window.atob( res.console.message ), window.atob( res.console.style ) );
 				console.log( res.console.cipher );
