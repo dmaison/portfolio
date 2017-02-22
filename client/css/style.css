@@ -28,6 +28,7 @@ body {
 #main-menu .item:nth-child( 7 ):hover { background-color: rgba( 64, 120, 192, 1 ) !important; }
 #main-menu .item:nth-child( 8 ):hover { background-color: rgba( 0, 123, 181, 1 ) !important; }
 #main-menu .item:nth-child( 9 ):hover { background-color: rgba( 59, 89, 152, 1 ) !important; }
+#main-menu .item:nth-child( 10 ):hover { background-color: rgba( 244, 128, 36, 1 ) !important; }
 
 #main-menu .right.menu .item .item:nth-child( 1 ):hover { background-color: rgba( 255, 0, 0, .3 ) !important; }
 #main-menu .right.menu .item .item:nth-child( 2 ):hover { background-color: rgba( 0, 255, 0, .3 ) !important; }
@@ -36,6 +37,7 @@ body {
 #main-menu .right.menu .item .item:nth-child( 5 ):hover { background-color: rgba( 64, 120, 192, 1 ) !important; }
 #main-menu .right.menu .item .item:nth-child( 6 ):hover { background-color: rgba( 0, 123, 181, 1 ) !important; }
 #main-menu .right.menu .item .item:nth-child( 7 ):hover { background-color: rgba( 59, 89, 152, 1 ) !important; }
+#main-menu .right.menu .item .item:nth-child( 8 ):hover { background-color: rgba( 244, 128, 36, 1 ) !important; }
 
 .box {
 	width: 300px;
@@ -45,3 +47,5 @@ body {
 .ui.tabular.menu .item:not( .active ) { color: rgba(255,255,255,.9) !important; }
 
 .ui.statistic .value { word-break: break-word; }
+
+F48024
