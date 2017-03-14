@@ -23,6 +23,37 @@
 		]
 	},
 	{
+		"description": "2snug",
+		"url": "http://2snug.com",
+		"thumbnail": "img/portfolio/2snug.jpg",
+		"technologies": [
+			{
+				"icon": "code",
+				"description": "Node.js w/ Express" 
+			},
+			{
+				"icon": "html5",
+				"description": "HTML 5"
+			},
+			{
+				"icon": "css3",
+				"description": "Semantic UI" 
+			},
+			{
+				"icon": "code",
+				"description": "AngularJS" 
+			},
+			{
+				"icon": "database",
+				"description": "MongoDB & Redis" 
+			},
+			{
+				"icon": "amazon",
+				"description": "S3 & Cloudfront" 
+			}
+		]
+	},
+	{
 		"description": "interlinkONE, Inc.",
 		"url": "http://www.interlinkone.com",
 		"thumbnail": "img/portfolio/interlinkone.png",
