@@ -1,7 +1,19 @@
 [
 	{
+		"title": "Senior Frontend Developer",
+		"employer": "Analog Devices, Inc.",
+		"logo": "img/logos/adi.png",
+		"site": "http://analog.com",
+		"date": "6/12/2017",
+		"description": "React",
+		"bullets": [
+			""
+		]
+	},
+	{
 		"title": "Senior Developer / Tech Support",
 		"employer": "interlinkONE, inc.",
+		"logo": "img/logos/interlink.png",
 		"site": "http://interlinkone.com",
 		"date": "6/1/2013",
 		"description": "Used skills with SQL, ASP, XHTML, CSS, Javascript, and AJAX, while working as part of a team to develop innovative logistics, marketing, and contact management technologies.",
@@ -18,6 +30,7 @@
 	{
 		"title": "Fuels Specialist",
 		"employer": "USAF Reserves",
+		"logo": "img/logos/usaf.png",
 		"site": "http://www.airforce.com/careers/detail/fuels-specialist/",
 		"date": "6/1/2013",
 		"description": "Worked with the mission operations control center at Dover AFB & Westover ARB to coordinate and dispatch personnel to successfully refuel aircraft in a timely and efficient manner. Also, maintained accurate billing records and accounting for all fuels and cryogenics products.",
@@ -33,6 +46,7 @@
 	{
 		"title": "Fuels Specialist",
 		"employer": "USAF",
+		"logo": "img/logos/usaf.png",
 		"site": "http://www.airforce.com/careers/detail/fuels-specialist/",
 		"date": "12/1/2009",
 		"dateEnd" : "6/1/2013",

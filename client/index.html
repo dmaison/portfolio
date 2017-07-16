@@ -22,7 +22,7 @@
 
     <title>dave.maison</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Amatica+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="libs/semantic-ui/dist/semantic.min.css">
     <!-- build:css css/dave.maison.min.css -->
     <link rel="stylesheet" type="text/css" href="libs/angular-chart.js/dist/angular-chart.css">
@@ -88,6 +88,7 @@
     <script type="text/javascript" src="js/factories/chasing-ballmer.js"></script>
     <script type="text/javascript" src="js/factories/contact.js"></script>
     <script type="text/javascript" src="js/factories/dna.js"></script>
+    <script type="text/javascript" src="js/factories/menu.js"></script>
     <script type="text/javascript" src="js/factories/presents.js"></script>
     <script type="text/javascript" src="js/factories/portfolio.js"></script>
     <script type="text/javascript" src="js/factories/resume.js"></script>
@@ -96,6 +97,10 @@
     <script type="text/javascript" src="js/directives/pagination.js"></script>
     <script type="text/javascript" src="js/directives/dropdown.js"></script>
     <script type="text/javascript" src="js/directives/alert.js"></script>
+    <script type="text/javascript" src="js/directives/menu.js"></script>
+    <script type="text/javascript" src="js/directives/resume.about.js"></script>
+    <script type="text/javascript" src="js/directives/resume.experience.js"></script>
+    <script type="text/javascript" src="js/directives/resume.expertise.js"></script>
     
     <!-- endbuild -->
     <script>
@@ -113,54 +118,10 @@
             <div class="ui loader"></div>
         </div>
         
-        <!-- menu -->
-        <div class="ui top fixed inverted menu" id="main-menu">
-            <a href="/" class="active item">
-                dave.maison
-            </a>
-            
-            <!-- responsive menu -->
-            <div class="ui right inverted menu" ng-show="isMobile">
-                <div class="ui dropdown icon item" id="mobile-menu">
-                    <i class="sidebar icon"></i>
-                    <div class="menu">
-                        <a ng-repeat="item in menu" href="{{item.path}}" class="item">
-                            {{item.title}}
-                        </a>
-                        <a target="_blank" class="icon item" href="https://github.com/dmaison">
-                            Github
-                        </a>
-                        <a target="_blank" class="icon item" href="https://www.linkedin.com/pub/david-maison/57/70b/859">
-                            LinkedIn
-                        </a>
-                        <a target="_blank" class="icon item" href="https://www.facebook.com/dave.maison">
-                            Facebook
-                        </a>
-                        <a target="_blank" class="icon item" href="https://stackoverflow.com/users/1733171/dave-maison?tab=profile">
-                            Stack Overflow
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <a ng-repeat="item in menu" href="{{item.path}}" class="icon item" ng-show="!isMobile">
-                <i class="large {{item.icon}} icon"></i>
-            </a>
-            <a target="_blank" class="icon item" href="https://github.com/dmaison" ng-show="!isMobile">
-                <i class="large github icon"></i>
-            </a>
-            <a target="_blank" class="icon item" href="https://www.linkedin.com/pub/david-maison/57/70b/859" ng-show="!isMobile">
-                <i class="large linkedin icon"></i>
-            </a>
-            <a target="_blank" class="icon item" href="https://www.facebook.com/dave.maison" ng-show="!isMobile">
-                <i class="large facebook icon"></i>
-            </a>
-            <a target="_blank" class="icon item" href="https://stackoverflow.com/users/1733171/dave-maison?tab=profile" ng-show="!isMobile">
-                <i class="large stack overflow icon"></i>
-            </a>
-        </div>
+        <menu></menu>
         
         <!-- content -->
-        <div id="content" ng-view></div>    
+        <div id="content" ng-class="{ 'mobile' : isMobile }" ng-view></div>    
         
         <alert>{{ error || success }}</alert>
 

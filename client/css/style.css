@@ -1,49 +1,61 @@
-body { 
-	overflow-x: hidden; 
-	background-color: #1B1C1D;
+/* semantic overrides */
+.ui.header,
+#main-menu .brand { font-family: quicksand, sans-serif;}
+
+.ui.inverted.menu,
+.ui.button.primary:hover { background-color: #374048; }
+
+.ui.button.primary { background-color: #455765; }
+
+.ui.button.positive { background-color: #6d9e78; }
+.ui.button.positive:hover { background-color: #40af5a; }
+
+.ui.inverted.menu a .icon:before { opacity: .5; }
+.ui.inverted.menu a:hover .icon:before,
+.ui.inverted.menu a.active .icon:before { opacity: 1; }
+
+.ui.table thead th,
+.ui.secondary.segment,
+.ui.fluid.raised.card .image,
+.ui.pagination.menu a.item.active,
+.ui.pagination.menu a.item:hover { background-color: rgb( 239, 242, 247 ); }
+
+.ui.pagination.menu a.item.disabled { color: rgb( 220, 225, 234 ); }
+
+.ui.divided.list .item > img { margin: .8rem 0; }
+.ui.divided.list .item:first-child > img { margin-top: 0; }
+.ui.divided.list .item:last-child > img { margin-bottom: 0; }
+
+.mobile .ui.stackable.grid .column { 
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
-#content { 
-	margin-top: 100px;
-	padding: 15px;
+
+/* general layout */
+body {
+    background: #eee;
+    background: -webkit-radial-gradient( #fff, #fff, rgb( 220, 225, 234 ) );
+    background: -o-radial-gradient( #fff, #fff, rgb( 220, 225, 234 ) );
+    background: -moz-radial-gradient( #fff, #fff, rgb( 220, 225, 234 ) );
+    background: radial-gradient( #fff, #fff, rgb( 220, 225, 234 ) );
+    background-attachment: fixed;
 }
 
-.top.menu { 
-	-moz-box-shadow: 0 5px 5px #000 !important;
-	-webkit-box-shadow: 0 5px 5px #000 !important;
-	box-shadow: 0 5px 5px #000 !important;
+#main-menu .brand { font-weight: bold; }
+
+#content { padding: 1rem; }
+
+#content:not( .mobile ) { margin-left: 56.77px; }
+
+#content.mobile { margin-top: 40px; }
+
+#experience .image img { 
+    max-width: 250px; 
+    max-height: 100px;
+    height: auto;
+    width: auto;
+    margin: auto;
 }
 
-:not(div).header,
-:not(div).header > .content,
-.top.menu .item { font-family: 'Amatica SC' !important; }
-
-#main-menu .item { font-size: 2em; }
-#main-menu #mobile-menu .item { font-size: 1.5rem !important; }
-
-#main-menu .item:nth-child( 3 ):hover { background-color: rgba( 255, 0, 0, .3 ) !important; }
-#main-menu .item:nth-child( 4 ):hover { background-color: rgba( 0, 255, 0, .3 ) !important; }
-#main-menu .item:nth-child( 5 ):hover { background-color: rgba( 0, 0, 255, .3 ) !important; }
-#main-menu .item:nth-child( 6 ):hover { background-color: rgba( 255, 0, 255, .3 ) !important; }
-#main-menu .item:nth-child( 7 ):hover { background-color: rgba( 64, 120, 192, 1 ) !important; }
-#main-menu .item:nth-child( 8 ):hover { background-color: rgba( 0, 123, 181, 1 ) !important; }
-#main-menu .item:nth-child( 9 ):hover { background-color: rgba( 59, 89, 152, 1 ) !important; }
-#main-menu .item:nth-child( 10 ):hover { background-color: rgba( 244, 128, 36, 1 ) !important; }
-
-#main-menu .right.menu .item .item:nth-child( 1 ):hover { background-color: rgba( 255, 0, 0, .3 ) !important; }
-#main-menu .right.menu .item .item:nth-child( 2 ):hover { background-color: rgba( 0, 255, 0, .3 ) !important; }
-#main-menu .right.menu .item .item:nth-child( 3 ):hover { background-color: rgba( 0, 0, 255, .3 ) !important; }
-#main-menu .right.menu .item .item:nth-child( 4 ):hover { background-color: rgba( 255, 0, 255, .3 ) !important; }
-#main-menu .right.menu .item .item:nth-child( 5 ):hover { background-color: rgba( 64, 120, 192, 1 ) !important; }
-#main-menu .right.menu .item .item:nth-child( 6 ):hover { background-color: rgba( 0, 123, 181, 1 ) !important; }
-#main-menu .right.menu .item .item:nth-child( 7 ):hover { background-color: rgba( 59, 89, 152, 1 ) !important; }
-#main-menu .right.menu .item .item:nth-child( 8 ):hover { background-color: rgba( 244, 128, 36, 1 ) !important; }
-
-.box {
-	width: 300px;
-	height: 300px;
-}
-
-.ui.tabular.menu .item:not( .active ) { color: rgba(255,255,255,.9) !important; }
-
-.ui.statistic .value { word-break: break-word; }
+#experience .image { padding: 1rem; }

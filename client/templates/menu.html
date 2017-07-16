@@ -1,0 +1,51 @@
+ <div class="ui inverted icon menu" id="main-menu" ng-class="{ 'top fixed' : isMobile, 'left fixed vertical' : !isMobile }">
+     
+    <a href="/" class="brand active item">
+        d.m
+    </a>
+    
+    <a ng-repeat="item in menu" href="{{item.path}}" class="icon item" ng-class="{ 'active' : item.path === location.path() }" ng-show="!isMobile" ng-click="click()" ref="{{ item.path }}">
+        <i class="large {{item.icon}} icon"></i>
+    </a>
+    
+    <a target="_blank" class="icon item" href="https://github.com/dmaison" ng-show="!isMobile">
+        <i class="large github icon"></i>
+    </a>
+    
+    <a target="_blank" class="icon item" href="https://www.linkedin.com/pub/david-maison/57/70b/859" ng-show="!isMobile">
+        <i class="large linkedin icon"></i>
+    </a>
+    
+    <a target="_blank" class="icon item" href="https://www.facebook.com/dave.maison" ng-show="!isMobile">
+        <i class="large facebook icon"></i>
+    </a>
+    
+    <a target="_blank" class="icon item" href="https://stackoverflow.com/users/1733171/dave-maison?tab=profile" ng-show="!isMobile">
+        <i class="large stack overflow icon"></i>
+    </a>
+    
+    <!-- responsive menu -->
+    <div class="ui right inverted menu" ng-show="isMobile">
+        <div class="ui dropdown icon item" id="mobile-menu">
+            <i class="sidebar icon"></i>
+            <div class="menu">
+                <a ng-repeat="item in menu" href="{{item.path}}" class="item">
+                    {{item.title}}
+                </a>
+                <a target="_blank" class="icon item" href="https://github.com/dmaison">
+                    Github
+                </a>
+                <a target="_blank" class="icon item" href="https://www.linkedin.com/pub/david-maison/57/70b/859">
+                    LinkedIn
+                </a>
+                <a target="_blank" class="icon item" href="https://www.facebook.com/dave.maison">
+                    Facebook
+                </a>
+                <a target="_blank" class="icon item" href="https://stackoverflow.com/users/1733171/dave-maison?tab=profile">
+                    Stack Overflow
+                </a>
+            </div>
+        </div>
+    </div>
+    
+</div>

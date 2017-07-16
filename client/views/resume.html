@@ -1,4 +1,4 @@
-<h1 class="ui inverted header">
+<h1 class="ui header">
   	<i class="file text icon"></i>
   	<div class="content">
     	Resume
@@ -8,151 +8,12 @@
   	</div>
 </h1>
 
-<div class="ui top attached tabular menu">
+<div class="ui secondary pointing menu">
 	<a class="item" ng-class="{ 'active' : ( page == 'about' ) }"  ng-click="navigate( 'about' )">About</a>
 	<a class="item" ng-class="{ 'active' : ( page == 'experience' ) }"  ng-click="navigate( 'experience' )">Experience</a>
   	<a class="item" ng-class="{ 'active' : ( page == 'expertise' ) }"  ng-click="navigate( 'expertise' )">Expertise</a>
 </div>
-<div class="ui bottom attached segment">
 
- 	<div ng-show="( page == 'about' )">
-		<div class="ui stackable grid">
-			<div class="three wide column">
-				<div class="ui fluid card">
-					<div class="image">
-						<img src="/img/me.jpg">
-					</div>
-					<div class="content">
-						<div class="header">
-							David J. Maison Jr.
-						</div>
-						<div class="meta">
-							<i class="birthday icon"></i> 
-							16 Oct. 1987
-						</div>
-					</div>
-					<div class="extra content">
-						<div class="meta">
-							<span class="right floated time">Interlink ONE, Inc.</span>
-							Senior Developer
-						</div>
-						<div class="meta">
-							<span class="right floated time">USAF Reserves</span>
-							Fuels Specialist
-						</div>
-					</div>
-					<div class="extra content">
-						<div class="description">
-							6 years experience in the web development career field, with an emphasis on web standards, design, 
-							and user experience. 4 years of education with emphasis in internet technologies from Shawsheen 
-							Valley High School, and currently attending UMass Lowell for Information Technologies degree.
-					    </div>
-					</div>
-				</div>
-			</div>
-			<div class="thirteen wide column">
-				<h3 class="ui header">Specialties</h3>
-				<div class="ui relaxed divided list">
-					<div class="item">
-						MEAN Stack Development
-					</div>
-					<div class="item">
-						RESTful Web Services
-					</div>
-					<div class="item">
-						MVC Software Architecture
-					</div>
-					<div class="item">
-						Responsive Design
-					</div>
-					<div class="item">
-						UI/UX
-					</div>
-					<div class="item">
-						W3C Standards Compliance
-					</div>
-				</div>
-				
-				<h3 class="ui header">Education</h3>
-				<div class="ui relaxed divided list">
-					<div class="item">
-						Learned internet technologies vocation at 
-						<a href="http://www.shawsheentech.org/" target="_blank">Shawsheen Valley Tech.</a> 
-						while attending high school
-					</div>
-					<div class="item">
-						Working towards a degree in Information Technologies
-					</div>
-					<div class="item">
-						In Training for Fuels Craftsman
-					</div>
-				</div>
-				
-				<h3 class="ui header">Hobbies &amp; Interests</h3>
-				<div class="ui relaxed divided list">
-					<div class="item">
-						Health &amp; Fitness
-					</div>
-					<div class="item">
-						Music
-					</div>
-					<div class="item">
-						Art
-					</div>
-					<div class="item">
-						Hockey
-					</div>
-					<div class="item">
-						Whisky
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div ng-show="( page == 'experience' )">
-		<div class="ui stackable grid">
-			<div class="four wide stretched column" ng-repeat="job in jobs">
-				<div class="ui fluid card">
-					<div class="content">
-						<div class="header">
-							<span class="right floated time">{{job.years}} years</span>
-							{{job.employer}}
-						</div>
-						<div class="meta">
-							<p>{{job.title}}</p>
-						</div>
-						<div class="description">
-							<p>{{job.description}}</p>
-						</div>
-					</div>
-					<a href="{{job.site}}" class="ui bottom attached primary labeled icon button" target="_blank">
-						<i class="forward mail icon"></i>
-						Visit Site
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div ng-show="( page == 'expertise' )">
-		<div class="ui stackable grid">
-			<div class="sixteen wide column">
-				<paginate list="languages" items-per-page="4"></paginate>
-			</div>
-			<div class="four wide column" ng-repeat="item in languages">
-				<h3 class="ui header">{{item.description}}</h3>
-				<div class="ui relaxed divided list">
-					<div class="item" ng-repeat="lang in item.languages">
-						<i class="large {{item.icon}} middle aligned icon"></i>
-						<div class="content">
-							<a class="header">{{lang.language}}</a>
-							<div class="description">{{lang.experience}} years experience</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-</div>
+<about ng-show="( page == 'about' )"></about>
+<experience ng-show="( page == 'experience' )"></experience>
+<expertise ng-show="( page == 'expertise' )"></expertise>
