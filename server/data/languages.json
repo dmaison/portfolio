@@ -1,35 +1,23 @@
 [
 	{	
-		"description": "Server Side",
+		"description": "Backend",
 		"icon": "code",
 		"languages" : [ 
 			{ "language": "Node", "experience": 3 }, 
 			{ "language": "PHP", "experience": 4 }, 
 			{ "language": "Classic ASP", "experience": 5 }, 
-			{ "language": ".NET", "experience": 1 } 
-		]
-	},
-	{
-		"description": "Database",
-		"icon": "database",
-		"languages" : [
+			{ "language": ".NET", "experience": 1 },
 			{ "language": "Mongo", "experience": 3 }, 
 			{ "language": "Redis", "experience": 2 }, 
 			{ "language": "SQL", "experience": 5 },
-			{ "language": "Microsoft Access", "experience": ">1" }
-		]
-	},
-	{
-		"description": "Compiled",
-		"icon": "puzzle",
-		"languages" : [
+			{ "language": "Microsoft Access", "experience": ">1" },
 			{ "language": "C", "experience": ">1" },
 			{ "language": "C#", "experience": 1 },
 			{ "language": "Visual Basic", "experience": 5 }
 		]
 	},
 	{
-		"description": "Web",
+		"description": "Frontend",
 		"icon": "html5",
 		"languages" : [
 			{ "language": "HTML", "experience": "10+" },
@@ -37,20 +25,13 @@
 			{ "language": "Javascript", "experience": "10+" },
 			{ "language": "AJAX", "experience": 5 },
 			{ "language": "JSON", "experience": 5 },
-			{ "language": "XML", "experience": 5 }
-		]
-	},
-	{
-		"description": "Libraries & Packages",
-		"icon": "dropbox",
-		"languages" : [
+			{ "language": "XML", "experience": 5 },
 			{ "language": "jQuery", "experience": 3 },
-			{ "language": "Prototype.js", "experience": 2 },
-			{ "language": "script.aculo.us", "experience": 2 },
-			{ "language": "Angular.js", "experience": 2 },
+			{ "language": "Angular.js", "experience": 4 },
 			{ "language": "Backbone.js", "experience": ">1" },
 			{ "language": "Bootstrap", "experience": 5 },
-			{ "language": "Semantic UI", "experience": ">1" }
+			{ "language": "Semantic UI", "experience": 2 },
+			{ "language": "React", "experience": ">1" }
 		]
 	},
 	{
@@ -68,19 +49,29 @@
 		"languages" : [
 			{ "language": "Jira", "experience": 3 },
 			{ "language": "Trello", "experience": 1 },
-			{ "language": "interlinkONE Projects", "experience": 1 }
+			{ "language": "Teamwork", "experience": 2 }
+		]
+	},
+	{
+		"description": "Command Line",
+		"icon": "terminal",
+		"languages" : [
+			{ "language": "npm & Bower", "experience": 3 },
+			{ "language": "Gulp", "experience": 2 },
+			{ "language": "Powershell CLI", "experience": 3 },
+			{ "language": "Ubuntu CLI", "experience": 2 },
+			{ "language": "CentOS CLI", "experience": 2 },
+			{ "language": "Linux CLI", "experience": 2 },
+			{ "language": "Windows CLI", "experience": 3 }
 		]
 	},
 	{
 		"description": "Other",
 		"icon": "desktop",
 		"languages" : [
-			{ "language": "npm & Bower", "experience": 3 },
 			{ "language": "XMPie", "experience": 5 },
 			{ "language": "SOAP", "experience": 5 },
 			{ "language": "RESTful Web Services", "experience": 5 },
-			{ "language": "Windows Powershell Command Line", "experience": 3 },
-			{ "language": "Ubuntu Command line", "experience": 2 },
 			{ "language": "Wordpress", "experience": 3 },
 			{ "language": "Adobe Creative Suites", "experience": "10+" }
 		]

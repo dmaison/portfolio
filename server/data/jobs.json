@@ -5,9 +5,13 @@
 		"logo": "img/logos/adi.png",
 		"site": "http://analog.com",
 		"date": "6/12/2017",
-		"description": "React",
+		"description": "Work with a team to develop and maintain the customer website using skills in React and ES2015.",
 		"bullets": [
-			""
+			"Actualize and implement redlines provided by design team",
+			"Perform group code reviews to ensure code standardization and perfection",
+			"Lead semi-daily scrums to ensure work is being completed in a timely fashion",
+			"Assist other developers in working through issues they are encountering",
+			"Apply tracking and rules using DTM, Eloqua, and Adobe Analytics for full visibility in customer behavior"
 		]
 	},
 	{
