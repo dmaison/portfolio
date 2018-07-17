@@ -1,0 +1,88 @@
+{
+    "name": "David Maison",
+    "birthDate": "10/16/1987",
+    "history": [
+        {
+            "company": "Analog Devices, Inc",
+            "years": {
+                "start": "2017"
+            },
+            "description": "Lead a team to develop and maintain the commercial website and convert the current code base to implement SSR and client side React apps.",
+            "jobTitle": "Senior Front-End Developer",
+            "logo": "",
+            "responsibilities": [
+                "Lead semi-daily scrums",
+                "Perform code reviews to ensure standardization and efficiency",
+                "Work directly with the design team to actualize and implement redlines",
+                "Assist junior developers to work through blockers",
+                "Maintain code base documentation for future generations of developers",
+                "Maintain behavioral tracking and analytics rules implemented via Adobe DTM, iPerceptions, Google Adwords, and others"
+            ],
+            "web": true,
+            "website": "http://analog.com"
+        },
+        {
+            "company": "interlinkONE, Inc.",
+            "years": {
+                "start": "2013",
+                "end": "2017"
+            },
+            "description": "Used skills with Node, Angular, SQL, ASP, XHTML, CSS, Javascript, and AJAX, while working as part of a team to develop innovative logistics, marketing, and contact management technologies.",
+            "jobTitle": "Senior Developer & Tech Support",
+            "logo": "",
+            "responsibilities": [
+                "Designed and implemented development conventions for new application",
+                "Developed new applications using Node, Angular, and MongoDB",
+                "Created wireframes for new applications with focus on UI/UX",
+                "Worked directly with clients to develop new or improve current functionality to meet their needs",
+                "Received copy from clients and collaborated to create landing pages and emails",
+                "Implementing web standards and the jQuery library into the product",
+                "Designed database tables using SQL to accommodate new or existing functional"
+            ],
+            "web": true,
+            "website": "https://interlinkone.com/"
+        },
+        {
+            "company": "United States Air Force Reserves",
+            "years": {
+                "start": "2013",
+                "end": "2018"
+            },
+            "description": "Worked with the mission operations control center at Westover ARB to coordinate and dispatch personnel to successfully refuel aircraft in a timely and efficient manner. Also, maintained accurate billing records and accounting for all fuels and cryogenics products.",
+            "jobTitle": "Fuels Service Center Supervisor and Lead Accountant",
+            "logo": "",
+            "responsibilities": [
+                "Processed over 12 thousand fueling transactions, ensuring timely and accurate billing",
+                "Completed 6 End of Month/Year fuels account reconciliations with zero discrepancies",
+                "Maintained 100% document retention, resulting in zero lost fuels transactions",
+                "Supervised 3 personnel, guaranteeing timely/accurate accounting of fuels transactions",
+                "Trained 6 personnel on proper use of petroleum products and facilities",
+                "Authored and presented daily safety/environmental briefings for 11 personnel"
+            ],
+            "website": "http://www.airforce.com/careers/detail/fuels-specialist/"
+        },
+        {
+            "company": "United States Air Force",
+            "years": {
+                "start": "2009",
+                "end": "2013"
+            },
+            "description": "Worked directly with the Fuels Service Center at Dover AFB to distribute jet fuel and ground fuels, as well as issuing cryogenics products in a timely manner. Also, performed hydrant systems operations, including refuels, defuels, flushes, transfers, and receipts",
+            "jobTitle": "Fuels Specialist and Fuels Service Center Accountant",
+            "logo": "",
+            "website": "http://www.airforce.com/careers/detail/fuels-specialist/"
+        },
+        {
+            "company": "interlinkONE, Inc.",
+            "years": {
+                "start": "2006",
+                "end": "2009"
+            },
+            "description": "Worked directly with the Fuels Service Center at Dover AFB to distribute jet fuel and ground fuels, as well as issuing cryogenics products in a timely manner. Also, performed hydrant systems operations, including refuels, defuels, flushes, transfers, and receipts",
+            "jobTitle": "Junior Developer",
+            "logo": "",
+            "web": true,
+            "website": "https://interlinkone.com/"
+        }
+    ]
+}

@@ -1,12 +1,10 @@
-import locales from '../data/locales.json';
-
 const INITIAL_STATE = {
-	locales,
 	menu: [
 		{ title: 'resume', path: '/resume' },
 		{ title: 'portfolio', path: '/portfolio' },
 		{ title: 'contact', path: '/contact' }
-	]
+	],
+	months: [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ]
 };
 
 const app = ( state = INITIAL_STATE, action ) => {

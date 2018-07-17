@@ -1,0 +1,103 @@
+@keyframes resume-h1 {
+    from {
+        left: -100px;
+        opacity: 0;
+    }
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes resume-h2 {
+    0% { 
+        opacity: 0; 
+        left: 100px; 
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes resume-li-1 {
+    0% { 
+        opacity: 0; 
+        left: -100px;
+    }
+    100% {
+        left: .5rem;
+        opacity: 1;
+    }
+}
+
+@keyframes resume-li-2 {
+    0% { 
+        left: 200px;
+        opacity: 0; 
+    }
+    100% {
+        left: 1.5rem;
+        opacity: 1;
+    }
+}
+
+@keyframes resume-li-3 {
+    0% { 
+        top: 50px;
+        opacity: 0; 
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+main.resume {
+    position: absolute;
+    top: 25vh;
+    left: 10vw;
+}
+
+main.resume h1 {
+    margin: 0;
+    line-height: 29px;
+    position: relative;
+    left: 0;
+    animation: resume-h1 .75s; 
+    animation-timing-function: ease;
+}
+
+main.resume h2 { 
+    margin: 0; 
+    position: relative;
+    left: 0;
+    animation: resume-h2 .75s; 
+    animation-timing-function: ease;
+}
+
+main.resume > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+main.resume > ul > li {
+    position: relative;
+    animation-timing-function: ease;
+}
+
+main.resume > ul > li:nth-child( 1 ){
+    left: .5rem;
+    animation: resume-li-1 .75s; 
+}
+
+main.resume > ul > li:nth-child( 2 ){
+    left: 1.5rem;
+    animation: resume-li-2 .75s; 
+}
+
+main.resume > ul > li:nth-child( 3 ){
+    left: 1rem;
+    animation: resume-li-3 .75s; 
+}
