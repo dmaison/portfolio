@@ -1,0 +1,8 @@
+nav.menu a {
+    color: var( --white );
+    margin-right: .75rem;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+nav.menu a i.square { margin-right: .25rem; }

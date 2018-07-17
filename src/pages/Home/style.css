@@ -1,0 +1,22 @@
+@keyframes home {
+    from {
+        top: 100px;
+        opacity: 0;
+    }
+    to {
+        top: 1.5rem;
+        opacity: 1;
+    }
+}
+
+main.home {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    text-align: right;
+    max-width: 25vw;
+    animation: home .75s; 
+    animation-timing-function: ease;
+}
+
+main.home h1 { margin-bottom: 0; }

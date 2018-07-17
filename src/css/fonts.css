@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Gotham Book';
+    src: url( ../fonts/gotham-book.otf );
+}
+
+@font-face {
+    font-family: 'Gotham Black';
+    src: url( ../fonts/gotham-black.ttf );
+}
+
+body {
+    color: var( --black );
+    font-family: 'Gotham Book', helvetica, arial, sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-family: 'Gotham Black', impact, sans-serif;
+    font-size: 40px;
+    margin: 0 0 1rem 0;
+}
+
+a {
+    color: var( --white );
+    text-shadow: 1px 1px var( --black );
+}
+
+p { margin: 0 0 1rem 0; }

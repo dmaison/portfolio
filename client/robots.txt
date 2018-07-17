@@ -1,9 +1,0 @@
-User-Agent: *
-Disallow: 
-Allow: /img
-Allow: /views
-Allow: /js
-Allow: /css
-Allow: /examples
-
-Sitemap: http://dave.maison/sitemap.xml

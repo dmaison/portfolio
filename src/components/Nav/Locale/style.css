@@ -1,0 +1,21 @@
+nav.menu div.locales.dropdown {
+    padding: 1rem .45rem;
+    top: -2px;
+    border-top: 2px solid transparent; /* this is only here to compensate for a difference in size */
+    float: right;
+}
+
+nav.menu div.locales.dropdown > div.text { text-transform: uppercase; }
+
+nav.menu div.locales.dropdown > div.menu { 
+    background-color: rgba( 255, 255, 255, .85 ); 
+    border-color: transparent;
+}
+
+nav.menu div.locales.dropdown > div.menu > div.selected.item {
+    font-weight: bold;
+    background-color: var( --lightBlueGrayTransparent );
+    color: #fff;
+}
+
+nav.menu div.locales.dropdown > div.menu > div.item:hover:not( .selected ){ background-color: lightgray; }

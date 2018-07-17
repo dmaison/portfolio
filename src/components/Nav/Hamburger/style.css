@@ -1,0 +1,5 @@
+section.menu[role="menu"] div#hamburger {
+    color: rgba(255, 255, 255, 0.45);
+    padding: 1rem 0;
+    transition: linear .2s;
+}

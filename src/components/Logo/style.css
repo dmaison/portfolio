@@ -1,0 +1,5 @@
+header.logo a {
+    font-size: 35px;
+    color: var( --white );
+    text-decoration: none;
+}

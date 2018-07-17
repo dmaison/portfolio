@@ -1,0 +1,5 @@
+section[ role="menu" ] {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 1.5rem;
+}
