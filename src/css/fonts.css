@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Gotham Book';
-    src: url( ../fonts/gotham-book.otf );
+    src: url( //assets.dave.maison/fonts/gotham-book.otf );
 }
 
 @font-face {
     font-family: 'Gotham Black';
-    src: url( ../fonts/gotham-black.ttf );
+    src: url( //assets.dave.maison/fonts/gotham-black.ttf );
 }
 
 body {

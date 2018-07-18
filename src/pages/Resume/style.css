@@ -59,6 +59,10 @@ main.resume {
     left: 10vw;
 }
 
+main.resume h1,
+main.resume h2,
+main.resume > ul > li { text-shadow: 0 1px var( --white ) }
+
 main.resume h1 {
     margin: 0;
     line-height: 29px;

@@ -1,5 +1,5 @@
 body {
-    background: var( --black ) url( ../img/background.jpg ) no-repeat left bottom;
+    background: var( --black ) url( //assets.dave.maison/img/background.jpg ) no-repeat left bottom;
     background-size: cover;
     height: calc( 100vh - 1px );
     margin: 0;

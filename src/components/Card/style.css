@@ -1,0 +1,9 @@
+div.card img.logo { 
+    max-width: 200px; 
+    margin-bottom: 1rem;
+}
+
+div.card div.details {
+    background: linear-gradient( var( --blackTrans ), var( --whiteTrans ) );
+    padding: 1rem;
+}
