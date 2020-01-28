@@ -1,34 +1,23 @@
-@font-face {
-    font-family: 'Gotham Book';
-    src: url( //assets.dave.maison/fonts/gotham-book.otf );
-}
-
-@font-face {
-    font-family: 'Gotham Black';
-    src: url( //assets.dave.maison/fonts/gotham-black.ttf );
-}
-
 body {
-    color: var( --black );
-    font-family: 'Gotham Book', helvetica, arial, sans-serif;
-    font-size: 14px;
+    font-family: quicksand, sans-serif;
+    font-size: 16px;
 }
 
-h1 {
-    font-family: 'Gotham Black', impact, sans-serif;
-    font-size: 40px;
-    margin: 0 0 1rem 0;
-}
-
-h2 {
+h1, h2, h3, h4, h5, h6 { 
+    font-family: teko, sans-serif; 
     font-weight: normal;
-    font-size: 28px;
-    margin: 0 0 1rem 0;
+    margin: 0 0 1rem;
 }
 
-a {
-    color: var( --white );
-    text-shadow: 1px 1px var( --black );
+h1 { 
+    font-size: 5rem; 
+    line-height: 5rem;
+    margin-bottom: 0;
 }
 
-p { margin: 0 0 1rem 0; }
+h1 > small {
+    display: block;
+    font-family: quicksand;
+    font-size: 1rem;
+    line-height: 1rem;
+}
