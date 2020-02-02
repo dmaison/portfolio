@@ -5,3 +5,20 @@ section.page#home {
     justify-content: center;
     text-align: center;
 }
+
+section.page#home > div.indicator { position: relative; }
+
+section.page#home > div.indicator > div.animation.container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 96px;
+    left: -20px;
+    position: absolute;
+    top: -32px;
+    width: 60px;
+}
+
+section.page#home > div.indicator > div.animation.container > i.fa-angle-double-down:first-child {
+    animation: pulse 1.2s ease-in-out 2s infinite;
+}

@@ -8,7 +8,7 @@
                 "start": "2017"
             },
             "description": "Lead a team to develop and maintain the commercial website and convert the current code base to implement SSR and client side React apps.",
-            "jobTitle": "Senior Front-End Developer",
+            "title": "Senior Front-End Developer",
             "logo": "//assets.dave.maison/img/logo/adi.svg",
             "responsibilities": [
                 "Lead semi-daily scrums",
@@ -28,7 +28,7 @@
                 "end": "2017"
             },
             "description": "Used skills with Node, Angular, SQL, ASP, XHTML, CSS, Javascript, and AJAX, while working as part of a team to develop innovative logistics, marketing, and contact management technologies.",
-            "jobTitle": "Senior Developer & Tech Support",
+            "title": "Senior Developer & Tech Support",
             "logo": "//assets.dave.maison/img/logo/interlinkONE-pro.png",
             "responsibilities": [
                 "Designed and implemented development conventions for new application",
@@ -49,7 +49,7 @@
                 "end": "2018"
             },
             "description": "Worked with the mission operations control center at Westover ARB to coordinate and dispatch personnel to successfully refuel aircraft in a timely and efficient manner. Also, maintained accurate billing records and accounting for all fuels and cryogenics products.",
-            "jobTitle": "Fuels Service Center Supervisor and Lead Accountant",
+            "title": "Fuels Service Center Supervisor and Lead Accountant",
             "logo": "//assets.dave.maison/img/logo/usafr.png",
             "responsibilities": [
                 "Processed over 12 thousand fueling transactions, ensuring timely and accurate billing",
@@ -68,7 +68,7 @@
                 "end": "2013"
             },
             "description": "Worked directly with the Fuels Service Center at Dover AFB to distribute jet fuel and ground fuels, as well as issuing cryogenics products in a timely manner. Also, performed hydrant systems operations, including refuels, defuels, flushes, transfers, and receipts",
-            "jobTitle": "Fuels Specialist and Fuels Service Center Accountant",
+            "title": "Fuels Specialist and Fuels Service Center Accountant",
             "logo": "//assets.dave.maison/img/logo/usaf.png",
             "website": "http://www.airforce.com/careers/detail/fuels-specialist/"
         },
@@ -79,8 +79,8 @@
                 "end": "2009"
             },
             "description": "Worked directly with the Fuels Service Center at Dover AFB to distribute jet fuel and ground fuels, as well as issuing cryogenics products in a timely manner. Also, performed hydrant systems operations, including refuels, defuels, flushes, transfers, and receipts",
-            "jobTitle": "Junior Developer",
-            "logo": "//assets.dave.maison/img/logo/interlinkONE.png",
+            "title": "Junior Developer",
+            "logo": "//assets.dave.maison/img/logo/interlinkONE-pro.png",
             "web": true,
             "website": "https://interlinkone.com/"
         }

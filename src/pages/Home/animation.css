@@ -1,0 +1,11 @@
+@keyframes pulse {
+    from {
+        font-size: 2em;
+        opacity: 1;
+    }
+
+    to {
+        font-size: 6rem;
+        opacity: 0;
+    }
+}

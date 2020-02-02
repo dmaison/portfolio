@@ -9,14 +9,24 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 1rem;
 }
 
+h1 > small,
+h2 > small,
+h3 > small,
+h4 > small,
+h5 > small, 
+h6 > small {    
+    display: block;
+    font-family: quicksand;
+}
+
 h1 { 
     font-size: 7rem; 
     line-height: 5rem;
 }
 
 h1 > small {
-    display: block;
-    font-family: quicksand;
     font-size: 1.2rem;
     line-height: 1rem;
 }
+
+h2 { font-size: 4rem; }

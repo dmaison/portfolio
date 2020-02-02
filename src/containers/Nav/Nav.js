@@ -10,10 +10,8 @@ const Nav = props => (
     </nav>
 );
 
-const mapStateToProps = state => {
-    return {
-        menu: state.app.menu,
-    };
-};
+const mapStateToProps = state => ({
+    menu: state.app.menu,
+});
 
 export default withRouter( connect( mapStateToProps )( Nav ) );

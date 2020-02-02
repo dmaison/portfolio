@@ -12,4 +12,10 @@ Page.propTypes = {
     id: PropTypes.string.isRequired
 };
 
+Page.Container = props => (
+    <div className="container">
+        { props.children }
+    </div>
+);
+
 export default Page;
