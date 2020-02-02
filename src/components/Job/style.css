@@ -1,7 +1,7 @@
 article.job { padding: 1rem; }
 
 article.job > div.container {
-    background-color: white;
+    background-color: black;
     border-radius: 20px;
     box-shadow: 0 10px 10px rgba( 0, 0, 0, .5 );
     text-align: center;
