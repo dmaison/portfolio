@@ -13,7 +13,7 @@ const Component = () => (
         <NavLink className="navigation__item navigation__item--projects" activeClassName="navigation__item--active" to="/projects" title="Personal Projects">
             { Project }
         </NavLink>
-        <NavLink className="navigation__item navigation__item--experience" activeClassName="navigation__item--active" to="/experience" title="Work Experience">
+        <NavLink className="navigation__item navigation__item--experience" activeClassName="navigation__item--active" to="/experience" title="Work History">
             { History }
         </NavLink>
     </nav>

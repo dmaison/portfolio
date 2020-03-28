@@ -9,6 +9,8 @@ const Component = () => (
         <Icon name="facebook" href="https://www.facebook.com/dave.maison" />
         <Icon name="instagram" href="https://www.instagram.com/fugdav/" />
         <Icon name="linkedin" href="https://www.linkedin.com/pub/david-maison/57/70b/859" />
+        <Icon name="steam" href="https://steamcommunity.com/id/fugdav/" />
+        <Icon name="twitch" href="https://www.twitch.tv/fugdav/" />
     </aside>
 )
 

@@ -8,3 +8,6 @@ export const LINKEDIN = 'linkedin';
 
 export const STACK_OVERFLOW = 'stack overflow';
 
+export const STEAM = 'steam';
+
+export const TWITCH = 'twitch';

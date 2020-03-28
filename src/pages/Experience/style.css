@@ -1,0 +1,22 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 10rem 0 0;
+}
+
+.experience__heading { text-align: right; }
+
+.experience__jobs__job {
+    
+    padding: 1rem;
+    width: calc( 33% - 2rem );
+}
+
+.experience__jobs__job__logo {
+    display: block;
+    height: 100px;
+    margin: 1rem auto;
+    width: auto;
+}

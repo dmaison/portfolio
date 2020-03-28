@@ -6,6 +6,8 @@ import github from './img/github.js'
 import instagram from './img/instagram.js'
 import linkedin from './img/linkedin.js'
 import stackOverflow from './img/stack-overflow.js'
+import steam from './img/steam.js'
+import twitch from './img/twitch.js'
 import './style.css'
 
 function Component( props ){
@@ -30,6 +32,12 @@ function Component( props ){
             case ICONS.STACK_OVERFLOW:
                 setIcon( stackOverflow );
                 break;
+            case ICONS.STEAM:
+                setIcon( steam );
+                break;
+            case ICONS.TWITCH:
+                setIcon( twitch );
+                break;
             default:
                 break;
         }
@@ -44,7 +52,7 @@ function Component( props ){
 }
 
 Component.propTypes = {
-    name: PropTypes.oneOf([ ICONS.FACEBOOK, ICONS.LINKEDIN, ICONS.GITHUB, ICONS.INSTAGRAM, ICONS.STACK_OVERFLOW ]).isRequired
+    name: PropTypes.oneOf([ ICONS.FACEBOOK, ICONS.LINKEDIN, ICONS.GITHUB, ICONS.INSTAGRAM, ICONS.STACK_OVERFLOW, ICONS.STEAM, ICONS.TWITCH ]).isRequired
 }
 
 export default Component

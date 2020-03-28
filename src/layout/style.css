@@ -1,10 +1,13 @@
 #root { 
     display: flex; 
     height: 100vh;
-    padding: 0 5vw;
-    width: calc( 100vw - 10vw );
+    overflow: hidden;
+    padding: 0 0 0 5vw;
+    width: calc( 100vw - 5vw );
 }
 
-#root > .header { flex-basis: 30vw; }
+#root .header { flex-basis: 30vw; }
 
-#root > .navigation { flex-basis: 100px; }
+#root .navigation { flex-basis: 100px; }
+
+#root .layout { flex: 1; }

@@ -1,0 +1,7 @@
+[
+    {
+        "name": "Sudoku",
+        "description": "A sudoku game, built in react. Includes functionality of saving and loading games, resetting a current game, difficulties selection, and tracks personal records",
+        "url": "http://games.dave.maison/sudoku"
+    }
+]

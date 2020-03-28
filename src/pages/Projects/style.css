@@ -1,0 +1,14 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 10rem 0 0;
+}
+
+.projects__heading { text-align: right; }
+
+.projects__list__project {    
+    padding: 1rem;
+    width: calc( 33% - 2rem );
+}

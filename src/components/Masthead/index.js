@@ -5,7 +5,7 @@ import './style.css'
 const Component = () => (
     <h1 className="masthead">
         <NavLink to="/">dave.maison</NavLink>
-        <small>web developer | veteran | novice strongman</small>
+        <small>full stack developer | veteran | strongman</small>
     </h1>
 )
 
