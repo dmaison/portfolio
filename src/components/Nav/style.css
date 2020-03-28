@@ -1,0 +1,19 @@
+.navigation {
+    align-items: center;
+    background-image: linear-gradient( to right, rgba( 0, 0, 0, .04 ), transparent );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navigation__item { margin: 2rem 0; }
+
+.navigation__item__icon {
+    height: 29px;
+    transition: linear .2s;
+    width: auto;
+}
+
+.navigation__item--contact .navigation__item__icon:hover { fill: var( --vapor-blue ); }
+.navigation__item--projects .navigation__item__icon:hover { fill: var( --vapor-pink ); }
+.navigation__item--experience .navigation__item__icon:hover { fill: var( --vapor-purple ); }

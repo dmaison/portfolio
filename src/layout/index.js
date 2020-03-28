@@ -1,14 +1,16 @@
-import React from 'react';
-import Home from '../pages/Home';
-import Nav from '../containers/Nav';
-import Resume from '../pages/Resume';
+import React from 'react'
+import Header from '../components/Header'
+import Nav from '../components/Nav'
+import './style.css'
 
-const Layout = () => (
-    <main>
-        <Home />
+const Component = props => (
+    <>
+        <Header />
         <Nav />
-        <Resume />
-    </main>
+        <main className="layout" role="main">
+            { props.children }
+        </main>
+    </>
 );
 
-export default Layout;
+export default Component

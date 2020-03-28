@@ -22,22 +22,30 @@
   "homepage": "http://dave.maison",
   "devDependencies": {
     "prop-types": "^15.7.2",
-    "react-scripts": "^1.1.5"
+    "react-scripts": "^3.4.1"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.12.0",
     "axios": "^0.18.1",
     "babel-polyfill": "^6.26.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-intersection-observer": "^8.25.2",
-    "react-localization": "^1.0.15",
-    "react-masonry-component": "^6.2.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-redux": "^5.1.2",
     "react-responsive": "^4.1.0",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

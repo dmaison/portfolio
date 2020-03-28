@@ -1,0 +1,10 @@
+#root { 
+    display: flex; 
+    height: 100vh;
+    padding: 0 5vw;
+    width: calc( 100vw - 10vw );
+}
+
+#root > .header { flex-basis: 30vw; }
+
+#root > .navigation { flex-basis: 100px; }

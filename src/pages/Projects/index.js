@@ -4,7 +4,7 @@ import './style.css'
 
 const Component = () => (
     <>
-        home
+        projects
     </>
 )
 

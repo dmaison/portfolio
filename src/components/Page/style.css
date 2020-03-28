@@ -1,9 +1,0 @@
-section.page {
-    min-height: 100vh;
-}
-
-section.page > div.container {
-    margin: auto;
-    max-width: 1024px;
-    padding: 2rem 0;
-}

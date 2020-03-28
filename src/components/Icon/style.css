@@ -1,0 +1,15 @@
+.icon__image {
+    height: 29px;
+    transition: linear .2s;
+    width: auto;
+}
+
+.icon__image--facebook:hover { fill: var( --facebook ); }
+
+.icon__image--github:hover { fill: var( --github ); }
+
+.icon__image--instagram:hover { fill: var( --instagram ); }
+
+.icon__image--linkedin:hover { fill: var( --linkedin ); }
+
+.icon__image--stackOverflow:hover { fill: var( --stack-overflow ); }
