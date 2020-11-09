@@ -29,7 +29,6 @@
     "babel-polyfill": "^6.26.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-masonry-component": "^6.2.1",
     "react-redux": "^5.1.2",
     "react-responsive": "^4.1.0",
     "react-router-dom": "^5.1.2",

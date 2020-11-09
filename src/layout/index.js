@@ -1,15 +1,17 @@
 import React from 'react'
-import Header from '../components/Header'
 import Nav from '../components/Nav'
+import Title from '../components/Title'
 import './style.css'
 
 const Component = props => (
     <>
-        <Header />
-        <Nav />
-        <main className="layout" role="main">
-            { props.children }
-        </main>
+        <Title />
+        <div className="focus">
+            <Nav />
+            <main className="layout" role="main">
+                { props.children }
+            </main>
+        </div>
     </>
 );
 

@@ -1,4 +1,10 @@
 :root {
+
+    --fontPrimary: #dee5f5;
+    --lightBlue: #0d1f46;
+    --darkBlue: #000819;
+    --yellow: #ffdf00;
+
     --facebook: #1778f2;
     --github: #24292e;
     --instagram: #e1306c;
@@ -6,7 +12,4 @@
     --stack-overflow: #f48024;
     --steam: #1b2838;
     --twitch: #9147ff;
-    --vapor-pink: #ff00c1;
-    --vapor-purple: #9600ff;
-    --vapor-blue: #00b8ff;
 }

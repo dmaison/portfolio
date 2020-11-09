@@ -1,13 +1,9 @@
 #root { 
-    display: flex; 
-    height: 100vh;
+    display: flex;
+    height: calc( 100vh - 6rem);
     overflow: hidden;
-    padding: 0 0 0 5vw;
-    width: calc( 100vw - 5vw );
+    padding: 3rem 3rem 3rem 0;
+    position: relative;
 }
 
-#root .header { flex-basis: 30vw; }
-
-#root .navigation { flex-basis: 100px; }
-
-#root .layout { flex: 1; }
+.focus { flex: 1; }

@@ -1,19 +1,12 @@
-.icon__image {
-    height: 29px;
-    transition: linear .2s;
+.icon { display: inline-block; }
+
+.icon svg { 
+    height: 100%;
     width: auto;
 }
 
-.icon__image--facebook:hover { fill: var( --facebook ); }
+.icon--white { fill: var( --fontPrimary ); }
 
-.icon__image--github:hover { fill: var( --github ); }
+.icon--yellow { fill: var( --yellow ); }
 
-.icon__image--instagram:hover { fill: var( --instagram ); }
-
-.icon__image--linkedin:hover { fill: var( --linkedin ); }
-
-.icon__image--stackOverflow:hover { fill: var( --stack-overflow ); }
-
-.icon__image--steam:hover { fill: var( --steam ); }
-
-.icon__image--twitch:hover { fill: var( --twitch ); }
+.icon--large { height: 70px; }

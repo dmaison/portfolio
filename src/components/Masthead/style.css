@@ -1,9 +1,0 @@
-.masthead {
-    text-align: center;
-    width: 410px;
-}
-
-.masthead > a {
-    color: var( --black );
-    text-decoration: none;
-}

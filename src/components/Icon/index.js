@@ -1,13 +1,19 @@
 import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import * as ICONS from './config'
+import clock from './img/clock.js'
+import contact from './img/contact-card.js'
+import email from './img/email.js'
 import facebook from './img/facebook.js'
+import folder from './img/folder.js'
 import github from './img/github.js'
+import hat from './img/hat.js'
+import history from './img/history.js'
 import instagram from './img/instagram.js'
 import linkedin from './img/linkedin.js'
+import phone from './img/phone.js'
 import stackOverflow from './img/stack-overflow.js'
-import steam from './img/steam.js'
-import twitch from './img/twitch.js'
+import user from './img/user.js'
 import './style.css'
 
 function Component( props ){
@@ -17,11 +23,29 @@ function Component( props ){
     useEffect(() => {
 
         switch( props.name ){
+            case ICONS.CLOCK:
+                setIcon( clock );
+                break;
+            case ICONS.CONTACT:
+                setIcon( contact );
+                break;
+            case ICONS.EMAIL:
+                setIcon( email );
+                break;
             case ICONS.FACEBOOK:
                 setIcon( facebook );
                 break;
+            case ICONS.FOLDER:
+                setIcon( folder );
+                break;
             case ICONS.GITHUB:
                 setIcon( github );
+                break;
+            case ICONS.HAT:
+                setIcon( hat );
+                break;
+            case ICONS.HISTORY:
+                setIcon( history );
                 break;
             case ICONS.INSTAGRAM:
                 setIcon( instagram );
@@ -29,14 +53,14 @@ function Component( props ){
             case ICONS.LINKEDIN:
                 setIcon( linkedin );
                 break;
+            case ICONS.PHONE:
+                setIcon( phone );
+                break;
             case ICONS.STACK_OVERFLOW:
                 setIcon( stackOverflow );
                 break;
-            case ICONS.STEAM:
-                setIcon( steam );
-                break;
-            case ICONS.TWITCH:
-                setIcon( twitch );
+            case ICONS.USER:
+                setIcon( user );
                 break;
             default:
                 break;
@@ -45,14 +69,21 @@ function Component( props ){
     }, [ props.name ])
 
     return (
-        <a href={ props.href } className="icon" title={ props.name } rel="noopener noreferrer" target="_blank">
+        <span className={ `icon icon--${ props.color } icon--${ props.size }` }>
             { icon }
-        </a>
+        </span>
     )
 }
 
+Component.defaultProps = {
+    color: 'white',
+    size: 'medium'
+}
+
 Component.propTypes = {
-    name: PropTypes.oneOf([ ICONS.FACEBOOK, ICONS.LINKEDIN, ICONS.GITHUB, ICONS.INSTAGRAM, ICONS.STACK_OVERFLOW, ICONS.STEAM, ICONS.TWITCH ]).isRequired
+    color: PropTypes.oneOf([ 'white', 'blue', 'yellow' ]),
+    name: PropTypes.oneOf([ ICONS.CLOCK, ICONS.CONTACT, ICONS.EMAIL, ICONS.FACEBOOK, ICONS.FOLDER, ICONS.GITHUB, ICONS.HAT, ICONS.HISTORY, ICONS.INSTAGRAM, ICONS.LINKEDIN, ICONS.PHONE, ICONS.STACK_OVERFLOW, ICONS.USER ]).isRequired,
+    size: PropTypes.oneOf([ 'small', 'medium', 'large' ]),
 }
 
 export default Component
