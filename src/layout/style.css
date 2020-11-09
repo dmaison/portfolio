@@ -6,4 +6,10 @@
     position: relative;
 }
 
-.focus { flex: 1; }
+.focus { 
+    display: flex;
+    flex: 1; 
+    flex-direction: column;
+}
+
+.focus main { flex: 1; }
