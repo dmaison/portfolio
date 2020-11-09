@@ -12,4 +12,17 @@
     flex-direction: column;
 }
 
-.focus main { flex: 1; }
+main { 
+    flex: 1; 
+    position: relative;
+}
+
+main h2 {
+    bottom: -17px;
+    left: 0;
+    line-height: 44px;
+    position: absolute;
+    text-transform: uppercase;
+    transform: rotate( 180deg );
+    writing-mode: vertical-lr;
+}

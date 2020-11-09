@@ -5,8 +5,10 @@
     width: 100%;
 }
 
-.navigation__item__icon {
-    height: 29px;
-    transition: linear .2s;
-    width: auto;
+.navigation__item svg { transition: linear .2s; }
+
+.navigation__item:hover svg { 
+    fill: white; 
+    padding-top: 10px;
+    margin-bottom: -10px;
 }
