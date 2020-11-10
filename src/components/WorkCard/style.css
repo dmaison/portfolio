@@ -1,7 +1,13 @@
+.work-card__company { 
+    align-items: center;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+}
+
 .work-card__company__logo {
-    height: auto;
+    max-width: 100%;
     max-height: 200px;
-    width: 100%;
 }
 
 .work-card__time-in-position,
