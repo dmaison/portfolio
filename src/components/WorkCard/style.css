@@ -1,0 +1,23 @@
+.work-card__company__logo {
+    height: auto;
+    max-height: 200px;
+    width: 100%;
+}
+
+.work-card__time-in-position,
+.work-card__title { 
+    align-items: center;
+    display: flex;
+    font-family: kanit, Arial, Helvetica, sans-serif;
+}
+
+.work-card__time-in-position .icon,
+.work-card__title .icon {
+    text-align: center;
+    margin-right: 1rem;
+    width: 40px;
+}
+
+.work-card__title {
+    font-size: 1.5rem;
+}

@@ -6,7 +6,9 @@ import './style.css'
 const Component = props => (
     <article className="work-card">
         <h3 className="work-card__company">
-            <a href={ props.website } target="_blank" rel="noopener noreferrer"><img src={ props.logo } alt={ props.company } /></a>
+            <a href={ props.website } target="_blank" rel="noopener noreferrer">
+                <img src={ props.logo } alt={ props.company } className="work-card__company__logo" />
+            </a>
         </h3>
         <p className="work-card__title">
             <Icon name="hat" color="yellow" />
@@ -19,7 +21,7 @@ const Component = props => (
             { 
                 props.years.end ?
                     props.years.end :
-                    'present'
+                    <em>Present</em>
             }
         </p>
         <p className="work-card__description" dangerouslySetInnerHTML={{ __html: props.description }} />
