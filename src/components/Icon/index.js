@@ -16,6 +16,7 @@ import resume from './img/resume.js'
 import stackOverflow from './img/stack-overflow.js'
 import user from './img/user.js'
 import './style.css'
+import professional from './img/professional'
 
 function Component( props ){
 
@@ -57,6 +58,9 @@ function Component( props ){
             case ICONS.PHONE:
                 setIcon( phone );
                 break;
+            case ICONS.PROFESSIONAL:
+                setIcon( professional );
+                break;
             case ICONS.RESUME:
                 setIcon( resume );
                 break;
@@ -64,6 +68,7 @@ function Component( props ){
                 setIcon( stackOverflow );
                 break;
             case ICONS.USER:
+            case ICONS.PERSONAL:
                 setIcon( user );
                 break;
             default:
@@ -86,7 +91,7 @@ Component.defaultProps = {
 
 Component.propTypes = {
     color: PropTypes.oneOf([ 'white', 'blue', 'yellow' ]),
-    name: PropTypes.oneOf([ ICONS.CLOCK, ICONS.CONTACT, ICONS.EMAIL, ICONS.FACEBOOK, ICONS.FOLDER, ICONS.GITHUB, ICONS.HAT, ICONS.HISTORY, ICONS.INSTAGRAM, ICONS.LINKEDIN, ICONS.PHONE, ICONS.RESUME, ICONS.STACK_OVERFLOW, ICONS.USER ]).isRequired,
+    name: PropTypes.oneOf([ ICONS.CLOCK, ICONS.CONTACT, ICONS.EMAIL, ICONS.FACEBOOK, ICONS.FOLDER, ICONS.GITHUB, ICONS.HAT, ICONS.HISTORY, ICONS.INSTAGRAM, ICONS.LINKEDIN, ICONS.PERSONAL, ICONS.PHONE, ICONS.PROFESSIONAL, ICONS.RESUME, ICONS.STACK_OVERFLOW, ICONS.USER ]).isRequired,
     size: PropTypes.oneOf([ 'small', 'medium', 'large' ]),
 }
 

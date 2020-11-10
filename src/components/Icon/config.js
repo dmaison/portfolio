@@ -18,7 +18,11 @@ export const INSTAGRAM = 'instagram';
 
 export const LINKEDIN = 'linkedin';
 
+export const PERSONAL = 'personal';
+
 export const PHONE = 'phone';
+
+export const PROFESSIONAL = 'professional';
 
 export const RESUME = 'resume';
 
