@@ -20,6 +20,8 @@ export const LINKEDIN = 'linkedin';
 
 export const PHONE = 'phone';
 
+export const RESUME = 'resume';
+
 export const STACK_OVERFLOW = 'stack overflow';
 
 export const USER = 'user';

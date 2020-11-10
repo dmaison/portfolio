@@ -5,8 +5,16 @@
     width: auto;
 }
 
+/**
+ * Colors
+ */
 .icon--white { fill: var( --fontPrimary ); }
 
 .icon--yellow { fill: var( --yellow ); }
 
+/**
+ * Sizes
+ */
 .icon--large { height: 70px; }
+
+.icon--small { height: 20px; }
