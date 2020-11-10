@@ -29,3 +29,5 @@ main h2 {
     transform: rotate( 180deg );
     writing-mode: vertical-lr;
 }
+
+main h3 { text-transform: uppercase; }
