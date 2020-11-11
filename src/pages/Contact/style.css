@@ -10,6 +10,7 @@
     flex-shrink: 1;
     margin-bottom: 2rem;
     overflow-y: scroll;
+    padding-right: 2rem;
 }
 
 .page-contact__container::-webkit-scrollbar { width: 12px; }
@@ -82,3 +83,13 @@
 }
 
 .page-contact__details__data { margin-inline-start: 0; } 
+
+@media screen and (max-width: 970px){
+    .page-contact__photo {
+        float: none;
+        display: block;
+        margin: auto;
+    }
+
+    .page-contact p { max-width: initial; }
+}

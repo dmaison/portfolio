@@ -19,3 +19,14 @@
     max-height: 100%;
     width: auto;
 }
+
+@media screen and (max-width: 750px){
+    .title { 
+        display: none;
+    }
+
+    .title a img {
+        height: auto;
+        width: 100%;
+    }
+}

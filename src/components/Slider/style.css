@@ -44,3 +44,7 @@
     outline: none;
     width: 100%;
 }
+
+@media screen and (max-width: 970px){
+    .slider__content { max-width: initial; }
+}
