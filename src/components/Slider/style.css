@@ -1,3 +1,5 @@
+.slider { height: 100%; }
+
 .slider__content {
     height: calc( 100% - 24px - 2rem );
     margin-bottom: 2rem;
