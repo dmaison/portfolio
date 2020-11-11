@@ -1,14 +1,13 @@
 .page-contact { 
     display: flex;
     flex-direction: column;
+    max-height: calc( 100vh - 260px - 10rem );
     min-height: 100%;
 }
 
 .page-contact__container {
     flex: 1;
     flex-shrink: 1;
-    flex-grow: 0;
-    max-height: calc( 100vh - 260px - 10rem );
     margin-bottom: 2rem;
     overflow-y: scroll;
 }
@@ -70,7 +69,7 @@
     flex-basis: 190px;
     flex-shrink: 0;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 30px auto;
     grid-row-gap: 2rem;
     grid-column-gap: 1rem;
     margin: 0;
