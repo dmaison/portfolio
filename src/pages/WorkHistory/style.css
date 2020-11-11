@@ -1,3 +1,10 @@
 .page-work-history { height: 100%; }
 
 .page-work-history .work-card { margin-right: 2rem; }
+
+@media screen and (max-width: 750px){
+    .page-work-history { 
+        height: calc( 100vh - 87px - 5rem ); 
+        padding-right: 2rem;
+    }
+}
