@@ -22,17 +22,15 @@
   "homepage": "http://dave.maison",
   "devDependencies": {
     "prop-types": "^15.7.2",
-    "react-scripts": "^3.4.1"
+    "react-scripts": "^4.0.0"
   },
   "dependencies": {
-    "axios": "^0.18.1",
     "babel-polyfill": "^6.26.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-redux": "^5.1.2",
-    "react-responsive": "^4.1.0",
-    "react-router-dom": "^5.1.2",
-    "react-router-transition": "^2.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
+    "react-responsive": "^8.1.1",
+    "react-router-dom": "^5.2.0",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0"
   },

@@ -21,9 +21,15 @@
 }
 
 @media screen and (max-width: 750px){
-    .title { 
-        display: none;
+    .title {
+        font-size: initial;
+        margin-right: 0;
+        margin-bottom: 1rem;
+        line-height: initial;
+        height: auto;
     }
+
+    .title a { width: auto; }
 
     .title a img {
         height: auto;

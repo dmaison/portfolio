@@ -2,6 +2,7 @@ body {
     background-color: var( --darkBlue );
     background-image: radial-gradient( var( --lightBlue ), var( --darkBlue ) );
     background-position: fixed;
+    background-repeat: no-repeat;
     color: var( --fontPrimary );
     margin: 0;
     padding: 0;    
