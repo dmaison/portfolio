@@ -24,7 +24,7 @@ main h2 {
     bottom: -17px;
     left: 0;
     line-height: 44px;
-    position: absolute;
+    position: fixed;
     text-transform: uppercase;
     transform: rotate( 180deg );
     writing-mode: vertical-lr;
@@ -40,4 +40,5 @@ main h3 { text-transform: uppercase; }
         overflow: initial;
         padding: 0;
     }
+
 }
