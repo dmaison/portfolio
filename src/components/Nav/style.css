@@ -1,0 +1,26 @@
+.navigation {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navigation__item svg { transition: linear .2s; }
+
+.navigation__item:hover svg,
+.navigation__item--active svg { 
+    fill: var( --yellow );
+    padding-top: 10px;
+    margin-bottom: -10px;
+}
+
+.navigation__item--facebook:hover svg { fill: var( --facebook ); }
+.navigation__item--instagram:hover svg { fill: var( --instagram ); }
+.navigation__item--stack-overflow:hover svg { fill: var( --stack-overflow ); }
+.navigation__item--github:hover svg { fill: var( --github ); }
+
+@media screen and (max-width: 750px){
+    .navigation {
+        justify-content: space-evenly;
+    }
+}

@@ -1,0 +1,10 @@
+.page-portfolio { height: 100%; }
+
+.page-portfolio .project-card { margin-right: 2rem; }
+
+@media screen and (max-width: 750px){
+    .page-portfolio { 
+        height: calc( 100vh - 87px - 5rem ); 
+        padding-right: 2rem;
+    }
+}

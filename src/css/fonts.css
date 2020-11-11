@@ -1,0 +1,21 @@
+body {
+    font-family: quicksand, sans-serif;
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+    font-family: kanit, sans-serif; 
+    font-weight: normal;
+    margin: 0 0 1rem;
+}
+
+h1 { 
+    font-size: 7rem; 
+    line-height: 5rem;
+}
+
+h2 { font-size: 4rem; }
+
+h3 { font-size: 2rem; }
+
+a { color: var( --yellow )}

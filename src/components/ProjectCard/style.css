@@ -1,0 +1,27 @@
+.project-card__title { 
+    align-items: center;
+    display: flex;
+    font-family: kanit, Arial, Helvetica, sans-serif;
+    height: 200px;
+    justify-content: center;
+}
+
+.project-card__title__image[src$=".svg"] { 
+    height: auto;
+    max-height: 200px;
+    width: 100%; 
+}
+
+.project-card__type { 
+    align-items: center;
+    display: flex;
+    font-family: kanit, Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.project-card__type .icon {
+    text-align: center;
+    margin-right: 1rem;
+    width: 40px;
+}

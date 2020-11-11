@@ -1,0 +1,6 @@
+.transitionContainer { position: relative; }
+  
+.transitionContainer > div {
+    position: absolute;
+    width: 100%;
+}

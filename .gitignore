@@ -1,53 +1,17 @@
-node_modules/
-client/libs/
-server/config.js
+# See https://help.github.com/ignore-files/ for more about ignoring files.
 
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+# dependencies
+/node_modules
 
-# Folder config file
-Desktop.ini
+# testing
+/coverage
 
+# production
+/build
 
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
+# misc
 .DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
-._*
-
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-
-# Minified files
-client/css/dave.maison.min.css
-client/js/dave.maison.min.js
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
