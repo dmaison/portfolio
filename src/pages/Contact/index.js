@@ -22,8 +22,8 @@ const Component = () => {
                     United States Air Force, Husband, and Father.
                 </p>
                 <p>
-                    After graduating from a vacational highschool with a focused study on internet technologies, I immediately began my professional career. However, 
-                    during the recession in 2009, I made the decision to serve the country and joined the United States Air Force assuming the career field my father occupied while he served, Fuels &amp; Cryogentics Specialist  (2F0X1).
+                    After graduating from a vocational highschool with a focused study on internet technologies, I immediately began my professional career. However, 
+                    during the recession in 2009, I made the decision to serve the country and joined the United States Air Force assuming the career field my father occupied while he served, Fuels &amp; Cryogenics Specialist  (2F0X1).
                 </p>
                 <p>
                     While in active duty, I continued to hone my development skills as a free-lance developer, until I left active duty in 2014 and switched to reserve duty. During that time, I resumed the full-time profession
