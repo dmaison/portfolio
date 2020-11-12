@@ -1,0 +1,29 @@
+.page-home { 
+    align-items: flex-end;
+    display: flex;
+    height: 100%;
+}
+
+.page-home__quote {
+    flex: 1;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.page-home__quote__quotee {
+    color: var( --yellow );
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 750px){
+    .page-home__quote { 
+        bottom: 1rem;
+        font-size: 1.5rem; 
+        margin-left: calc( 2rem + 50px );
+        position: fixed;
+        right: 0;
+    }
+}
