@@ -79,7 +79,7 @@ const About = () => {
                     <ListItemIcon>
                         <SvgIcon component={ SolidityIcon } inheritViewBox color="primary" />
                     </ListItemIcon>
-                    <ListItemText primary="Solidity" secondary="ABIs, Web3, wallet interactions" />
+                    <ListItemText primary="Solidity" secondary="ERC20, Hardhat, Web3" />
                 </ListItem>
                 <ListItem>
                     <ListItemIcon>
