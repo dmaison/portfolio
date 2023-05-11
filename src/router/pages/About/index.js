@@ -20,6 +20,11 @@ import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
+import HandymanIcon from '@mui/icons-material/Handyman';
+import LocalFloristIcon from '@mui/icons-material/LocalFlorist';
+import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
+import SendIcon from '@mui/icons-material/Send';
+import PersonIcon from '@mui/icons-material/Person';
 import { CURRENT_AGE, EXPERIENCE_TOTAL_YEARS, HREF_BANDCAMP, HREF_RESUME } from "./config";
 
 const About = () => {
@@ -95,8 +100,37 @@ const About = () => {
                     </ListItemButton>
                 </ListItem>
             </List>
+
             <Typography variant="h3">
-                Other Stuff
+                Contact
+            </Typography>
+            <List>
+                <ListItem>
+                    <ListItemIcon>
+                        <PersonIcon color="primary" />
+                    </ListItemIcon>
+                    <ListItemText primary="David J. Maison Jr." secondary="Sr. UI Architect, Analog Devices, Inc." />
+                </ListItem>
+                <ListItem disablePadding>
+                    <ListItemButton component={ Link } href="tel:1-978-436-0982">
+                        <ListItemIcon>
+                            <PhoneIphoneIcon color="primary" />
+                        </ListItemIcon>
+                        <ListItemText primary="Phone" secondary="(978) 436-0982" />
+                    </ListItemButton>
+                </ListItem>
+                <ListItem disablePadding>
+                    <ListItemButton component={ Link } href="mailto:davemaison@gmail.com">
+                        <ListItemIcon>
+                            <SendIcon color="primary" />
+                        </ListItemIcon>
+                        <ListItemText primary="E-mail" secondary="davemaison@gmail.com" />
+                    </ListItemButton>
+                </ListItem>
+            </List>
+            
+            <Typography variant="h3">
+                Interests
             </Typography>
 
             <Stack direction="row">
@@ -137,17 +171,26 @@ const About = () => {
                         <ListItemText primary="Etymology & Language" secondary="1% of the way to becomming a polyglot" />
                     </ListItem>
                 </List>
+
+                <List 
+                    subheader={
+                        <ListSubheader>Domestic Things</ListSubheader>
+                    }>
+                    <ListItem>
+                        <ListItemIcon>
+                            <HandymanIcon color="primary" />
+                        </ListItemIcon>
+                        <ListItemText primary="Home Improvement" secondary="Depending on who you ask" />
+                    </ListItem>
+                    <ListItem>
+                        <ListItemIcon>
+                            <LocalFloristIcon color="primary" />
+                        </ListItemIcon>
+                        <ListItemText primary="Growing Food" secondary="I also raise chickens" />
+                    </ListItem>
+                </List>
             </Stack>
-            <dl className="page-contact__details">
-                {/* <dt className="page-contact__details__label"><Icon name="user" size="small" /></dt> */}
-                <dd className="page-contact__details__data">David J. Maison Jr.</dd>
-                {/* <dt className="page-contact__details__label"><Icon name="phone" size="small" /></dt> */}
-                <dd className="page-contact__details__data"><a href="tel:1-978-436-0982">(978) 436-0982</a></dd>
-                {/* <dt className="page-contact__details__label"><Icon name="email" size="small" /></dt> */}
-                <dd className="page-contact__details__data"><a href="mailto:davemaison@gmail.com">davemaison@gmail.com</a></dd>
-                {/* <dt className="page-contact__details__label"><Icon name="resume" size="small" /></dt> */}
-                <dd className="page-contact__details__data">{ HREF_RESUME }</dd>
-            </dl>
+            
         </Page>
     )
 }
