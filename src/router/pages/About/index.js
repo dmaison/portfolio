@@ -13,10 +13,10 @@ import ListItemText from '@mui/material/ListItemText';
 import { ReactComponent as HtmlIcon } from './media/html.svg';
 import { ReactComponent as CssIcon } from './media/css.svg';
 import { ReactComponent as JavascriptIcon } from './media/js.svg';
-import { ReactComponent as ReactIcon } from './media/react.svg';
-import { ReactComponent as AngularIcon } from './media/angular.svg';
-import { ReactComponent as NodeIcon } from './media/node.svg';
-import { ReactComponent as MongoIcon } from './media/mongo.svg';
+import { ReactComponent as SolidityIcon } from './media/solidity.svg';
+import { ReactComponent as UbuntuIcon } from './media/ubuntu.svg';
+import { ReactComponent as AWSIcon } from './media/aws.svg';
+import StorageIcon from '@mui/icons-material/Storage';
 import Me from "./media/me.jpg";
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
@@ -67,37 +67,37 @@ const About = () => {
                     <ListItemIcon>
                         <SvgIcon component={ CssIcon } inheritViewBox color="primary" />
                     </ListItemIcon>
-                    <ListItemText primary="CSS" secondary="CSS3" />
+                    <ListItemText primary="CSS" secondary="CSS3, LESS, SASS" />
                 </ListItem>
                 <ListItem>
                     <ListItemIcon>
                         <SvgIcon component={ JavascriptIcon } inheritViewBox color="primary" />
                     </ListItemIcon>
-                    <ListItemText primary="Javascript" secondary="ES2016/V8"  />
+                    <ListItemText primary="Javascript" secondary="ECMAScript, ReactJS, AngularJS, NodeJS"  />
                 </ListItem>
                 <ListItem>
                     <ListItemIcon>
-                    <SvgIcon component={ ReactIcon } inheritViewBox color="primary" />
+                        <SvgIcon component={ SolidityIcon } inheritViewBox color="primary" />
                     </ListItemIcon>
-                    <ListItemText primary="ReactJS" secondary="Current Version" />
+                    <ListItemText primary="Solidity" secondary="ABIs, Web3, wallet interactions" />
                 </ListItem>
                 <ListItem>
                     <ListItemIcon>
-                        <SvgIcon component={ AngularIcon } inheritViewBox color="primary" />
+                        <SvgIcon component={ UbuntuIcon } inheritViewBox color="primary" />
                     </ListItemIcon>
-                    <ListItemText primary="AngularJS" secondary="Current Version"  />
+                    <ListItemText primary="Ubuntu" secondary="CLI (bash, vim, nano, etc.)"  />
                 </ListItem>
                 <ListItem>
                     <ListItemIcon>
-                        <SvgIcon component={ NodeIcon } inheritViewBox color="primary" />
+                        <SvgIcon component={ AWSIcon } inheritViewBox color="primary" />
                     </ListItemIcon>
-                    <ListItemText primary="NodeJS" secondary="Current Version"  />
+                    <ListItemText primary="Amazon Web Services " secondary="EC2, S3, Route53, Lambda, CloudFront..."  />
                 </ListItem>
                 <ListItem>
                     <ListItemIcon>
-                        <SvgIcon component={ MongoIcon } inheritViewBox color="primary" />
+                        <StorageIcon color="primary" />
                     </ListItemIcon>
-                    <ListItemText primary="MongoDB" secondary="Current Version"  />
+                    <ListItemText primary="Database Architecture" secondary="SQL, MongoDB, Redis"  />
                 </ListItem>
                 <ListItem disablePadding>
                     <ListItemButton component={ Link } href={ HREF_RESUME } target="_blank" aria-label="Résumé">
