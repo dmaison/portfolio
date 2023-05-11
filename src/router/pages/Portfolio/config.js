@@ -12,6 +12,44 @@ import { ReactComponent as AwsIcon } from './media/aws.svg';
  */
 export const PIECES = [
     {
+        name: "Chain of Events",
+        image: "http://assets.dave.maison/img/logo/whats-their-name-white.png",
+        owner: 'Private',
+        description: `
+            A tool designed to allow communities to create immutable evidence boards, recounting a crime or conspiracy, and publish it permantly 
+            to the Ethereum, and soon PulseChain, blockchains  as an NFT.<br><br>
+            This is the <em>only</em> practical application of NFTs that I know of.
+        `,
+        featuredTechnologies: [{
+                label: 'ReactJS',
+                icon: ReactIcon
+            },
+            {
+                label: 'NodeJS',
+                icon: NodeIcon
+            },
+            {
+                label: 'Solidity',
+                icon: SolidityIcon
+            },
+            {
+                label: 'Lambda, Rekognition, API Gateway, S3, Route53, & CloudFront',
+                icon: AwsIcon
+            }
+        ],
+        url: "https://chainofevents.app"
+    },
+    {
+        name: "This Website",
+        image: MyAnalogSS,
+        owner: 'Me',
+        description: "A basic React website meant to showcase my expertise in the area of web development, among some other things.",
+        featuredTechnologies: [{
+            label: 'ReactJS',
+            icon: ReactIcon
+        }]
+    },
+    {
         name: "myAnalog",
         image: MyAnalogSS,
         owner: 'Analog Devices, Inc.',
@@ -31,7 +69,7 @@ export const PIECES = [
             icon: ReactIcon
         }],
         description: "Application allows engineers to select and compare parts based on user input specifications",
-        url: "https://my.analog.com"
+        url: "https://www.analog.com/en/parametricsearch/12998"
     },
     {
         name: "Sudoku Game",
@@ -60,30 +98,5 @@ export const PIECES = [
             label: 'NodeJS',
             icon: NodeIcon
         }]
-    },
-    {
-        name: "Chain of Events",
-        image: "http://assets.dave.maison/img/logo/whats-their-name-white.png",
-        owner: 'Private',
-        description: "A tool designed to allow communities to create immutable evidence boards, recounting a crime or conspiracy, and publish it permantly to the Ethereum blockchain as an NFT.",
-        featuredTechnologies: [{
-            label: 'ReactJS',
-            icon: ReactIcon
-        },
-        {
-            label: 'NodeJS',
-            icon: NodeIcon
-        },
-        {
-            label: 'Solidity',
-            icon: SolidityIcon
-        },
-        {
-            label: 'Lambda, Rekognition, API Gateway, S3, Route53, & CloudFront',
-            icon: AwsIcon
-        }
-    ],
-        url: "https://chainofevents.app"
-    }
-    
+    }    
 ];

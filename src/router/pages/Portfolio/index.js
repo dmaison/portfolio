@@ -23,7 +23,7 @@ const Experience = () => {
     return (
         <Page title="Portfolio">
             <Typography sx={{ mb: 3 }}>
-                A high-level overview of my professional career
+                A Notable list of things I have made in recent history
             </Typography>
             <Grid container spacing={ 2 } columns={ 3 }>
                 {
