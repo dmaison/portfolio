@@ -16,7 +16,7 @@
         "name": "Sudoku Game",
         "description": "A sudoku game, built in react. Includes functionality of saving and loading games, resetting a current game, difficulties selection, and tracks personal records.",
         "type": "personal",
-        "url": "http://games.dave.maison/sudoku"
+        "url": "http://games.dave.maison/"
     },
     {
         "name": "What's Their Name?",

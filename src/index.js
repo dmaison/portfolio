@@ -1,22 +1,13 @@
-import 'babel-polyfill';
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { createStore, applyMiddleware, compose } from 'redux';
-import { Provider } from 'react-redux';
-import ReduxThunk from 'redux-thunk';
-import reducers from './reducers';
-import Router from './routes';
-import './css/index.css';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import reportWebVitals from './reportWebVitals';
+import Router from './router';
 
-const enhancers = compose( applyMiddleware( ReduxThunk ), window.devToolsExtension
-	? window.devToolsExtension()
-	: f => f);
-
-const store = createStore( reducers, enhancers );
-
-ReactDOM.render(
-  	<Provider store={ store }>
-	  	<Router />
-	</Provider>,
-  	document.getElementById( 'root' )
+const root = createRoot( document.getElementById( 'root' ) );
+root.render(
+  	<StrictMode>
+		<Router />
+  	</StrictMode>
 );
+
+reportWebVitals();
