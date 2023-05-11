@@ -23,7 +23,7 @@ const Experience = () => {
     return (
         <Page title="Experience">
             <Typography sx={{ mb: 3 }}>
-                A high-level overview of my work experience
+                A high-level overview of my professional career
             </Typography>
             {
                 HISTORY.map(
