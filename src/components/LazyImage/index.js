@@ -25,9 +25,9 @@ const LazyImage = props => {
             <img 
                 { ...props} 
                 style={{
-                    height: 'auto',
+                    height: width ? 'auto' : height,
                     maxWidth: width,
-                    width: '100%'
+                    width: width ? '100%' : 'auto'
                 }} />
         )
 }
