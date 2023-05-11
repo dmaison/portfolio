@@ -15,6 +15,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import SvgIcon from '@mui/material/SvgIcon';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import { useState } from "react";
 
 const Experience = () => {
@@ -29,7 +30,7 @@ const Experience = () => {
                 {
                     PIECES.map(
                         piece => {
-                            const { description, featuredTechnologies, image, name, owner, url } = piece;
+                            const { description, featuredTechnologies, github, image, name, owner, url } = piece;
                             return (
                                 <Grid item key={ name } md={ 1 } xs={ 3 }>
                                     <Card>
@@ -57,15 +58,23 @@ const Experience = () => {
                                                 }
                                             </List>
                                         </CardContent>
-                                        {
-                                            url ?
-                                                <CardActions>
+                                        
+                                        <CardActions>
+                                            {
+                                                url ?
                                                     <Button href={ url } startIcon={ <OpenInNewIcon /> } variant="text" target="_blank">
                                                         Launch
-                                                    </Button>
-                                                </CardActions> :
-                                                null
-                                        }
+                                                    </Button> :
+                                                    null
+                                            }
+                                            { 
+                                                github ?
+                                                    <Button startIcon={ <GitHubIcon /> } href={ github } target="_blank">
+                                                        View it on GitHub
+                                                    </Button> :
+                                                    null
+                                            }
+                                        </CardActions>
                                     </Card>
                                 </Grid>
                             )

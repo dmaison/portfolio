@@ -47,7 +47,8 @@ export const PIECES = [
         featuredTechnologies: [{
             label: 'ReactJS',
             icon: ReactIcon
-        }]
+        }],
+        github: 'https://github.com/dmaison/portfolio'
     },
     {
         name: "myAnalog",
@@ -83,7 +84,8 @@ export const PIECES = [
             label: 'S3 & Route53',
             icon: AwsIcon
         }],
-        url: "http://games.dave.maison/"
+        url: "http://games.dave.maison/",
+        github: 'https://github.com/dmaison/sudoku'
     },
     {
         name: "What's Their Name?",
