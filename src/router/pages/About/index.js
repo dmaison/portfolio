@@ -2,6 +2,7 @@ import Page from "../../../components/Page";
 import Typography from "@mui/material/Typography";
 import SvgIcon from '@mui/material/SvgIcon';
 import Stack from '@mui/material/Stack';
+import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
 import List from '@mui/material/List';
 import ListSubheader from '@mui/material/ListSubheader';
@@ -16,6 +17,7 @@ import { ReactComponent as ReactIcon } from './media/react.svg';
 import { ReactComponent as AngularIcon } from './media/angular.svg';
 import { ReactComponent as NodeIcon } from './media/node.svg';
 import { ReactComponent as MongoIcon } from './media/mongo.svg';
+import Me from "./media/me.jpg";
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
@@ -26,25 +28,31 @@ import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import SendIcon from '@mui/icons-material/Send';
 import PersonIcon from '@mui/icons-material/Person';
 import { CURRENT_AGE, EXPERIENCE_TOTAL_YEARS, HREF_BANDCAMP, HREF_RESUME } from "./config";
+import LazyImage from "../../../components/LazyImage";
+import { styled } from '@mui/material/styles';
+
+const Para = styled( Typography )`
+    margin-bottom: 1rem
+`
 
 const About = () => {
     return (
         <Page title="About">
-            <Typography>
+            <Para>
                 I am a { CURRENT_AGE } year old Full-stack developer with over { EXPERIENCE_TOTAL_YEARS } years of professional experience, a veteran of the 
                 United States Air Force, Husband, and Father.
-            </Typography>
-            <Typography>
+            </Para>
+            <Para>
                 After graduating from a vacational highschool with a focused study on internet technologies, I immediately began my professional career. However, 
                 during the recession in 2009, I made the decision to serve the country and joined the United States Air Force assuming the career field my father occupied while he served, Fuels &amp; Cryogentics Specialist  (2F0X1).
-            </Typography>
-            <Typography>
+            </Para>
+            <Para>
                 While in active duty, I continued to hone my development skills as a free-lance developer, until I left active duty in 2014 and switched to reserve duty. During that time, I resumed the full-time profession
                 of a full stack developer. I was honorably discharged from service in 2018 after I met my, soon-to-be wife Mallory.
-            </Typography>
-            <Typography>
+            </Para>
+            <Para>
                 2 years later, Mallory and I were married, and shortly after became the proud parents of a baby boy named, Tyr.
-            </Typography>
+            </Para>
             <Typography variant="h3">
                 Featured Proficiencies
             </Typography>
@@ -104,31 +112,41 @@ const About = () => {
             <Typography variant="h3">
                 Contact
             </Typography>
-            <List>
-                <ListItem>
-                    <ListItemIcon>
-                        <PersonIcon color="primary" />
-                    </ListItemIcon>
-                    <ListItemText primary="David J. Maison Jr." secondary="Sr. UI Architect, Analog Devices, Inc." />
-                </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton component={ Link } href="tel:1-978-436-0982">
-                        <ListItemIcon>
-                            <PhoneIphoneIcon color="primary" />
-                        </ListItemIcon>
-                        <ListItemText primary="Phone" secondary="(978) 436-0982" />
-                    </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton component={ Link } href="mailto:davemaison@gmail.com">
-                        <ListItemIcon>
-                            <SendIcon color="primary" />
-                        </ListItemIcon>
-                        <ListItemText primary="E-mail" secondary="davemaison@gmail.com" />
-                    </ListItemButton>
-                </ListItem>
-            </List>
-            
+            <Grid container>
+                <Grid item md={ 6 } xs={ 12 }>
+                    <LazyImage 
+                        alt="A wonderful and totally non-aggressive photo of me."
+                        height={ 384 }
+                        width={ 576 }
+                        src={ Me } />
+                </Grid>
+                <Grid item md={ 6 } xs={ 12 }>
+                    <List>
+                        <ListItem>
+                            <ListItemIcon>
+                                <PersonIcon color="primary" />
+                            </ListItemIcon>
+                            <ListItemText primary="David J. Maison Jr." secondary="Sr. UI Architect, Analog Devices, Inc." />
+                        </ListItem>
+                        <ListItem disablePadding>
+                            <ListItemButton component={ Link } href="tel:1-978-436-0982">
+                                <ListItemIcon>
+                                    <PhoneIphoneIcon color="primary" />
+                                </ListItemIcon>
+                                <ListItemText primary="Phone" secondary="(978) 436-0982" />
+                            </ListItemButton>
+                        </ListItem>
+                        <ListItem disablePadding>
+                            <ListItemButton component={ Link } href="mailto:davemaison@gmail.com">
+                                <ListItemIcon>
+                                    <SendIcon color="primary" />
+                                </ListItemIcon>
+                                <ListItemText primary="E-mail" secondary="davemaison@gmail.com" />
+                            </ListItemButton>
+                        </ListItem>
+                    </List>
+                </Grid>
+            </Grid>
             <Typography variant="h3">
                 Interests
             </Typography>
