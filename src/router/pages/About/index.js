@@ -32,6 +32,7 @@ import LazyImage from "../../../components/LazyImage";
 import { styled } from '@mui/material/styles';
 import { NavLink } from 'react-router-dom';
 import { PATH_ALBUM } from "../../config";
+import { GROUPS } from "../Album/config";
 
 const Para = styled( Typography )`
     margin-bottom: 1rem
@@ -159,7 +160,7 @@ const About = () => {
                         <ListSubheader>Strongman Competitions</ListSubheader>
                     }>
                     <ListItem disablePadding>
-                        <ListItemButton component={ NavLink } to={ PATH_ALBUM }>
+                        <ListItemButton component={ NavLink } to={ `${ PATH_ALBUM }?group=${ GROUPS[ 0 ].id }` }>
                             <ListItemIcon>
                                 <EmojiEventsIcon color="primary" />
                             </ListItemIcon>

@@ -14,17 +14,16 @@ import { useLocation } from "react-router-dom";
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Button from '@mui/material/Button';
 import LazyImage from "../../../components/LazyImage";
 
-const ClashOfTheTitans = () => {
+const Album = () => {
 
     const location = useLocation(),
     defaultGroup = useMemo(() => {
         const qs = new URLSearchParams( location?.search ),
-        group = qs.get( 'tab' ) || 0;
+        group = qs.get( 'group' ) || 0;
         return parseInt( group );
     }, [ location ]),
     [ group, setGroup ] = useState( defaultGroup ),
@@ -56,6 +55,9 @@ const ClashOfTheTitans = () => {
 
     return (
         <Page title="Album">
+            <Typography>
+                A small snapshot of who I am
+            </Typography>
 
             <Tabs value={ group } onChange={ setActiveGroup } aria-label="album selection">
                 <Tab label="All" id={ 0 } />
@@ -128,4 +130,4 @@ const ClashOfTheTitans = () => {
     )
 }
 
-export default ClashOfTheTitans;
+export default Album;
