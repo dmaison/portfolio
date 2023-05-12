@@ -27,6 +27,9 @@ const NavButton = styled( IconButton )(({ theme }) => ({
     fontSize: useMediaQuery( theme.breakpoints.down( 'md' ) ) ? '30px' :' 50px',
     ':hover': {
         color: theme.palette.primary.main
+    },
+    '&&.active': {
+        color: theme.palette.primary.main
     }
 }));
 
