@@ -38,7 +38,7 @@ const Experience = () => {
                                         subheader={ owner }
                                         title={ name } />
                                     <CardMedia sx={{ maxHeight: 200, overflow: 'hidden' }}>
-                                        <LazyImage src={ image } height={ 200 } alt={ `Screenshot of ${ name }` }  />
+                                        <LazyImage src={ image } width="100%" alt={ `Screenshot of ${ name }` }  />
                                     </CardMedia>
                                     <CardContent>
                                         <Typography sx={{ mb: 2 }}><span dangerouslySetInnerHTML={{ __html: description }} /></Typography>
