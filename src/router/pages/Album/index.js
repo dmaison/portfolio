@@ -87,7 +87,7 @@ const Album = () => {
                                         loading="lazy" />
                                     <ImageListItemBar
                                         actionIcon={
-                                            <IconButton onClick={ toggleMedia( url, video, title ) }>
+                                            <IconButton onClick={ toggleMedia( url, video, title ) } aria-label={ video ? 'play' : 'zoom' }>
                                                 {
                                                     video ? 
                                                         <PlayArrowIcon /> :
