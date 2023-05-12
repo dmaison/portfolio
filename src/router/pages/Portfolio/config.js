@@ -90,7 +90,7 @@ export const PIECES = [
         name: "myAnalog",
         image: MyAnalogSS,
         owner: 'Analog Devices, Inc.',
-        description: "Application allows engineers who use analog.com website have a more personalized experience, build and manage engineer projects, save products, manage their notifications, and more!",
+        description: "An application that allows engineers who use analog.com website have a more personalized experience, build and manage engineering projects, manage their product notifications, and more!",
         featuredTechnologies: [{
             label: 'ReactJS',
             icon: ReactIcon
@@ -120,12 +120,10 @@ export const PIECES = [
                 icon: OpenCvIcon
             },
             {
-                label: 'EC2, S3',
+                label: 'EC2, S3, Elastic Beanstalk',
                 icon: AwsIcon
             }
-        ]
-
-        
+        ]        
     },
     {
         name: "Parametric Search Table",
@@ -135,8 +133,30 @@ export const PIECES = [
             label: 'ReactJS',
             icon: ReactIcon
         }],
-        description: "Application allows engineers to select and compare parts based on user input specifications",
+        description: "Application that allows engineers to select and compare parts based on user input specifications.",
         url: "https://www.analog.com/en/parametricsearch/12998"
+    },
+    {
+        name: "Sample & Buy Table",
+        image: PstSS,
+        owner: 'Analog Devices, Inc.',
+        featuredTechnologies: [{
+            label: 'ReactJS',
+            icon: ReactIcon
+        }],
+        description: "Application allows engineers to compare and purchase different parts.",
+        url: "https://www.analog.com/en/products/ad7706.html#product-samplebuy"
+    },
+    {
+        name: "Analog Dialogue Archives",
+        image: PstSS,
+        owner: 'Analog Devices, Inc.',
+        featuredTechnologies: [{
+            label: 'ReactJS',
+            icon: ReactIcon
+        }],
+        description: `A simple component that you to search archived editions of the, "Analog Dialogue", magazine.`,
+        url: "https://www.analog.com/en/analog-dialogue/archives.html"
     }
     
 ];
