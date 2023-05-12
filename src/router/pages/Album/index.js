@@ -69,7 +69,7 @@ const Album = () => {
                     )
                 }
             </Tabs>
-            <ImageList variant="masonry" cols={ 3 } gap={ 16 }>
+            <ImageList variant="masonry" cols={ 3 } gap={ 32 }>
                 {
                     MEDIA.map(
                         ({ groupId, title, url, weight, width, video, subtitle }, index ) => {

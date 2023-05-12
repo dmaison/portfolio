@@ -10,7 +10,14 @@ import AtlasVid from './media/cot/atlas-stone.mp4';
 import Squat1 from './media/cot/squat-still.jpg';
 import SquatVid from './media/cot/squat.mp4';
 import Win from './media/cot/win.jpg';
-
+import Garden1 from './media/garden/done.jpg';
+import Garden2 from './media/garden/garden2.jpg';
+import Garden3 from './media/garden/garden3.jpg';
+import Garden4 from './media/garden/garden4.jpg';
+import Garden5 from './media/garden/garden5.jpg';
+import Garden6 from './media/garden/garden6.jpg';
+import Garden7 from './media/garden/garden7.jpg';
+import Garden8 from './media/garden/garden8.jpg';
 /**
  * Used to filter the media on the page
  * @type {array}
@@ -23,10 +30,6 @@ export const GROUPS = [
     {
         id: 2,
         title: "Garden"
-    },
-    {
-        id: 3,
-        title: "Wedding"
     }
 ]
 
@@ -87,4 +90,54 @@ export const MEDIA = [
         weight: 375,
         video: SquatVid
     },
+    {
+        groupId: GROUPS[ 1 ].id,
+        title: 'Finished Product',
+        url: Garden1,
+        video: false
+    },
+    {
+        groupId: GROUPS[ 1 ].id,
+        title: 'Finishing the irrigation',
+        url: Garden2,
+        video: false
+    },
+    {
+        groupId: GROUPS[ 1 ].id,
+        title: 'Boxes: in. Veggies: planted.',
+        url: Garden3,
+        video: false
+    },
+    {
+        groupId: GROUPS[ 1 ].id,
+        title: 'Watering',
+        url: Garden4,
+        video: false
+    },
+    {
+        groupId: GROUPS[ 1 ].id,
+        title: 'Installing irrigation',
+        url: Garden5,
+        video: false
+    },
+    {
+        groupId: GROUPS[ 1 ].id,
+        title: 'Building the beds',
+        url: Garden6,
+        video: false
+    },
+    {
+        groupId: GROUPS[ 1 ].id,
+        title: 'Building the frames',
+        url: Garden7,
+        video: false
+    },
+    {
+        groupId: GROUPS[ 1 ].id,
+        title: 'Welcome home, ladies!',
+        subtitle: 'The chickens moving into their coop',
+        url: Garden8,
+        video: false
+    },
 ]
+

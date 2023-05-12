@@ -5,6 +5,8 @@ import sudokuSS from './media/ss-sudoku.png';
 import CoeSS from './media/ss-coe.png';
 import portfolioSS from './media/ss-portfolio.png';
 import WtnSS from './media/ss-wtn.png';
+import SnbSS from './media/ss-snb.png';
+import AaSS from './media/ss-aa.png';
 import { ReactComponent as ReactIcon } from './media/react.svg';
 import { ReactComponent as NodeIcon } from './media/node.svg';
 import { ReactComponent as SolidityIcon } from './media/solidity.svg';
@@ -138,7 +140,7 @@ export const PIECES = [
     },
     {
         name: "Sample & Buy Table",
-        image: PstSS,
+        image: SnbSS,
         owner: 'Analog Devices, Inc.',
         featuredTechnologies: [{
             label: 'ReactJS',
@@ -149,7 +151,7 @@ export const PIECES = [
     },
     {
         name: "Analog Dialogue Archives",
-        image: PstSS,
+        image: AaSS,
         owner: 'Analog Devices, Inc.',
         featuredTechnologies: [{
             label: 'ReactJS',
