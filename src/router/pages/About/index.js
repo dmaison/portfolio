@@ -56,7 +56,7 @@ const About = () => {
             <Para>
                 2 years later, Mallory and I were married, and shortly after became the proud parents of a baby boy named, Tyr.
             </Para>
-            <Typography variant="h3">
+            <Typography variant="h3" component="h2">
                 Featured Proficiencies
             </Typography>
             <List sx={{ columns: { md: 2, xs: 1 } }}>
@@ -112,7 +112,7 @@ const About = () => {
                 </ListItem>
             </List>
 
-            <Typography variant="h3" sx={{ mb: 2 }}>
+            <Typography variant="h3" sx={{ mb: 2 }} component="h2">
                 Contact
             </Typography>
             <Grid container>
@@ -150,7 +150,7 @@ const About = () => {
                     </List>
                 </Grid>
             </Grid>
-            <Typography variant="h3">
+            <Typography variant="h3" component="h2">
                 Interests
             </Typography>
 

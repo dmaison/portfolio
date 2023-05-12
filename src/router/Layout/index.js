@@ -63,25 +63,25 @@ const Layout = ({ children }) => {
                         top: 0, 
                         zIndex: 999 
                     }}>
-                    <NavButton component={ NavLink } to={ PATH_ABOUT }>
+                    <NavButton component={ NavLink } to={ PATH_ABOUT } aria-label="About">
                         <RecentActorsIcon fontSize="inherit" />
                     </NavButton>
-                    <NavButton component={ NavLink } to={ PATH_ALBUM }>
+                    <NavButton component={ NavLink } to={ PATH_ALBUM } aria-label="Album">
                         <CollectionsIcon fontSize="inherit" />
                     </NavButton>
-                    <NavButton component={ NavLink } to={ PATH_EXPERIENCE }>
+                    <NavButton component={ NavLink } to={ PATH_EXPERIENCE } aria-label="Experience">
                         <HistoryIcon fontSize="inherit" />
                     </NavButton>
-                    <NavButton component={ NavLink } to={ PATH_PORTFOLIO }>
+                    <NavButton component={ NavLink } to={ PATH_PORTFOLIO } aria-label="">
                         <FolderCopyIcon fontSize="inherit" />
                     </NavButton>
-                    <NavButton component={ Link } href={ HREF_LINKED_IN } target="_blank">
+                    <NavButton component={ Link } href={ HREF_LINKED_IN } target="_blank" aria-label="linkedIn">
                         <LinkedInIcon fontSize="inherit" />
                     </NavButton>
-                    <NavButton component={ Link } href={ HREF_GITHUB } target="_blank">
+                    <NavButton component={ Link } href={ HREF_GITHUB } target="_blank" aria-label="GitHub">
                         <GitHubIcon fontSize="inherit" />
                     </NavButton>
-                    <NavButton component={ Link } href={ HREF_STACK_OVERFLOW } target="_blank">
+                    <NavButton component={ Link } href={ HREF_STACK_OVERFLOW } target="_blank" aria-label="Stack Overflow">
                         <SvgIcon component={ StackOverflowIcon } inheritViewBox fontSize="inherit" />
                     </NavButton>
                 </Stack>
