@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Skeleton from "@mui/material/Skeleton";
 import { useState, useEffect } from "react";
 
@@ -30,6 +31,13 @@ const LazyImage = props => {
                     width: width ? '100%' : 'auto'
                 }} />
         )
+}
+
+LazyImage.propTypes = {
+    alt: PropTypes.string.isRequired, 
+    src: PropTypes.string.isRequired, 
+    height: PropTypes.number, 
+    width: PropTypes.number
 }
 
 export default LazyImage;

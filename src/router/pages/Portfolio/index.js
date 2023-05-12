@@ -16,73 +16,73 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import SvgIcon from '@mui/material/SvgIcon';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { useState } from "react";
+import useMediaQuery from '@mui/material/useMediaQuery';
+import Masonry from "react-responsive-masonry"
 
 const Experience = () => {
 
+    const isMobile = useMediaQuery( theme => theme.breakpoints.down( 'md' ) );
 
     return (
         <Page title="Portfolio">
             <Typography sx={{ mb: 3 }}>
-                A Notable list of things I have made in recent history
+                A notable list of things I have made in recent history that I'm allowed to talk about
             </Typography>
-            <Grid container spacing={ 2 } columns={ 3 }>
+            <Masonry columnsCount={ !isMobile ? 3 : 1 } gutter="2rem">
                 {
                     PIECES.map(
                         piece => {
                             const { description, featuredTechnologies, github, image, name, owner, url } = piece;
                             return (
-                                <Grid item key={ name } md={ 1 } xs={ 3 }>
-                                    <Card>
-                                        <CardHeader
-                                            subheader={ owner }
-                                            title={ name } />
-                                        <CardMedia sx={{ textAlign: 'center', maxHeight: 200, overflow: 'hidden' }}>
-                                            <LazyImage src={ image } height={ 200 } alt={ `Screenshot of ${ name }` } />
-                                        </CardMedia>
-                                        <CardContent>
-                                            <Typography sx={{ mb: 2 }}><span dangerouslySetInnerHTML={{ __html: description }} /></Typography>
-                                            <Typography variant="caption">Featured Technologies</Typography>
-                                            <List>
-                                                {
-                                                    featuredTechnologies.map(
-                                                        ({ label, icon }) => (
-                                                            <ListItem disablePadding>
-                                                                <ListItemIcon>
-                                                                    <SvgIcon component={ icon } inheritViewBox color="primary" />
-                                                                </ListItemIcon>
-                                                                <ListItemText primary={ label } />
-                                                            </ListItem>
-                                                        )
-                                                    )
-                                                }
-                                            </List>
-                                        </CardContent>
-                                        
-                                        <CardActions>
+                                <Card sx={{ maxWidth: 400 }} key={ name }>
+                                    <CardHeader
+                                        subheader={ owner }
+                                        title={ name } />
+                                    <CardMedia sx={{ maxHeight: 200, overflow: 'hidden' }}>
+                                        <LazyImage src={ image } height={ 200 } alt={ `Screenshot of ${ name }` }  />
+                                    </CardMedia>
+                                    <CardContent>
+                                        <Typography sx={{ mb: 2 }}><span dangerouslySetInnerHTML={{ __html: description }} /></Typography>
+                                        <Typography variant="caption">Featured Technologies</Typography>
+                                        <List>
                                             {
-                                                url ?
-                                                    <Button href={ url } startIcon={ <OpenInNewIcon /> } variant="text" target="_blank">
-                                                        Launch
-                                                    </Button> :
-                                                    null
+                                                featuredTechnologies.map(
+                                                    ({ label, icon }) => (
+                                                        <ListItem disablePadding key={ label }>
+                                                            <ListItemIcon>
+                                                                <SvgIcon component={ icon } inheritViewBox color="primary" />
+                                                            </ListItemIcon>
+                                                            <ListItemText primary={ label } />
+                                                        </ListItem>
+                                                    )
+                                                )
                                             }
-                                            { 
-                                                github ?
-                                                    <Button startIcon={ <GitHubIcon /> } href={ github } target="_blank">
-                                                        View it on GitHub
-                                                    </Button> :
-                                                    null
-                                            }
-                                        </CardActions>
-                                    </Card>
-                                </Grid>
+                                        </List>
+                                    </CardContent>
+                                    
+                                    <CardActions>
+                                        {
+                                            url ?
+                                                <Button href={ url } startIcon={ <OpenInNewIcon /> } variant="text" target="_blank">
+                                                    Launch
+                                                </Button> :
+                                                null
+                                        }
+                                        { 
+                                            github ?
+                                                <Button startIcon={ <GitHubIcon /> } href={ github } target="_blank">
+                                                    View it on GitHub
+                                                </Button> :
+                                                null
+                                        }
+                                    </CardActions>
+                                </Card>
                             )
                         }
                     )
                 }
                 
-            </Grid>
+            </Masonry>
         </Page>
     )
 
