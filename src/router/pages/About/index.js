@@ -164,7 +164,7 @@ const About = () => {
                             <ListItemIcon>
                                 <EmojiEventsIcon color="primary" />
                             </ListItemIcon>
-                            <ListItemText primary="Clash of the Titans II" secondary="1st place - u230 Division (2019)" />
+                            <ListItemText primary="Clash of the Titans" secondary="1st place - u230 Division (2019)" />
                         </ListItemButton>
                     </ListItem>
                     <ListItem>
@@ -205,11 +205,13 @@ const About = () => {
                         </ListItemIcon>
                         <ListItemText primary="Home Improvement" secondary="Depending on who you ask" />
                     </ListItem>
-                    <ListItem>
-                        <ListItemIcon>
-                            <LocalFloristIcon color="primary" />
-                        </ListItemIcon>
-                        <ListItemText primary="Growing Food" secondary="I also raise chickens" />
+                    <ListItem disablePadding>
+                        <ListItemButton component={ NavLink } to={ `${ PATH_ALBUM }?group=${ GROUPS[ 1 ].id }` }>
+                            <ListItemIcon>
+                                <LocalFloristIcon color="primary" />
+                            </ListItemIcon>
+                            <ListItemText primary="Growing Food" secondary="I also raise chickens" />
+                        </ListItemButton>
                     </ListItem>
                 </List>
             </Stack>
