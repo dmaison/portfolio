@@ -10,60 +10,56 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { HISTORY } from "./config";
 import SvgIcon from '@mui/material/SvgIcon';
+import './style.css';
 
-const Experience = () => {
-
-
-    return (
-        <Page title="Experience">
-            <Typography sx={{ mb: 3 }}>
-                A high-level overview of my professional career
-            </Typography>
-            {
-                HISTORY.map(
-                    ( epoch, index ) => {
-                        const { company, image, positions } = epoch;
-                        return (
-                            <Accordion key={ company } defaultExpanded={ ( index === 0 ) } id={ `accordion-${ index }` }>
-                                <AccordionSummary
-                                    expandIcon={ <ExpandMoreIcon /> }
-                                    aria-controls={ `panel-${ index }-content` }
-                                    id={ `panel-${ index }-header` } >
-                                    <Stack direction="row" alignItems="center" spacing={ 2 }>
-                                        <SvgIcon component={ image } inheritViewBox color="primary" sx={{ fontSize: 40 }} />
-                                        <Typography>{ company }</Typography>
-                                    </Stack>
-                                </AccordionSummary>
-                                <AccordionDetails id={ `panel-${ index }-content` }>
-                                    {
-                                        positions.map(
-                                            position => {
-                                                const { description, title, years } = position,
-                                                { start, end } = years,
-                                                yearCount = !!end ? ( end - start ) : null;
-                                                return (
-                                                    <Card key={ title } elevation={ 4 } sx={{ mb: 2 }}>
-                                                        <CardHeader
-                                                            subheader={ yearCount ? `${ yearCount } Year${ yearCount > 1 ? 's' : '' }` : 'Current Role' }
-                                                            title={ title } />
-                                                        <CardContent>
-                                                            { description }
-                                                        </CardContent>
-                                                    </Card>
-                                                )
-                                            }
-                                        )
-                                    }
-                                </AccordionDetails>
-                            </Accordion>
-                        )
-                    }
-                )
-            }
-            
-        </Page>
-    )
-
-}
+const Experience = () => (
+    <Page title="Experience" modifier="experience">
+        <Typography sx={{ mb: 3 }}>
+            A high-level overview of my professional career
+        </Typography>
+        {
+            HISTORY.map(
+                ( epoch, index ) => {
+                    const { company, image, positions } = epoch;
+                    return (
+                        <Accordion key={ company } defaultExpanded={ ( index === 0 ) } id={ `accordion-${ index }` }>
+                            <AccordionSummary
+                                expandIcon={ <ExpandMoreIcon /> }
+                                aria-controls={ `panel-${ index }-content` }
+                                id={ `panel-${ index }-header` } >
+                                <Stack direction="row" alignItems="center" spacing={ 2 }>
+                                    <SvgIcon component={ image } inheritViewBox color="primary" sx={{ fontSize: 40 }} />
+                                    <Typography>{ company }</Typography>
+                                </Stack>
+                            </AccordionSummary>
+                            <AccordionDetails id={ `panel-${ index }-content` }>
+                                {
+                                    positions.map(
+                                        position => {
+                                            const { description, title, years } = position,
+                                            { start, end } = years,
+                                            yearCount = !!end ? ( end - start ) : null;
+                                            return (
+                                                <Card key={ title } elevation={ 4 } sx={{ mb: 2 }}>
+                                                    <CardHeader
+                                                        subheader={ yearCount ? `${ yearCount } Year${ yearCount > 1 ? 's' : '' }` : 'Current Role' }
+                                                        title={ title } />
+                                                    <CardContent>
+                                                        { description }
+                                                    </CardContent>
+                                                </Card>
+                                            )
+                                        }
+                                    )
+                                }
+                            </AccordionDetails>
+                        </Accordion>
+                    )
+                }
+            )
+        }
+        
+    </Page>
+)
 
 export default Experience;
