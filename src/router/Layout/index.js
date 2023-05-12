@@ -72,7 +72,7 @@ const Layout = ({ children }) => {
                     <NavButton component={ NavLink } to={ PATH_EXPERIENCE } aria-label="Experience">
                         <HistoryIcon fontSize="inherit" />
                     </NavButton>
-                    <NavButton component={ NavLink } to={ PATH_PORTFOLIO } aria-label="">
+                    <NavButton component={ NavLink } to={ PATH_PORTFOLIO } aria-label="Portfolio">
                         <FolderCopyIcon fontSize="inherit" />
                     </NavButton>
                     <NavButton component={ Link } href={ HREF_LINKED_IN } target="_blank" aria-label="linkedIn">
