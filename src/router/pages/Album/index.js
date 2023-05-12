@@ -17,6 +17,7 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
 import Button from '@mui/material/Button';
 import LazyImage from "../../../components/LazyImage";
+import './style.css'
 
 const Album = () => {
 
@@ -54,7 +55,7 @@ const Album = () => {
     }
 
     return (
-        <Page title="Album">
+        <Page title="Album" modifier="album">
             <Typography>
                 This is really only here to have more content on the site.
             </Typography>
