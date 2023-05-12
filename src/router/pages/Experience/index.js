@@ -24,17 +24,17 @@ const Experience = () => {
                     ( epoch, index ) => {
                         const { company, image, positions } = epoch;
                         return (
-                            <Accordion key={ company } defaultExpanded={ ( index === 0 ) }>
+                            <Accordion key={ company } defaultExpanded={ ( index === 0 ) } id={ `accordion-${ index }` }>
                                 <AccordionSummary
                                     expandIcon={ <ExpandMoreIcon /> }
-                                    aria-controls="panel1a-content"
-                                    id="panel1a-header" >
+                                    aria-controls={ `panel-${ index }-content` }
+                                    id={ `panel-${ index }-header` } >
                                     <Stack direction="row" alignItems="center" spacing={ 2 }>
                                         <SvgIcon component={ image } inheritViewBox color="primary" sx={{ fontSize: 40 }} />
                                         <Typography>{ company }</Typography>
                                     </Stack>
                                 </AccordionSummary>
-                                <AccordionDetails>
+                                <AccordionDetails id={ `panel-${ index }-content` }>
                                     {
                                         positions.map(
                                             position => {
