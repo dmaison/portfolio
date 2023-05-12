@@ -24,8 +24,8 @@ export const PIECES = [
         image: CoeSS,
         owner: 'Personal',
         description: `
-            A tool designed help solve cold cases and crimes by allowing communities to create immutable evidence boards and publish it permantly 
-            to the Ethereum, and soon PulseChain, blockchains as an NFT.<br><br>
+            A tool designed help solve cold cases and crimes by allowing communities to create, trade, and extend evidence boards and store them  
+            on the Ethereum, and soon PulseChain, blockchains as an NFT.<br><br>
             Finally an NFT with a practical use.
         `,
         featuredTechnologies: [{
