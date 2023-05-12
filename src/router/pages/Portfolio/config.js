@@ -24,7 +24,7 @@ export const PIECES = [
         image: CoeSS,
         owner: 'Personal',
         description: `
-            A tool designed to allow communities to create immutable evidence boards, recounting a crime, and publish it permantly 
+            A tool designed help solve cold cases and crimes by allowing communities to create immutable evidence boards and publish it permantly 
             to the Ethereum, and soon PulseChain, blockchains as an NFT.<br><br>
             Finally an NFT with a practical use.
         `,
@@ -59,7 +59,7 @@ export const PIECES = [
         name: "Portfolio Website",
         image: portfolioSS,
         owner: 'Personal',
-        description: "A basic React website meant to showcase my expertise in the area of web development, among some other things.",
+        description: "A basic React website designed to showcase my expertise in the area of web development, among some other things.",
         featuredTechnologies: [{
             label: 'ReactJS',
             icon: ReactIcon
