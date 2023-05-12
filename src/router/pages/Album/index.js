@@ -72,7 +72,7 @@ const Album = () => {
             <ImageList variant="masonry" cols={ 3 } gap={ 32 }>
                 {
                     MEDIA.map(
-                        ({ groupId, title, url, weight, width, video, subtitle }, index ) => {
+                        ({ groupId, title, url, weight, video, subtitle }, index ) => {
 
                             // filter the active tab if its not all images
                             if( group > 0 && groupId !== group ) return null;
@@ -114,11 +114,13 @@ const Album = () => {
                 </DialogTitle>
                 <DialogContent id="media-content">
                     {
-                        media?.video ?
-                            <video controls width="100%" style={{ maxHeight: '50vh' }} >
-                                <source src={ media?.video } type="video/mp4" />
-                            </video> :
-                            <LazyImage src={ media?.src } alt={ media?.title } width="100%" />
+                        media ?
+                            media?.video ?
+                                <video controls width="100%" style={{ maxHeight: '50vh' }} >
+                                    <source src={ media?.video } type="video/mp4" />
+                                </video> :
+                                <LazyImage src={ media?.src } alt={ media?.title } width="100%" /> :
+                            null
                     }
                 </DialogContent>
                 <DialogActions>

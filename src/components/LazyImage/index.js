@@ -37,7 +37,7 @@ LazyImage.propTypes = {
     alt: PropTypes.string.isRequired, 
     src: PropTypes.string.isRequired, 
     height: PropTypes.number, 
-    width: PropTypes.number
+    width: PropTypes.oneOfType([ PropTypes.number, PropTypes.string ])
 }
 
 export default LazyImage;
