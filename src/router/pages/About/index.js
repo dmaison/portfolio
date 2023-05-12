@@ -154,7 +154,7 @@ const About = () => {
                 Interests
             </Typography>
 
-            <Stack direction="row">
+            <Stack direction={{ xs: 'column', sm: 'row' }}>
                 <List 
                     subheader={
                         <ListSubheader>Strongman Competitions</ListSubheader>
