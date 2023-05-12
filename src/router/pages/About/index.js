@@ -30,6 +30,8 @@ import PersonIcon from '@mui/icons-material/Person';
 import { CURRENT_AGE, EXPERIENCE_TOTAL_YEARS, HREF_BANDCAMP, HREF_RESUME } from "./config";
 import LazyImage from "../../../components/LazyImage";
 import { styled } from '@mui/material/styles';
+import { NavLink } from 'react-router-dom';
+import { PATH_CLASH } from "../../config";
 
 const Para = styled( Typography )`
     margin-bottom: 1rem
@@ -156,11 +158,13 @@ const About = () => {
                     subheader={
                         <ListSubheader>Strongman Competitions</ListSubheader>
                     }>
-                    <ListItem>
-                        <ListItemIcon>
-                            <EmojiEventsIcon color="primary" />
-                        </ListItemIcon>
-                        <ListItemText primary="Clash of the Titans II" secondary="1st place - u230 Division (2019)" />
+                    <ListItem disablePadding>
+                        <ListItemButton component={ NavLink } to={ PATH_CLASH }>
+                            <ListItemIcon>
+                                <EmojiEventsIcon color="primary" />
+                            </ListItemIcon>
+                            <ListItemText primary="Clash of the Titans II" secondary="1st place - u230 Division (2019)" />
+                        </ListItemButton>
                     </ListItem>
                     <ListItem>
                         <ListItemIcon>

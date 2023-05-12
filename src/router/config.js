@@ -7,6 +7,12 @@ const BASE_PATH = "/";
 export const PATH_ABOUT = BASE_PATH + 'about';
 
 /**
+ * Used to locate the "Clash of the Titans" page
+ * @type {string}
+ */
+export const PATH_CLASH = BASE_PATH + 'clash-of-the-titans';
+
+/**
  * Used to locate the "experience" page
  * @type {string}
  */
