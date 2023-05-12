@@ -20,21 +20,6 @@
     "url": "https://github.com/dmaison/portfolio.git"
   },
   "homepage": "http://dave.maison",
-  "devDependencies": {
-    "prop-types": "^15.7.2",
-    "react-scripts": "^4.0.0"
-  },
-  "dependencies": {
-    "babel-polyfill": "^6.26.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-redux": "^7.2.2",
-    "react-responsive": "^8.1.1",
-    "react-router-dom": "^5.2.0",
-    "react-swipeable": "^6.0.0",
-    "redux": "^4.0.5",
-    "redux-thunk": "^2.3.0"
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -46,5 +31,22 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "packageManager": "yarn@3.5.1",
+  "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.0",
+    "@mui/styles": "^5.12.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-responsive-masonry": "^2.1.7",
+    "react-router-dom": "^6.11.1",
+    "web-vitals": "^3.3.1"
+  },
+  "devDependencies": {
+    "prop-types": "^15.8.1",
+    "react-scripts": "^5.0.1"
   }
 }
