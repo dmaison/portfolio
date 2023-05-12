@@ -22,7 +22,7 @@
   "homepage": "http://dave.maison",
   "devDependencies": {
     "prop-types": "^15.7.2",
-    "react-scripts": "^4.0.0"
+    "react-scripts": "^5.0.1"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
