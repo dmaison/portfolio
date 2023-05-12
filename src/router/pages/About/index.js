@@ -79,7 +79,7 @@ const About = () => {
                     <ListItemIcon>
                         <SvgIcon component={ SolidityIcon } inheritViewBox color="primary" />
                     </ListItemIcon>
-                    <ListItemText primary="Solidity" secondary="ERC20, Hardhat, Web3" />
+                    <ListItemText primary="Solidity" secondary="ERC20, ERC721, Hardhat, Web3" />
                 </ListItem>
                 <ListItem>
                     <ListItemIcon>
@@ -109,7 +109,7 @@ const About = () => {
                 </ListItem>
             </List>
 
-            <Typography variant="h3">
+            <Typography variant="h3" sx={{ mb: 2 }}>
                 Contact
             </Typography>
             <Grid container>
@@ -117,7 +117,7 @@ const About = () => {
                     <LazyImage 
                         alt="A wonderful and totally non-aggressive photo of me."
                         height={ 384 }
-                        width={ 576 }
+                        width={ 400 }
                         src={ Me } />
                 </Grid>
                 <Grid item md={ 6 } xs={ 12 }>
