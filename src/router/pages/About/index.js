@@ -31,7 +31,7 @@ import { CURRENT_AGE, EXPERIENCE_TOTAL_YEARS, HREF_BANDCAMP, HREF_RESUME } from 
 import LazyImage from "../../../components/LazyImage";
 import { styled } from '@mui/material/styles';
 import { NavLink } from 'react-router-dom';
-import { PATH_CLASH } from "../../config";
+import { PATH_ALBUM } from "../../config";
 
 const Para = styled( Typography )`
     margin-bottom: 1rem
@@ -159,7 +159,7 @@ const About = () => {
                         <ListSubheader>Strongman Competitions</ListSubheader>
                     }>
                     <ListItem disablePadding>
-                        <ListItemButton component={ NavLink } to={ PATH_CLASH }>
+                        <ListItemButton component={ NavLink } to={ PATH_ALBUM }>
                             <ListItemIcon>
                                 <EmojiEventsIcon color="primary" />
                             </ListItemIcon>

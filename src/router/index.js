@@ -5,7 +5,7 @@ import About from "./pages/About";
 import Experience from "./pages/Experience";
 import Portfolio from "./pages/Portfolio";
 import Home from "./pages/Home";
-import ClashOfTheTitans from "./pages/ClashOfTheTitans";
+import Album from "./pages/Album";
 
 const Router = () => (
     <BrowserRouter>
@@ -14,7 +14,7 @@ const Router = () => (
                 <Route path={ CONFIG.PATH_ABOUT } element={ <About /> } />
                 <Route path={ CONFIG.PATH_PORTFOLIO } element={ <Portfolio /> } />
                 <Route path={ CONFIG.PATH_EXPERIENCE } element={ <Experience /> } />
-                <Route path={ CONFIG.PATH_CLASH } element={ <ClashOfTheTitans /> } />
+                <Route path={ CONFIG.PATH_ALBUM } element={ <Album /> } />
                 <Route index element={ <Home /> } />
             </Routes>
         </Layout>

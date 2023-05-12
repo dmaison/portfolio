@@ -7,21 +7,41 @@ import Squat1 from './media/squat-still.jpg';
 import Win from './media/win.jpg';
 
 /**
+ * Used to filter the media on the page
+ * @type {array}
+ */
+export const GROUPS = [
+    {
+        id: 1,
+        title: "Clash of the Titans",
+        subtitle: "2019"
+    },
+    {
+        id: 2,
+        title: "Garden",
+        subtitle: "2019"
+    }
+]
+
+/**
  * Used to easily iterate through images/videos of the show
  * @type {array}
  */
 export const MEDIA = [
     {
+        groupId: GROUPS[ 0 ].id,
         title: 'Axle Press',
         subtitle: 'for reps',
         url: AxlePress1,
         weight: 215
     },
     {
+        groupId: GROUPS[ 0 ].id,
         title: 'First Place Baby!',
         url: Win
     },
     {
+        groupId: GROUPS[ 0 ].id,
         title: 'Sled Drag',
         subtitle: 'for time',
         weight: 460,
@@ -29,6 +49,7 @@ export const MEDIA = [
         video: true
     },
     {
+        groupId: GROUPS[ 0 ].id,
         title: 'Husafell Carry',
         subtitle: 'for distance & time',
         weight: 250,
@@ -36,6 +57,7 @@ export const MEDIA = [
         video: true
     },
     {
+        groupId: GROUPS[ 0 ].id,
         title: 'Atlas Stones',
         subtitle: 'for max weight',
         weight: 325,
@@ -43,6 +65,7 @@ export const MEDIA = [
         video: true
     },
     {
+        groupId: GROUPS[ 0 ].id,
         title: 'Axle Press',
         subtitle: 'for reps',
         url: AxlePress2,
@@ -50,6 +73,7 @@ export const MEDIA = [
         video: true
     },
     {
+        groupId: GROUPS[ 0 ].id,
         title: 'Squat',
         subtitle: 'for reps',
         url: Squat1,
