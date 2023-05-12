@@ -45,11 +45,12 @@ const Experience = () => {
                                         positions.map(
                                             position => {
                                                 const { description, title, years } = position,
-                                                { start, end } = years;
+                                                { start, end } = years,
+                                                yearCount = !!end ? ( end - start ) : null;
                                                 return (
-                                                    <Card>
+                                                    <Card key={ title } elevation={ 4 } sx={{ mb: 2 }}>
                                                         <CardHeader
-                                                            subheader={ !!end ? `${ ( end - start ) } Year(s)` : 'Current Role' }
+                                                            subheader={ yearCount ? `${ yearCount } Year${ yearCount > 1 ? 's' : '' }` : 'Current Role' }
                                                             title={ title } />
                                                         <CardContent>
                                                             { description }
