@@ -20,6 +20,13 @@ const theme = createTheme({
         h1: {
             fontWeight: 'bold',
             textTransform: 'uppercase'
+        },
+        body1: {
+            fontFamily: [
+                'arial',
+                'helvetica',
+                'sans-serif'
+            ].join( ',' )
         }
     }
 });
