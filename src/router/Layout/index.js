@@ -11,11 +11,12 @@ import HistoryIcon from '@mui/icons-material/History';
 import FolderCopyIcon from '@mui/icons-material/FolderCopy';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import CollectionsIcon from '@mui/icons-material/Collections';
 import { ReactComponent as StackOverflowIcon } from './media/icon-stack-overflow.svg';
 import { NavLink, useLocation } from 'react-router-dom';
 import theme from "./theme";
 import "./style.css"
-import { PATH_ABOUT, PATH_EXPERIENCE, PATH_HOME, PATH_PORTFOLIO } from "../config";
+import { PATH_ABOUT, PATH_ALBUM, PATH_EXPERIENCE, PATH_HOME, PATH_PORTFOLIO } from "../config";
 import { HREF_GITHUB, HREF_LINKED_IN, HREF_STACK_OVERFLOW } from "./config";
 import { styled } from '@mui/material/styles';
 import { withTheme  } from "@mui/styles";
@@ -52,6 +53,9 @@ const Layout = ({ children }) => {
                 <Stack direction="row" alignItems="center">
                     <NavButton component={ NavLink } to={ PATH_ABOUT }>
                         <RecentActorsIcon fontSize="inherit" />
+                    </NavButton>
+                    <NavButton component={ NavLink } to={ PATH_ALBUM }>
+                        <CollectionsIcon fontSize="inherit" />
                     </NavButton>
                     <NavButton component={ NavLink } to={ PATH_EXPERIENCE }>
                         <HistoryIcon fontSize="inherit" />
