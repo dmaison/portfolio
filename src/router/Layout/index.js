@@ -19,12 +19,12 @@ import "./style.css"
 import { PATH_ABOUT, PATH_ALBUM, PATH_EXPERIENCE, PATH_HOME, PATH_PORTFOLIO } from "../config";
 import { HREF_GITHUB, HREF_LINKED_IN, HREF_STACK_OVERFLOW } from "./config";
 import { styled } from '@mui/material/styles';
-import { withTheme  } from "@mui/styles";
 import { useEffect, useRef } from "react";
 import useMediaQuery from '@mui/material/useMediaQuery';
+import { alpha } from "@mui/material";
 
-const NavButton = styled( withTheme( IconButton ) )(({ theme }) => ({
-    fontSize: useMediaQuery( theme.breakpoints.down( 'md' ) ) ? '20px':'50px',
+const NavButton = styled( IconButton )(({ theme }) => ({
+    fontSize: useMediaQuery( theme.breakpoints.down( 'md' ) ) ? '30px' :' 50px',
     ':hover': {
         color: theme.palette.primary.main
     }
@@ -55,7 +55,7 @@ const Layout = ({ children }) => {
                     direction="row" 
                     alignItems="center" 
                     sx={{ 
-                        backgroundColor: theme.palette.background.default, 
+                        backgroundColor: alpha( theme.palette.background.default, .85 ), 
                         position: 'sticky', 
                         top: 0, 
                         zIndex: 999 
