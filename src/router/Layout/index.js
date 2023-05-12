@@ -21,9 +21,10 @@ import { HREF_GITHUB, HREF_LINKED_IN, HREF_STACK_OVERFLOW } from "./config";
 import { styled } from '@mui/material/styles';
 import { withTheme  } from "@mui/styles";
 import { useEffect, useRef } from "react";
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 const NavButton = styled( withTheme( IconButton ) )(({ theme }) => ({
-    fontSize: '50px',
+    fontSize: useMediaQuery( theme.breakpoints.down( 'md' ) ) ? '20px':'50px',
     ':hover': {
         color: theme.palette.primary.main
     }
@@ -50,7 +51,15 @@ const Layout = ({ children }) => {
                     variant="h1"
                     sx={{ textDecoration: 'none' }} 
                     to={ PATH_HOME }>Dave Maison</Typography>
-                <Stack direction="row" alignItems="center">
+                <Stack 
+                    direction="row" 
+                    alignItems="center" 
+                    sx={{ 
+                        backgroundColor: theme.palette.background.default, 
+                        position: 'sticky', 
+                        top: 0, 
+                        zIndex: 999 
+                    }}>
                     <NavButton component={ NavLink } to={ PATH_ABOUT }>
                         <RecentActorsIcon fontSize="inherit" />
                     </NavButton>
@@ -73,8 +82,8 @@ const Layout = ({ children }) => {
                         <SvgIcon component={ StackOverflowIcon } inheritViewBox fontSize="inherit" />
                     </NavButton>
                 </Stack>
+                { children }
             </Container>
-            { children }
         </ThemeProvider>
     )
 }

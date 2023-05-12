@@ -9,7 +9,7 @@ const Page = ({ children, modifier, title }) => {
     if( modifier ) classes.push( `${ classes[ 0 ] }--${ modifier }` );
 
     return (
-        <Container className={ classes.join( ' ' ) }>
+        <Container className={ classes.join( ' ' ) } sx={{ pb: 2 }}>
             <Typography variant="h2" component="h1">{ title }</Typography>
             { children }
         </Container>

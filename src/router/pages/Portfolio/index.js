@@ -6,7 +6,6 @@ import CardMedia from '@mui/material/CardMedia';
 import CardHeader from '@mui/material/CardHeader';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import { PIECES } from "./config";
 import LazyImage from '../../../components/LazyImage';
