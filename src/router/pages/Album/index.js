@@ -79,11 +79,10 @@ const Album = () => {
 
                             return (
                                 <ImageListItem key={ `event-${ index }` }>
-                                    <img 
+                                    <LazyImage 
                                         alt={ title }
                                         src={ url } 
-                                        srcSet={ url }
-                                        width={ width } 
+                                        width="100%" 
                                         loading="lazy" />
                                     <ImageListItemBar
                                         actionIcon={
