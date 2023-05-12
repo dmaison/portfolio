@@ -15,7 +15,6 @@ import CollectionsIcon from '@mui/icons-material/Collections';
 import { ReactComponent as StackOverflowIcon } from './media/icon-stack-overflow.svg';
 import { NavLink, useLocation } from 'react-router-dom';
 import theme from "./theme";
-import "./style.css"
 import { PATH_ABOUT, PATH_ALBUM, PATH_EXPERIENCE, PATH_HOME, PATH_PORTFOLIO } from "../config";
 import { HREF_GITHUB, HREF_LINKED_IN, HREF_STACK_OVERFLOW } from "./config";
 import { styled } from '@mui/material/styles';
