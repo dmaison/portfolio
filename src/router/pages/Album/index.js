@@ -56,7 +56,7 @@ const Album = () => {
     return (
         <Page title="Album">
             <Typography>
-                A small snapshot of who I am
+                This is really only here to have more content on the site.
             </Typography>
 
             <Tabs value={ group } onChange={ setActiveGroup } aria-label="album selection">
