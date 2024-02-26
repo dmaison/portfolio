@@ -1,0 +1,39 @@
+.features {
+    --radius: 300px;
+    border-radius: 50%;
+    display: grid;
+    grid-template-areas: "layer";
+    height: calc( var( --radius ) * 2 );
+    margin: var( --space-10 ) auto;
+    padding-top: 40px;
+    place-items: center;
+    width: calc( var( --radius ) * 2 );
+
+    img { 
+        position: absolute;
+        width: 80px; 
+
+        grid-area: layer;
+        display: grid;
+        place-items: center;
+        --d: calc(var(--i) / var(--total));
+        --r-offset: -0.25turn;
+        --r-amount: 1turn;
+        --r: calc((var(--r-amount) * var(--d)) + var(--r-offset));
+        --transform: rotate(var(--r)) translate(var(--radius)) rotate(calc(-1 * var(--r)));
+      
+        transform: var(--transform);
+        transition: transform 1.5s ease-in-out;
+      
+        .features:hover & {
+          --radius: calc(-20vmin);
+          --r-offset: -1.75turn; //0.75turn;
+        }
+    }
+
+}
+
+  
+  img {
+    max-width: 40%;
+  }

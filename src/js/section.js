@@ -1,3 +1,5 @@
+import './section.about';
+
 /**
  * Classname for nav links
  * @type {string}

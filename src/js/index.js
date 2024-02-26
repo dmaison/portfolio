@@ -1,2 +1,3 @@
 import '../css/index.scss';
-import './section'
+import './section';
+import './timeframes';
