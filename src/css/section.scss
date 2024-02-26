@@ -1,7 +1,8 @@
 .section {
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 50px auto;
+    gap: var( --space-8 );
+    grid-template-columns: var( --space-10 ) auto;
     margin: auto;
     max-width: var( --max-width );
     min-height: 100vh;
@@ -9,7 +10,11 @@
     scroll-margin-top: 120px;
 
     &__title {
+        font-size: 40px;
+        letter-spacing: 2px;
+        line-height: 40px;
         position: sticky;
+        text-transform: uppercase;
         top: 120px;
         transform: rotate(180deg);
         margin: 0;
