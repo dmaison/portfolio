@@ -1,39 +1,57 @@
 .features {
-    --radius: 300px;
+    --radius: 225px;
     border-radius: 50%;
+    float: right;
     display: grid;
     grid-template-areas: "layer";
     height: calc( var( --radius ) * 2 );
-    margin: var( --space-10 ) auto;
-    padding-top: 40px;
+    margin-left: var( --space-10 );
+    margin-top: var( --space-5 );
+    margin-right: var( --space-5 );
     place-items: center;
+    position: relative;
     width: calc( var( --radius ) * 2 );
 
-    img { 
+    &__details {
+        align-items: center;
+        box-sizing: border-box;
+        box-shadow: 0 var( --space-6 ) var( --space-10 ) var( --color-black-trans );
+        border-radius: inherit;
+        display: flex;
+        gap: var( --space-4 );
+        flex-direction: column;
+        justify-content: center;
+        height: calc( var( --radius ) * 1.4 );
+        padding: var( --space-4 );
         position: absolute;
-        width: 80px; 
+        width: calc( var( --radius ) * 1.4 );
 
-        grid-area: layer;
-        display: grid;
-        place-items: center;
+        &__title {
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+
+    &__technology { 
+        
         --d: calc(var(--i) / var(--total));
         --r-offset: -0.25turn;
         --r-amount: 1turn;
         --r: calc((var(--r-amount) * var(--d)) + var(--r-offset));
         --transform: rotate(var(--r)) translate(var(--radius)) rotate(calc(-1 * var(--r)));
-      
+
+        display: grid;
+        grid-area: layer;
+        opacity: .60;
         transform: var(--transform);
         transition: transform 1.5s ease-in-out;
-      
-        .features:hover & {
-          --radius: calc(-20vmin);
-          --r-offset: -1.75turn; //0.75turn;
+        transition: opacity var( --transition-basic );
+        width: 60px;
+
+        &:hover {
+            opacity: 1;
         }
+
     }
 
 }
-
-  
-  img {
-    max-width: 40%;
-  }
