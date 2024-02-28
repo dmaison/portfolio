@@ -39,10 +39,11 @@
 				<h2 class="section__title">About</h2>
 			</div>
 			<div class="section__body">
-				<div class="cloud" id="cloud-base"></div>
-				<div class="cloud" id="cloud-back"></div>
-				<div class="cloud" id="cloud-mid"></div>
-				<div class="cloud" id="cloud-front"></div>
+				<div class="sun"></div>
+				<div class="cloud cloud--base" style="left: -300px"></div>
+				<div class="cloud cloud--back" style="left: -300px"></div>
+				<div class="cloud cloud--mid" style="left: -300px"></div>
+				<div class="cloud cloud--front" style="left: -300px"></div>
 				<div class="section--about__content">
 					<h3>Who I Am</h3>
 					<p>I am a <span data-age>#</span> year old UI architect with over <span data-total-experience>#</span> years of professional experience, a veteran of the United States Air Force, Husband, and Father.</p>
@@ -94,7 +95,7 @@
       </section>
     </main>
     <script type="module" src="/src/js/index.js"></script>
-	<svg width="0" height="0">
+	<svg width="0" height="0" class="cloudFilter">
 		<filter id="filter-base">
 			<feTurbulence type="fractalNoise" baseFrequency="0.011" numOctaves="5" seed="8517" />
 			<feDisplacementMap  in="SourceGraphic" scale="120" />
