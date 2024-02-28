@@ -1,18 +1,23 @@
 .section {
-    box-sizing: border-box;
-    display: grid;
-    gap: var( --space-8 );
-    grid-template-columns: var( --space-10 ) auto;
-    margin: auto;
-    max-width: var( --max-width );
-    min-height: 100vh;
-    padding: var( --space-10 ) var( --space-4 );
-    scroll-margin-top: 80px;
+    scroll-margin-top: 110px;
+
+    &__container {
+        box-sizing: border-box;
+        display: grid;
+        gap: var( --space-8 );
+        grid-template-columns: var( --space-10 ) auto;
+        margin: auto;
+        max-width: var( --max-width );
+        min-height: 100vh;
+        padding: 0 var( --space-4 );
+    }
 
     &__title {
         font-size: 40px;
+        font-weight: normal;
         letter-spacing: 2px;
         line-height: 40px;
+        padding-bottom: var( --space-10 );
         position: sticky;
         text-transform: uppercase;
         top: 120px;
@@ -20,8 +25,9 @@
         margin: 0;
         writing-mode: vertical-lr;
 
-        &::first-letter {
-            color: var( --color-primary );
-        }
+    }
+
+    &__body {
+        padding-top: var( --space-10 );
     }
 }

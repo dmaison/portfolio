@@ -1,46 +1,50 @@
 .nav {
     background-color: inherit;
-    box-sizing: border-box;
-    display: flex;
-    list-style: none;
-    margin: auto;
-    max-width: var( --max-width );
-    padding: 0;
+    box-shadow: 0 var( --space-6 ) var( --space-6 ) var( --color-black-trans );
     position: sticky;
     top: 70px;
-    z-index: 1;
+    z-index: 2;
 
-    &__item {
-        
-        &__link {
-            color: inherit;
-            display: block;
-            font-size: 12px;
-            letter-spacing: 2px;
-            line-height: 40px;
-            padding: 0 var( --space-4 );
-            position: relative;
-            text-decoration: none;
-            text-transform: uppercase;
+    &__list {
+        box-sizing: border-box;
+        display: flex;
+        list-style: none;
+        margin: auto;
+        max-width: var( --max-width );
+        padding: 0;
 
-            &::after {
-                box-sizing: border-box;
-                content: '';
-                height: 2px;
-                left: 50%;
-                position: absolute;
-                transition: var( --transition-basic );
-                top: 100%;
-                width: 1px;
+        &__item {
+            
+            &__link {
+                color: inherit;
+                display: block;
+                font-size: 12px;
+                letter-spacing: 2px;
+                line-height: 40px;
+                padding: 0 var( --space-4 );
+                position: relative;
+                text-decoration: none;
+                text-transform: uppercase;
+
+                &::after {
+                    box-sizing: border-box;
+                    content: '';
+                    height: 2px;
+                    left: 50%;
+                    position: absolute;
+                    transition: var( --transition-basic );
+                    top: 100%;
+                    width: 1px;
+                }
+
+                &:hover::after,
+                &--active::after {
+                    background-color: var( --color-primary );
+                    left: 0;
+                    width: 100%;
+                }
             }
 
-            &:hover::after,
-            &--active::after {
-                background-color: var( --color-primary );
-                left: 0;
-                width: 100%;
-            }
         }
-
     }
 }

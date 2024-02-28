@@ -1,57 +1,47 @@
-.features {
-    --radius: 225px;
-    border-radius: 50%;
-    float: right;
-    display: grid;
-    grid-template-areas: "layer";
-    height: calc( var( --radius ) * 2 );
-    margin-left: var( --space-10 );
-    margin-top: var( --space-5 );
-    margin-right: var( --space-5 );
-    place-items: center;
+
+.section--about {
+
+    background: linear-gradient(0deg, #62a0d8 0%, #2178d1 50%, #085cb3 100%);
+    color: var( --color-white );
+    text-shadow: 0 2px 0 var( --color-black );
     position: relative;
-    width: calc( var( --radius ) * 2 );
 
-    &__details {
-        align-items: center;
-        box-sizing: border-box;
-        box-shadow: 0 var( --space-6 ) var( --space-10 ) var( --color-black-trans );
-        border-radius: inherit;
-        display: flex;
-        gap: var( --space-4 );
-        flex-direction: column;
-        justify-content: center;
-        height: calc( var( --radius ) * 1.4 );
-        padding: var( --space-4 );
+    &__content {
+        position: relative;
+        z-index: 1;
+    }
+
+    .cloud {
+        width: 600px;
+        height: 100px;
+        border-radius: 50%;
         position: absolute;
-        width: calc( var( --radius ) * 1.4 );
-
-        &__title {
-            font-size: 24px;
-            font-weight: 700;
-        }
+        top: -100px;
+        left: -100px;
+        z-index: 0;
+    }
+    
+    #cloud-base {
+        top: 90px;
+        height: 100px;
+        filter: url(#filter-base);
+        box-shadow: 200px 170px 19px 40px rgba(255, 255, 255, 0.9);
     }
 
-    &__technology { 
-        
-        --d: calc(var(--i) / var(--total));
-        --r-offset: -0.25turn;
-        --r-amount: 1turn;
-        --r: calc((var(--r-amount) * var(--d)) + var(--r-offset));
-        --transform: rotate(var(--r)) translate(var(--radius)) rotate(calc(-1 * var(--r)));
-
-        display: grid;
-        grid-area: layer;
-        opacity: .60;
-        transform: var(--transform);
-        transition: transform 1.5s ease-in-out;
-        transition: opacity var( --transition-basic );
-        width: 60px;
-
-        &:hover {
-            opacity: 1;
-        }
-
+    #cloud-back {
+        top: 90px;
+        height: 30px;
+        width: 500px;
+        filter: url(#filter-back);
+        box-shadow: 200px 200px 10px 40px rgba(215, 215, 215, 0.3);
     }
-
+    
+    #cloud-mid {
+        top: 80px;
+        width: 580px;
+        height: 35px;
+        filter: url(#filter-mid);
+        box-shadow: 210px 250px 28px 30px rgba(66, 105, 146, 0.2);
+    }
+    
 }

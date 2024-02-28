@@ -4,7 +4,7 @@ import './section.about';
  * Classname for nav links
  * @type {string}
  */
-const CLASS_LINK = 'nav__item__link';
+const CLASS_LINK = 'nav__list__item__link';
 
 /**
  * Classname for active nav links
