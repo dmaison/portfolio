@@ -1,9 +1,10 @@
 
 .section--about {
 
-    background: linear-gradient(0deg, #62a0d8 0%, #2178d1 50%, #085cb3 100%);
+    background: radial-gradient(ellipse at center bottom, #62a0d8, #2178d1, #085cb3);
     color: var( --color-white );
     text-shadow: 0 2px 0 var( --color-black );
+    overflow: clip;
     position: relative;
 
     &__content {
@@ -20,6 +21,12 @@
         position: absolute;
         left: 10%;
         width: 100px;
+    }
+
+    .tree {
+        position: absolute;
+        bottom: -20px;
+        right: -100px;
     }
 
     .cloud {
@@ -55,6 +62,17 @@
         }
     }
     
-    
+    .proficiencies {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        img { 
+            height: auto;
+            width: 100px;
+        }
+    }
     
 }
