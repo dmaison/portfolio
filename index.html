@@ -61,25 +61,33 @@
 					<p>2 years later, Mallory and I were married, and shortly after became the proud parents of a baby boy named, Tyr. We are now expecting our second son, Mars.</p>
 					<h3>Technical Proficiencies</h3>
 					<ul class="proficiencies">
-						<li><img src="./src/media/html5.svg" id="HTML" alt="HTML"></li>
-						<li><img src="./src/media/css3.svg" id="CSS" alt="CSS"></li>
-						<li><img src="./src/media/js.svg" id="Javascript" alt="Javascript"></li>
-						<li><img src="./src/media/dotnet.svg" id="DotNet" alt=".Net"></li>
-						<li><img src="./src/media/solidity.svg" id="Solidity" alt="Solidity"></li>
-						<li><img src="./src/media/aws.svg" id="AWS" alt="AWS"></li>
-						<li><img src="./src/media/ubuntu.svg" id="Ubuntu" alt="Ubuntu"></li>
-						<li><img src="./src/media/database.svg" id="Databases" alt="Databases"></li>
+						<li><img src="./src/media/html5.svg" id="HTML" alt="HTML" role="button"></li>
+						<li><img src="./src/media/css3.svg" id="CSS" alt="CSS" role="button"></li>
+						<li><img src="./src/media/js.svg" id="Javascript" alt="Javascript" role="button"></li>
+						<li><img src="./src/media/dotnet.svg" id="DotNet" alt=".Net" role="button"></li>
+						<li><img src="./src/media/solidity.svg" id="Solidity" alt="Solidity" role="button"></li>
+						<li><img src="./src/media/aws.svg" id="AWS" alt="AWS" role="button"></li>
+						<li><img src="./src/media/ubuntu.svg" id="Ubuntu" alt="Ubuntu" role="button"></li>
+						<li><img src="./src/media/database.svg" id="Databases" alt="Databases" role="button"></li>
 					</ul>
 					<aside class="drawer">
-						<div aria-describedby="HTML">
-							<h4>Markup Languages</h4>
+						<div aria-describedby="AWS" hidden>
+							<h4>Amazon Web Services</h4>
 							<ul>
-								<li><a href="https://html.spec.whatwg.org/multipage/" target="_blank">HTML5, XHTML, et. al</a></li>
-								<li><a href="https://www.w3.org/XML/" target="_blank">XML</a></li>
-								<li><a href="https://www.w3.org/TR/SVG2/" target="_blank">SVG</a></li>
+								<li><a href="https://aws.amazon.com/s3/" target="_blank">S3</a></li>
+								<li><a href="https://aws.amazon.com/ec2/" target="_blank">EC2</a></li>
+								<li><a href="https://aws.amazon.com/route53/" target="_blank">Route53</a></li>
+								<li><a href="https://aws.amazon.com/cloudfront/" target="_blank">CloudFront</a></li>
+								<li><a href="https://aws.amazon.com/cloudwatch/" target="_blank">CloudWatch</a></li>
+								<li><a href="https://aws.amazon.com/cloudformation/" target="_blank">CloudFormation</a></li>
+								<li><a href="https://aws.amazon.com/lambda/" target="_blank">Lambda</a></li>
+								<li><a href="https://aws.amazon.com/api-gateway/" target="_blank">API Gateway</a></li>
+								<li><a href="https://www.serverless.com/" target="_blank">IAM</a></li>
+								<li><a href="https://www.serverless.com/" target="_blank">Serverless</a></li>
+								<li><a href="https://aws.amazon.com/rekognition/" target="_blank">Rekognition</a></li>
 							</ul>
 						</div>
-						<div aria-describedby="CSS">
+						<div aria-describedby="CSS" hidden>
 							<h4>CSS</h4>
 							<ul>
 								<li><a href="https://www.w3.org/Style/CSS/specs.en.html" target="_blank">CSS3</a></li>
@@ -91,21 +99,15 @@
 								<li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
 							</ul>
 						</div>
-						<div aria-describedby="Javascript">
-							<h4>Javascript</h4>
+						<div aria-describedby="Databases" hidden>
+							<h4>Database & Storage</h4>
 							<ul>
-								<li><a href="https://ecma-international.org/technical-committees/tc39/?tab=published-standards" target="_blank">ECMA-262, 402, 404, 414</a></li>
-								<li><a href="https://eslint.org/" target="_blank">ESLint</a></li>
-								<li><a href="https://nodejs.org/en" target="_blank">Node.js</a></li>
-								<li><a href="https://expressjs.com/" target="_blank">Express</a></li>
-								<li><a href="https://react.dev/" target="_blank">React</a></li>
-								<li><a href="https://angular.io/" target="_blank">Angular</a></li>
-								<li><a href="https://vitejs.dev/" target="_blank">Vite</a></li>
-								<li><a href="https://jquery.com/" target="_blank">jQuery</a></li>
-								<li><a href="https://handlebarsjs.com/" target="_blank">Handlebars</a></li>
+								<li><a href="https://www.iso.org/standard/76583.html" target="_blank">SQL</a></li>
+								<li><a href="https://www.mongodb.com/" target="_blank">MongoDB</a></li>
+								<li><a href="https://redis.io/" target="_blank">Redis</a></li>
 							</ul>
 						</div>
-						<div aria-describedby="DotNet">
+						<div aria-describedby="DotNet" hidden>
 							<h4>.Net</h4>
 							<ul>
 								<li><a href="https://dotnet.microsoft.com/en-us/" target="_blank">.NET</a></li>
@@ -114,14 +116,49 @@
 								<li><a href="https://dotnet.microsoft.com/en-us/apps/aspnet">ASP</a></li>
 							</ul>
 						</div>
-						<div aria-describedby="Solidity">
+						<div aria-describedby="Solidity" hidden>
 							<h4>Ethereum/Pulsechain</h4>
 							<ul>
-								<li><a href="https://ecma-international.org/technical-committees/tc39/?tab=published-standards" target="_blank">Solidity</a></li>
+								<li><a href="https://soliditylang.org/" target="_blank">Solidity</a></li>
 								<li><a href="https://ethereum.org/developers/docs/standards/tokens/erc-20" target="_blank">ERC-20</a></li>
 								<li><a href="https://ethereum.org/developers/docs/standards/tokens/erc-721" target="_blank">ERC-721</a></li>
 								<li><a href="https://hardhat.org/" target="_blank">Hardhat</a></li>
 								<li><a href="https://web3js.org/" target="_blank">Web3.js</a></li>
+								<li><a href="https://metamask.io/" target="_blank">MetaMask</a></li>
+							</ul>
+						</div>
+						<div aria-describedby="Javascript" hidden>
+							<h4>Javascript</h4>
+							<ul>
+								<li><a href="https://ecma-international.org/technical-committees/tc39/?tab=published-standards" target="_blank">ECMA-262, 402, 404, 414</a></li>
+								<li><a href="https://eslint.org/" target="_blank">ESLint</a></li>
+								<li><a href="https://nodejs.org/en" target="_blank">Node.js</a></li>
+								<li><a href="https://expressjs.com/" target="_blank">Express</a></li>
+								<li><a href="https://aws.amazon.com/developer/tools/" target="_blank">AWS SDK</a></li>
+								<li><a href="https://react.dev/" target="_blank">React</a></li>
+								<li><a href="https://angular.io/" target="_blank">Angular</a></li>
+								<li><a href="https://vitejs.dev/" target="_blank">Vite</a></li>
+								<li><a href="https://jquery.com/" target="_blank">jQuery</a></li>
+								<li><a href="https://handlebarsjs.com/" target="_blank">Handlebars</a></li>
+							</ul>
+						</div>
+						<div aria-describedby="HTML" hidden>
+							<h4>Markup Languages</h4>
+							<ul>
+								<li><a href="https://html.spec.whatwg.org/multipage/" target="_blank">HTML5, XHTML, et. al</a></li>
+								<li><a href="https://www.w3.org/XML/" target="_blank">XML</a></li>
+								<li><a href="https://www.w3.org/TR/SVG2/" target="_blank">SVG</a></li>
+								<li><a href="https://yaml.org/" target="_blank">YAML</a></li>
+							</ul>
+						</div>
+						<div aria-describedby="Ubuntu" hidden>
+							<h4>Ubuntu</h4>
+							<ul>
+								<li><a href="https://www.gnu.org/software/bash/" target="_blank">BASH</a></li>
+								<li><a href="https://ex-vi.sourceforge.net/" target="_blank">VI</a></li>
+								<li><a href="https://www.vim.org/" target="_blank">VIM</a></li>
+								<li><a href="https://www.nano-editor.org/" target="_blank">Nano</a></li>
+								<li><a href="https://www.man7.org/linux/man-pages/man1/grep.1.html" target="_blank">Grep</a></li>
 							</ul>
 						</div>
 					</aside>

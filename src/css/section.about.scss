@@ -75,6 +75,7 @@
         }
 
         img { 
+            cursor: pointer;
             height: auto;
             width: 100px;
             transition: var( --transition-basic );
@@ -87,9 +88,14 @@
         box-shadow: var( --box-shadow );
         color: var( --color-black );
         text-shadow: none;
+        margin-bottom: var( --space-10 );
         padding: var( --space-4 );
         z-index: 2;
         position: relative;
+
+        &:not( :has( [aria-describedby]:not( [hidden] ) ) ){
+            display: none;
+        }
 
         h4 {
             font-size: 12px;
