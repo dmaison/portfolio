@@ -66,12 +66,41 @@
         align-items: center;
         display: flex;
         justify-content: space-between;
-        margin: 0;
+        margin: 0 0 var( --space-8 );
         padding: 0;
         list-style: none;
+
+        &:hover img:not( :hover ) {
+            opacity: .5;
+        }
+
         img { 
             height: auto;
             width: 100px;
+            transition: var( --transition-basic );
+        }
+    }
+
+    .drawer {
+        background-color: var( --color-white );
+        border-radius: 2px;
+        box-shadow: var( --box-shadow );
+        color: var( --color-black );
+        text-shadow: none;
+        padding: var( --space-4 );
+        z-index: 2;
+        position: relative;
+
+        h4 {
+            font-size: 12px;
+            letter-spacing: 2px;
+            font-weight: normal;
+            text-transform: uppercase;
+        }
+
+        ul {
+            columns: 4;
+            list-style-type: '✅'
         }
     }
     

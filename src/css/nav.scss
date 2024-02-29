@@ -1,6 +1,6 @@
 .nav {
     background-color: inherit;
-    box-shadow: 0 var( --space-6 ) var( --space-6 ) var( --color-black-trans );
+    box-shadow: var( --box-shadow );
     position: sticky;
     top: 70px;
     z-index: 2;

@@ -16,7 +16,14 @@ body {
     padding: 0;
 }
 
+a { 
+    color: inherit; 
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
 h3,
+h4,
 p {
     margin-bottom: var( --space-5 );
     margin-top: 0;
