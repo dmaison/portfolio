@@ -62,51 +62,55 @@
         }
     }
     
-    .proficiencies {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-        margin: 0 0 var( --space-8 );
-        padding: 0;
-        list-style: none;
+    .cards {
+        display: grid;
+        gap: var( --space-6 );
+        grid-template-columns: repeat( 3, 1fr );
 
-        &:hover img:not( :hover ) {
-            opacity: .5;
-        }
-
-        img { 
+        .card {
+            align-items: center;
+            background-color: var( --color-white-trans );
+            border-radius: var( --space-6 );
+            box-sizing: border-box;
+            color: var( --color-black );
             cursor: pointer;
-            height: auto;
-            width: 100px;
-            transition: var( --transition-basic );
-        }
-    }
+            display: flex;
+            justify-content: flex-end;
+            overflow: hidden;
+            padding: var( --space-4 );
+            position: relative;
+            text-shadow: none;
+            transition: .5s ease-in;
 
-    .drawer {
-        background-color: var( --color-white );
-        border-radius: 2px;
-        box-shadow: var( --box-shadow );
-        color: var( --color-black );
-        text-shadow: none;
-        margin-bottom: var( --space-10 );
-        padding: var( --space-4 );
-        z-index: 2;
-        position: relative;
+            &:hover { 
+                background-color: var( --color-white );
+                img { opacity: 1; }
+            }
 
-        &:not( :has( [aria-describedby]:not( [hidden] ) ) ){
-            display: none;
-        }
+            h3,
+            img,
+            ul { 
+                position: relative;
+                z-index: 2; 
+            }
 
-        h4 {
-            font-size: 12px;
-            letter-spacing: 2px;
-            font-weight: normal;
-            text-transform: uppercase;
-        }
+            h3 { 
+                font-size: 12px;
+                letter-spacing: 1px;
+                margin: 0; 
+                text-transform: uppercase;
+            }
 
-        ul {
-            columns: 4;
-            list-style-type: '✅'
+            img { 
+                display: block;
+                left: 0;
+                opacity: .75;
+                position: absolute;
+                transition: inherit;
+                width: 25%; 
+            }
+
+            ul { display: none; }
         }
     }
     
