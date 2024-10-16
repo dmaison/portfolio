@@ -1,0 +1,64 @@
+@import './header.css';
+
+:root {
+
+    --c-scale: 0.9;
+
+    --c-gray-white: #fff;
+    --c-gray-100: #fafded;
+    --c-gray-200: rgb( from var( --c-gray-100 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-gray-300: rgb( from var( --c-gray-200 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-gray-400: rgb( from var( --c-gray-300 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-gray-500: rgb( from var( --c-gray-400 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-gray-600: rgb( from var( --c-gray-500 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-gray-700: rgb( from var( --c-gray-600 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-gray-800: rgb( from var( --c-gray-700 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-gray-900: rgb( from var( --c-gray-800 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-gray-1000: rgb( from var( --c-gray-900 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-gray-black: #191a18;
+
+    --c-green-100: #d2f106;
+    --c-green-200: rgb( from var( --c-green-100 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-green-300: rgb( from var( --c-green-200 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-green-400: rgb( from var( --c-green-300 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-green-500: rgb( from var( --c-green-400 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-green-600: rgb( from var( --c-green-500 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-green-700: rgb( from var( --c-green-600 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-green-800: rgb( from var( --c-green-700 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-green-900: rgb( from var( --c-green-800 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-green-1000: rgb( from var( --c-green-900 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+
+    --transparency-100: .10;
+    --transparency-200: calc( var( --transparency-100 ) * 2 );
+    --transparency-300: calc( var( --transparency-100 ) * 3 );
+    --transparency-400: calc( var( --transparency-100 ) * 4 );
+    --transparency-500: calc( var( --transparency-100 ) * 5 );
+    --transparency-600: calc( var( --transparency-100 ) * 6 );
+    --transparency-700: calc( var( --transparency-100 ) * 7 );
+    --transparency-800: calc( var( --transparency-100 ) * 8 );
+    --transparency-900: calc( var( --transparency-100 ) * 9 );
+    --transparency-1000: calc( var( --transparency-100 ) * 10 );
+
+}
+
+body {
+    align-items: center;
+    background: var( --c-gray-black ) radial-gradient( var( --c-green-1000 ), var( --c-gray-black ) ) no-repeat;
+    background-size: 100dvw 100dvh;
+    display: flex;
+    font: 400 16px/24px 'pt sans', sans-serif;    
+    justify-content: center;
+    margin: 0;
+    min-height: 100dvh;
+    padding: 0;
+}
+
+.palette {
+    display: flex;
+    gap: 16px;
+    div {
+        --size: 50px;
+        height: var( --size );
+        width: var( --size );
+    }
+}
