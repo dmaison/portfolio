@@ -1,0 +1,36 @@
+nav {
+    --circumference: calc( 40dvh + 15rem );
+    --radius: calc( var( --circumference ) / 2 );
+    --size: 10dvh;
+    --halfSize: calc( var( --size ) / 2 );
+
+    box-sizing: border-box;
+    height: 1px;
+    left: 50dvw;
+    position: absolute;
+    top: 50dvh;
+    width: 1px;
+    
+    a {
+        --t: calc( var( --angle ) * pi / 180 );
+        color: rgb( from var( --c-accent-400 ) r g b / calc( alpha * .5 ) );
+        display: block;
+        height: var( --size );
+        left: calc( var( --radius ) * cos( var( --t ) ) );
+        margin-left: calc( var( --halfSize ) * -1 );
+        margin-top: calc( var( --halfSize ) * -1 );
+        position: absolute;
+        transition: .2s linear;
+        top: calc( var( --radius ) * sin( var( --t ) ) );
+        width: var( --size );
+        &:hover {
+            color: var( --c-accent-300 );
+        }
+
+        &:nth-child(1){ --angle: -40; }
+        &:nth-child(2){ --angle: -15; }
+        &:nth-child(3){ --angle: 10; }
+        &:nth-child(4){ --angle: 35; }
+    }
+
+}

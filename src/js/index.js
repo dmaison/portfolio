@@ -6,13 +6,10 @@ import { getQuadrant } from './window';
 const 
 
 handleMouseMove = ( header, e ) => { 
-
     const { pageX: x, pageY: y } = e,
     [ shadowX, shadowY ] = getQuadrant( x, y );
-
     header.style.setProperty( '--x', shadowX );
     header.style.setProperty( '--y', shadowY );
-
 },
 
 init = () => {
