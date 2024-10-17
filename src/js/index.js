@@ -26,8 +26,8 @@ handleHashChange = () => {
 handleMouseMove = ( header, e ) => { 
     const { pageX: x, pageY: y } = e,
     [ shadowX, shadowY ] = getQuadrant( x, y );
-    header.style.setProperty( '--x', shadowX );
-    header.style.setProperty( '--y', shadowY );
+    document.documentElement.style.setProperty( '--x', shadowX );
+    document.documentElement.style.setProperty( '--y', shadowY );
 },
 
 /**

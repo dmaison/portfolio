@@ -1,6 +1,4 @@
 header {
-    --x: -2;
-    --y: -2;
     --shadowX: calc( var( --height ) * var( --x ) * -1 );
     --shadowY: calc( var( --height ) * var( --y ) * -1 );
     --size: 40dvh;
@@ -10,8 +8,6 @@ header {
     --depthY: calc( var( --depthBase ) * var( --y ) );
     --highlightX: calc( var( --depthX ) * -1 );
     --highlightY: calc( var( --depthY ) * -1 );
-
-    
 
     align-items: center;
     background: radial-gradient( var( --c-accent-100 ), var( --c-accent-200 ), var( --c-accent-1000 ) );

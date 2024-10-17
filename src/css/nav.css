@@ -39,11 +39,16 @@ nav {
         }
 
         &.active { 
+            --height: 10px;
+            --shadowX: calc( var( --height ) * var( --x ) * -1 );
+            --shadowY: calc( var( --height ) * var( --y ) * -1 );
+        
             color: var( --c-compliment-100 ); 
             &::after {
                 color: var( --c-gray-100 );
                 left: 110%;
                 opacity: 1;
+                text-shadow: var( --shadowX ) var( --shadowY ) 10px var( --c-gray-black );
             }
         }
 
