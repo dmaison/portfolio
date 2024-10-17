@@ -23,8 +23,28 @@ nav {
         transition: .2s linear;
         top: calc( var( --radius ) * sin( var( --t ) ) );
         width: var( --size );
+
+        &::after {
+            color: var( --c-accent-100 );
+            content: attr( aria-label );
+            font: 400 48px/48px 'pt sans', sans-serif;
+            left: 90%;
+            letter-spacing: 1rem;
+            opacity: 0;
+            pointer-events: none;
+            position: absolute;
+            text-transform: uppercase;
+            transition: .5s ease-in-out;
+            top: calc( 50% - 24px );
+        }
+
         &:hover {
             color: var( --c-accent-300 );
+
+            &::after {
+                left: 110%;
+                opacity: 1;
+            }
         }
 
         &:nth-child(1){ --angle: -40; }
