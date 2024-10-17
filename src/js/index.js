@@ -5,6 +5,9 @@ import { getQuadrant } from './window';
 
 const 
 
+/**
+ * Handle hash change
+ */
 handleHashChange = () => {
     const className = 'active',
     { hash } = window.location,
@@ -17,6 +20,9 @@ handleHashChange = () => {
     next?.classList.add( className );
 },
 
+/**
+ * Update the light directions
+ */
 handleMouseMove = ( header, e ) => { 
     const { pageX: x, pageY: y } = e,
     [ shadowX, shadowY ] = getQuadrant( x, y );
@@ -24,6 +30,9 @@ handleMouseMove = ( header, e ) => {
     header.style.setProperty( '--y', shadowY );
 },
 
+/**
+ * Initialize the page
+ */
 init = () => {
     const header = document.querySelector( 'header' );
     document.addEventListener( 'mousemove', handleMouseMove.bind( null, header ), true );

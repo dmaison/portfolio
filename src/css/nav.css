@@ -41,6 +41,7 @@ nav {
         &.active { 
             color: var( --c-compliment-100 ); 
             &::after {
+                color: var( --c-gray-100 );
                 left: 110%;
                 opacity: 1;
             }
