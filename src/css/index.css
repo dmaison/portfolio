@@ -4,7 +4,11 @@
 :root {
 
     --c-scale: 0.9;
-    --c-green: #d2f106;
+    --c-none: steelblue;
+    --c-about: chartreuse;
+    --c-experience: gold;
+    --c-portfolio: darkorange;
+    --c-social: crimson;
 
     --c-gray-white: #fff;
     --c-gray-100: #fafded;
@@ -29,6 +33,17 @@
     --c-accent-800: rgb( from var( --c-accent-700 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
     --c-accent-900: rgb( from var( --c-accent-800 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
     --c-accent-1000: rgb( from var( --c-accent-900 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+
+    --c-compliment-100: lch( from var( --c-accent-100 ) l c calc( h + 180 ) );
+    --c-compliment-200: rgb( from var( --c-compliment-100 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-compliment-300: rgb( from var( --c-compliment-200 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-compliment-400: rgb( from var( --c-compliment-300 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-compliment-500: rgb( from var( --c-compliment-400 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-compliment-600: rgb( from var( --c-compliment-500 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-compliment-700: rgb( from var( --c-compliment-600 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-compliment-800: rgb( from var( --c-compliment-700 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-compliment-900: rgb( from var( --c-compliment-800 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-compliment-1000: rgb( from var( --c-compliment-900 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
 
     --transparency-100: .10;
     --transparency-200: calc( var( --transparency-100 ) * 2 );
