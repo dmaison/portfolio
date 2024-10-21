@@ -6,10 +6,19 @@ import { getQuadrant } from './window';
 const 
 
 /**
+ * 
+ */
+handleClick = ( e ) => {
+    const { currentTarget: button } = e;
+
+},
+
+/**
  * Handle hash change
  */
 handleHashChange = () => {
     const className = 'active',
+    sections = Array.from( document.querySelectorAll( 'main section' ) ),
     { hash } = window.location,
     current = document.querySelector( `nav a.${className}` ),
     next = document.querySelector( `nav a[href="${hash}"]` ),
@@ -18,12 +27,20 @@ handleHashChange = () => {
 
     current?.classList.remove( className );
     next?.classList.add( className );
+
+    sections.forEach(( section ) => {
+        if( `#${section.id}`=== hash ){
+            section.removeAttribute( 'hidden' );
+        } else {
+            section.setAttribute( 'hidden', '' );
+        }
+    })
 },
 
 /**
  * Update the light directions
  */
-handleMouseMove = ( header, e ) => { 
+handleMouseMove = ( e ) => { 
     const { pageX: x, pageY: y } = e,
     [ shadowX, shadowY ] = getQuadrant( x, y );
     document.documentElement.style.setProperty( '--x', shadowX );
@@ -34,8 +51,7 @@ handleMouseMove = ( header, e ) => {
  * Initialize the page
  */
 init = () => {
-    const header = document.querySelector( 'header' );
-    document.addEventListener( 'mousemove', handleMouseMove.bind( null, header ), true );
+    document.addEventListener( 'mousemove', handleMouseMove, true );
     handleHashChange();
 }
 

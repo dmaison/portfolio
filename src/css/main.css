@@ -29,7 +29,8 @@ main {
         }
 
         &#experience,
-        &#portfolio {
+        &#portfolio,
+        &#social {
             ul {
                 display: flex;
                 gap: 4rem;
@@ -56,6 +57,19 @@ main {
                         color: var( --c-accent-500 );
                         display: block;
                     }
+                }
+            }
+        }
+
+        &#social {
+            a {
+                color: var( --c-accent-100 );
+                display: block;
+                height: 4rem;
+                transition: .2s linear;
+                width: 4rem;
+                &:hover {
+                    color: var( --c-gray-white );
                 }
             }
         }
