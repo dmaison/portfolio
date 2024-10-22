@@ -1,0 +1,75 @@
+header {
+    --shadowX: calc( var( --height ) * var( --x ) * -1 );
+    --shadowY: calc( var( --height ) * var( --y ) * -1 );
+    --size: 40dvh;
+    --height: 40px;
+    --depthBase: calc( var( --size ) / 20 );
+    --depthX: calc( var( --depthBase ) * var( --x ) );
+    --depthY: calc( var( --depthBase ) * var( --y ) );
+    --highlightX: calc( var( --depthX ) * -1 );
+    --highlightY: calc( var( --depthY ) * -1 );
+
+    align-items: center;
+    background: radial-gradient( var( --c-accent-100 ), var( --c-accent-200 ), var( --c-accent-1000 ) );
+    border: 2px solid var( --c-accent-500 );
+    border-radius: 50%;
+    box-sizing: border-box;
+
+    /* magic */
+    box-shadow: 
+        var( --shadowX ) var( --shadowY ) var( --height ) var( --c-gray-black ),
+        var( --depthX ) var( --depthY ) var( --depthBase ) var( --c-accent-1000 ) inset,
+        var( --highlightX ) var( --highlightY ) var( --depthBase ) var( --c-accent-100 ) inset;
+
+    display: flex;
+    height: var( --size );
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    transition: .5s ease-out;
+    width: var( --size );
+
+    &::before {
+        --size2: calc( var( --size ) / 1.2 );
+        background: radial-gradient( rgb( from var( --c-gray-white ) r g b / calc( alpha * var( --transparency-900 ) ) ), transparent );
+        border-radius: inherit;
+        box-shadow: var( --height ) var( --height ) var( --height ) var( --c-accent-1000 );
+        content: '';
+        display: block;
+        filter: blur( 20px );
+        height: var( --size2 ) ;
+        left: 0;
+        opacity: .75;
+        position: absolute;
+        top: 0;
+        width: var( --size2 );
+    } 
+
+    &::after {
+        --size2: calc( var( --size ) - 2px );
+        background: linear-gradient( white, transparent ) no-repeat;
+        border-radius: inherit;
+        content: '';
+        display: block;
+        height: var( --size2 );
+        left: 0;
+        mix-blend-mode: overlay;
+        opacity: .75;
+        position: absolute;
+        top: -25%;
+        width: var( --size2 );
+    } 
+
+    h1 {
+        font-size: calc( var( --size ) / 2 );
+        mix-blend-mode: soft-light;
+        text-shadow: 
+            2px 2px 2px var( --c-gray-white ),
+            1px 1px 2px black;
+
+        z-index: 1;
+    }
+
+   
+
+}

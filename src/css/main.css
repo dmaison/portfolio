@@ -1,0 +1,105 @@
+main {
+    color: var( --c-gray-100 );
+    bottom: 0;
+    padding: 2rem;
+    position: fixed;
+
+    @media screen and ( width < 1060px ) {
+        padding: 0;
+    }
+
+    section {
+        box-sizing: border-box;
+        max-width: min( 1440px, calc( 100vw - 2rem ) );
+        padding: 0 1rem;
+
+        @media screen and ( width < 1060px ) {
+            background-color: rgb( from var( --c-gray-black ) r g b / calc( alpha * var( --transparency-500 ) ) );
+            padding: 1rem;
+        }
+
+        h2 {
+            color: var( --c-compliment-100 );
+            font-size: 1.5rem;
+            letter-spacing: 1rem;
+            text-transform: uppercase;
+        }
+
+        ul {
+            &::-webkit-scrollbar { 
+                background-color: var( --c-accent-1000 );
+                border-radius: 4px;
+                height: .4rem;
+            }
+        
+            &::-webkit-scrollbar-thumb {
+                background-color: var( --c-accent-100 );
+                border-radius: 4px;
+            }
+        }
+
+        &#experience,
+        &#portfolio,
+        &#social {
+            ul {
+                display: flex;
+                gap: 4rem;
+                list-style: none;
+                margin: 0;
+                max-width: 100%;
+                overflow: auto;
+                padding: 0 0 1rem 0;
+            }
+        }
+
+        &#experience {
+            ul {
+                align-items: flex-end;
+
+                li {
+                    a { 
+                        color: var( --c-accent-100 );
+                        display: block;
+                        font: 400 24px/32px 'pt sans', sans-serif;
+                        width: min( 200px, 50vw );
+                        text-decoration: none;
+                    }
+                    span {
+                        color: var( --c-accent-500 );
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        &#social {
+            a {
+                color: var( --c-accent-100 );
+                display: block;
+                height: 4rem;
+                transition: .2s linear;
+                width: 4rem;
+                &:hover {
+                    color: var( --c-gray-white );
+                }
+            }
+        }
+
+
+    }
+
+}
+
+@media screen and ( width > 1060px ) {
+    .shadow {
+        background: linear-gradient( transparent, var( --c-gray-black ) );
+        color: var( --c-gray-100 );
+        bottom: 0;
+        height: 200px;
+        mix-blend-mode: overlay;
+        padding: 2rem;
+        position: fixed;
+        width: 100%;
+        z-index: -1;
+    }
+}

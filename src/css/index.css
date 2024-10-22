@@ -1,0 +1,76 @@
+@import './header.css';
+@import './main.css';
+@import './nav.css';
+@import './article.css';
+
+:root {
+
+    --c-scale: 0.9;
+    --c-none: steelblue;
+    --c-about: chartreuse;
+    --c-experience: gold;
+    --c-portfolio: darkorange;
+    --c-social: crimson;
+
+    --c-gray-white: #fff;
+    --c-gray-100: #fafded;
+    --c-gray-200: rgb( from var( --c-gray-100 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-gray-300: rgb( from var( --c-gray-200 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-gray-400: rgb( from var( --c-gray-300 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-gray-500: rgb( from var( --c-gray-400 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-gray-600: rgb( from var( --c-gray-500 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-gray-700: rgb( from var( --c-gray-600 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-gray-800: rgb( from var( --c-gray-700 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-gray-900: rgb( from var( --c-gray-800 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-gray-1000: rgb( from var( --c-gray-900 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-gray-black: #191a18;
+
+    --c-accent-100: var( --c-green );
+    --c-accent-200: rgb( from var( --c-accent-100 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-accent-300: rgb( from var( --c-accent-200 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-accent-400: rgb( from var( --c-accent-300 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-accent-500: rgb( from var( --c-accent-400 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-accent-600: rgb( from var( --c-accent-500 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-accent-700: rgb( from var( --c-accent-600 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-accent-800: rgb( from var( --c-accent-700 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-accent-900: rgb( from var( --c-accent-800 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-accent-1000: rgb( from var( --c-accent-900 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+
+    --c-compliment-100: lch( from var( --c-accent-100 ) l c calc( h + 180 ) );
+    --c-compliment-200: rgb( from var( --c-compliment-100 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-compliment-300: rgb( from var( --c-compliment-200 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-compliment-400: rgb( from var( --c-compliment-300 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-compliment-500: rgb( from var( --c-compliment-400 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-compliment-600: rgb( from var( --c-compliment-500 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-compliment-700: rgb( from var( --c-compliment-600 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-compliment-800: rgb( from var( --c-compliment-700 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-compliment-900: rgb( from var( --c-compliment-800 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+    --c-compliment-1000: rgb( from var( --c-compliment-900 ) calc( r * var( --c-scale ) ) calc( g * var( --c-scale ) ) calc( b * var( --c-scale ) ) );
+
+    --transparency-100: .10;
+    --transparency-200: calc( var( --transparency-100 ) * 2 );
+    --transparency-300: calc( var( --transparency-100 ) * 3 );
+    --transparency-400: calc( var( --transparency-100 ) * 4 );
+    --transparency-500: calc( var( --transparency-100 ) * 5 );
+    --transparency-600: calc( var( --transparency-100 ) * 6 );
+    --transparency-700: calc( var( --transparency-100 ) * 7 );
+    --transparency-800: calc( var( --transparency-100 ) * 8 );
+    --transparency-900: calc( var( --transparency-100 ) * 9 );
+    --transparency-1000: calc( var( --transparency-100 ) * 10 );
+
+}
+
+body {
+    align-items: center;
+    background: var( --c-accent-1000 ) radial-gradient( transparent, var( --c-gray-black ) ) no-repeat;
+    background-size: 100dvw 100dvh;
+    display: flex;
+    font: 400 16px/24px 'pt sans', sans-serif;
+    justify-content: center;
+    margin: 0;
+    min-height: 100dvh;
+    min-width: 100dvw;
+    padding: 0;
+    transition: .5s linear;
+    transition-property: background-color;
+}
