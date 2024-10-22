@@ -10,9 +10,15 @@ nav {
     position: absolute;
     top: 50dvh;
     width: 1px;
-    
+
+    @media screen and ( width < 1350px ) {
+        --circumference: calc( 40dvh + 8rem );
+        --size: 6dvh;
+    }
+
     a {
         --t: calc( var( --angle ) * pi / 180 );
+        --hoverDirection: 110%;
         color: rgb( from var( --c-accent-400 ) r g b / calc( alpha * .5 ) );
         display: block;
         height: var( --size );
@@ -27,7 +33,7 @@ nav {
         &::after {
             color: var( --c-accent-100 );
             content: attr( aria-label );
-            font: 400 48px/48px 'pt sans', sans-serif;
+            font: 400 48px/1 'pt sans', sans-serif;
             left: 90%;
             letter-spacing: 1rem;
             opacity: 0;
@@ -38,40 +44,96 @@ nav {
             top: calc( 50% - 24px );
         }
 
+        @media screen and ( width > 1666px ) {
+            --startAngle: -40;
+            --gap: 25;
+        }
+
+        @media screen and ( width < 1666px ) {
+            --startAngle: -167;
+            --gap: 50;
+
+            &:nth-child(1),
+            &:nth-child(2){ 
+                &::after {
+                    left: initial;
+                    right: 90%;
+                }
+            }
+        }
+
+        @media screen and ( width < 1350px ) {
+            &::after {
+                font-size: 32px;
+                letter-spacing: .75rem;
+            }
+        }
+
+        @media screen and ( width < 1060px ) {
+            --startAngle: -120;
+            --gap: 20;
+            &::after {
+                content: initial;
+            }
+        }
+        
+
         &.active { 
             --height: 10px;
             --shadowX: calc( var( --height ) * var( --x ) * -1 );
             --shadowY: calc( var( --height ) * var( --y ) * -1 );
         
             color: var( --c-compliment-100 ); 
+
             &::after {
                 color: var( --c-gray-100 );
-                left: 110%;
+                left: var( --hoverDirection );
                 opacity: 1;
                 text-shadow: var( --shadowX ) var( --shadowY ) 10px var( --c-gray-black );
+            }
+
+            @media screen and ( width < 1666px ) {
+                &:nth-child(1),
+                &:nth-child(2){ 
+                    &::after {
+                        left: initial;
+                        right: var( --hoverDirection );
+                    }
+                }
             }
         }
 
         &:hover:not( .active ) {
             color: var( --c-accent-100 );
             &::after {
-                left: 110%;
+                left: var( --hoverDirection );
                 opacity: 1;
+            }
+            @media screen and ( width < 1666px ) {
+                &:nth-child(1),
+                &:nth-child(2){ 
+                    &::after {
+                        left: initial;
+                        right: var( --hoverDirection );
+                    }
+                }
             }
         }
 
         &:nth-child(1){ 
-            --angle: -40; 
+            --angle: var(--startAngle ); 
         }
         &:nth-child(2){ 
-            --angle: -15; 
+            --angle: calc( var( --startAngle ) + var( --gap ) ); 
         }
         &:nth-child(3){ 
-            --angle: 10; 
+            --angle: calc( var( --startAngle ) + var( --gap ) * 2 ); 
         }
         &:nth-child(4){ 
-            --angle: 35; 
+            --angle: calc( var( --startAngle ) + var( --gap ) * 3 ); 
         }
+        
+        
     }
 
 }
