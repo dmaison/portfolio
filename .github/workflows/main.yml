@@ -21,6 +21,6 @@ jobs:
       if: github.ref == 'refs/heads/master'
       uses: reggionick/s3-deploy@v3
       with:
-        folder: build
+        folder: dist
         bucket: ${{ secrets.BUCKET }}
         bucket-region: us-east-1
